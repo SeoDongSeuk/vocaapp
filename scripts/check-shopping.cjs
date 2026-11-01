@@ -6,7 +6,7 @@ const source = ts.transpileModule(fs.readFileSync('services/shopping.ts', 'utf8'
 let requested;
 const context = { exports: {}, URL, URLSearchParams, process: { env: { EXPO_PUBLIC_ADPICK_AFFILIATE_ID: 'test-affiliate' } }, fetch: async url => { requested = new URL(url); return { ok: true, json: async () => [{ list: [] }] }; } };
 vm.runInNewContext(source, context);
-const { parseShoppingDeals, fetchShoppingDeals } = context.exports;
+const { parseShoppingDeals, fetchShoppingDeals, fetchShoppingRecommendations } = context.exports;
 const product = { product_name: '테스트 상품', photo: 'https://example.com/photo.jpg', mall_name: '테스트몰', price_sale: '1,100,000', price_org: '1,850,000', commission: '10%', buyurl: 'https://example.com/buy' };
 const [deal] = parseShoppingDeals([{ title: '핫딜', list: [product] }]);
 assert.equal(deal.salePrice, 1100000);
@@ -31,6 +31,8 @@ assert.equal(parseShoppingDeals([{ list: [{ ...product, price_sale: 0 }] }])[0].
   assert.equal(requested.protocol, 'https:');
   assert.equal(requested.searchParams.get('affid'), 'test-affiliate');
   assert.equal(requested.pathname, '/apis/sdk_shopping_hotdeal.php');
+  await fetchShoppingRecommendations(new AbortController().signal);
+  assert.equal(requested.pathname, '/apis/sdk_shopping.php');
   context.process.env.EXPO_PUBLIC_ADPICK_AFFILIATE_ID = '';
   await assert.rejects(() => fetchShoppingDeals(new AbortController().signal));
   console.log('PASS: nested shopping groups, prices, missing values, duplicates, URL validation, empty/error responses and affiliate configuration.');
