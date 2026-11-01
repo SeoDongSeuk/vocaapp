@@ -5,9 +5,10 @@ import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import AdMobBanner from './components/AdMobBanner';
 import HomeCardPager from './components/HomeCardPager';
+import ReminderSettingsScreen from './components/ReminderSettingsScreen';
 import { WORD_LEVEL, wordsForLevel, type LevelId, type Word } from './vocabulary';
 
-type Screen = 'splash' | 'welcome' | 'home' | 'study' | 'studyResult' | 'countdown' | 'playing' | 'result';
+type Screen = 'splash' | 'welcome' | 'home' | 'study' | 'studyResult' | 'countdown' | 'playing' | 'result' | 'reminders';
 type Question = { answer: Word; choices: Word[] };
 type WordCycle = { order: Word[]; cursor: number; lastWord: string | null };
 
@@ -364,7 +365,7 @@ export default function App() {
 
       {screen === 'home' && (
         <View style={styles.homeScreen}>
-          <View style={styles.homePagerHeader}><Header /></View>
+          <View style={styles.homePagerHeader}><Header /><Pressable accessibilityRole="button" onPress={() => setScreen('reminders')} style={styles.reminderLink}><Text style={styles.reminderLinkText}>학습 알림 설정 🔔</Text></Pressable></View>
           <HomeCardPager>
           <ScrollView contentContainerStyle={styles.homeContent} nestedScrollEnabled showsVerticalScrollIndicator={false}>
             <View style={styles.levelCard}>
@@ -508,6 +509,8 @@ export default function App() {
           )}
         </SafeAreaView>
       )}
+
+      {screen === 'reminders' && <ReminderSettingsScreen onBack={() => setScreen('home')} />}
 
 
       {screen === 'studyResult' && (
@@ -679,6 +682,8 @@ function Header({ trailing }: { trailing?: string }) {
 }
 
 const styles = StyleSheet.create({
+  reminderLink: { alignSelf: 'flex-end', paddingVertical: 8, paddingHorizontal: 10, marginBottom: 4, backgroundColor: '#ECE9FF', borderRadius: 12 },
+  reminderLinkText: { color: '#5745CB', fontSize: 12, fontWeight: '700' },
   homePagerHeader: { width: '100%', maxWidth: 520, alignSelf: 'center', paddingHorizontal: 22, paddingTop: 54 },
   root: { flex: 1, backgroundColor: COLORS.canvas },
   homeScreen: { flex: 1 },
