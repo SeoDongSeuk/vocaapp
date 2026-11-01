@@ -5,9 +5,10 @@ import { Linking, Pressable, ScrollView, StyleSheet, Text, View } from 'react-na
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import AdMobBanner from './components/AdMobBanner';
 import StarterWordIllustration from './components/StarterWordIllustration';
+import TenpingAdList from './components/TenpingAdList';
 import { WORD_LEVEL, wordsForLevel, type LevelId, type Word } from './vocabulary';
 
-type Screen = 'splash' | 'welcome' | 'home' | 'study' | 'studyResult' | 'countdown' | 'playing' | 'result';
+type Screen = 'splash' | 'welcome' | 'home' | 'study' | 'studyResult' | 'countdown' | 'playing' | 'result' | 'ads';
 type Question = { answer: Word; choices: Word[] };
 type WordCycle = { order: Word[]; cursor: number; lastWord: string | null };
 
@@ -367,6 +368,7 @@ export default function App() {
         <View style={styles.homeScreen}>
           <ScrollView contentContainerStyle={styles.homeContent} showsVerticalScrollIndicator={false}>
             <Header />
+            <Pressable accessibilityRole="button" onPress={() => setScreen('ads')} style={styles.adListLink}><Text style={styles.adListLinkText}>광고 목록 보기 ↗</Text></Pressable>
             <View style={styles.levelCard}>
             <View style={styles.levelCardTop}>
               <View>
@@ -509,6 +511,8 @@ export default function App() {
           )}
         </SafeAreaView>
       )}
+
+      {screen === 'ads' && <TenpingAdList onBack={() => setScreen('home')} />}
 
       {screen === 'studyResult' && (
         <ScrollView contentContainerStyle={styles.studyResultContent} showsVerticalScrollIndicator={false}>
@@ -679,6 +683,8 @@ function Header({ trailing }: { trailing?: string }) {
 }
 
 const styles = StyleSheet.create({
+  adListLink: { alignSelf: 'flex-end', paddingVertical: 10, paddingHorizontal: 12, marginBottom: 8, borderRadius: 12, backgroundColor: '#ECE9FF' },
+  adListLinkText: { color: '#5745CB', fontSize: 12, fontWeight: '700' },
   root: { flex: 1, backgroundColor: COLORS.canvas },
   homeScreen: { flex: 1 },
   welcomeContent: { width: '100%', maxWidth: 520, alignSelf: 'center', flexGrow: 1, paddingHorizontal: 22, paddingTop: 54, paddingBottom: 25 },
