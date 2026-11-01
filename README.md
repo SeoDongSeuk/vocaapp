@@ -1,6 +1,6 @@
 # 워드챌린지 (Word Challenge)
 
-An English vocabulary study app built with Expo and React Native. Each of six levels contains 1,000 words with Korean meanings, from beginner vocabulary through advanced adult and native-speaker vocabulary. Learn 10 words with flashcards, review words you miss, or take a timed quiz at the selected level.
+An English vocabulary study app built with Expo and React Native. Five selectable levels—초급, 중급, 고급, 최상급, 마스터—each contain 1,000 words with Korean meanings. The default level is 초급. Learn 10 words with flashcards, review words you miss, or take a timed quiz at the selected level. Phonetic transcriptions are not displayed in study cards or quizzes.
 
 ## Play
 
@@ -16,9 +16,9 @@ Shopping hotdeals use the same affiliate ID and `/apis/sdk_shopping_hotdeal.php`
 
 Shopping recommendations use `/apis/sdk_shopping.php` with the same parser and affiliate ID, but a separate cache and card. The feed includes travel products with placeholder zero prices; nonpositive or missing prices are shown as ‘가격은 판매처에서 확인해 주세요’, not free products.
 
-The 입문 study cards show locally bundled Twemoji vector picture clues. Concrete nouns use object pictures; actions and concepts can use symbolic multi-icon scenes. All 1,000 entry words have an explicit image mapping. Grammar words such as `and`, `between`, and `beside` were exchanged for familiar concrete vocabulary while keeping 1,000 unique entries per level. The replacement list is in `data/starter-word-replacements.json`.
+입문 is no longer selectable in the app. Its previous vocabulary and illustration sources are retained as archived content. The historical replacement list is in `data/starter-word-replacements.json`.
 
-Picture plans are maintained in `data/starter-picture-plan.txt`. Run `node scripts/build-starter-art.cjs` to validate coverage and regenerate the offline artwork data. `--download` retrieves missing source SVGs during development only. Artwork attribution and license details are in `assets/word-art/ATTRIBUTION.md`.
+Archived picture plans are in `data/starter-picture-plan.txt`. `node scripts/build-starter-art.cjs` validates their coverage and regenerates the artwork data. `--download` retrieves missing source SVGs during development only. Artwork attribution and license details are in `assets/word-art/ATTRIBUTION.md`.
 
 On the home screen, each level has **학습하기** and **1분 퀴즈** buttons. Choose **학습하기** to study 10 flashcards: reveal each Korean meaning, then mark the word as known or add it to the review list. Review words again from the home screen.
 

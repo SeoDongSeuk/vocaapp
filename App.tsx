@@ -1,10 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
 import { useEffect, useRef, useState } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { Linking, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import AdMobBanner from './components/AdMobBanner';
-import StarterWordIllustration from './components/StarterWordIllustration';
 import HomeCardPager from './components/HomeCardPager';
 import { WORD_LEVEL, wordsForLevel, type LevelId, type Word } from './vocabulary';
 
@@ -16,7 +15,6 @@ const ROUND_SECONDS = 60;
 const STUDY_SESSION_SIZE = 10;
 const WELCOME_COMPLETED_KEY = 'wordrush.welcome.completed';
 const LEVELS: { id: LevelId; title: string; english: string; description: string }[] = [
-  { id: 'starter', title: '입문', english: 'STARTER', description: '유아를 위한 그림으로 배우는 생활 단어예요.' },
   { id: 'beginner', title: '초급', english: 'BEGINNER', description: '초등학생을 위한 생활 기초 단어예요.' },
   { id: 'intermediate', title: '중급', english: 'INTERMEDIATE', description: '중·고등학생 수준의 학교와 독해 단어예요.' },
   { id: 'advanced', title: '고급', english: 'ADVANCED', description: '대학 강의와 학술 글에서 쓰는 단어예요.' },
@@ -110,7 +108,7 @@ function createQuestion(answer: Word, levelWords: Word[]): Question {
 
 export default function App() {
   const [screen, setScreen] = useState<Screen>('splash');
-  const [selectedLevel, setSelectedLevel] = useState<LevelId>('starter');
+  const [selectedLevel, setSelectedLevel] = useState<LevelId>('beginner');
   const [correct, setCorrect] = useState(0);
   const [incorrect, setIncorrect] = useState(0);
   const [bestScores, setBestScores] = useState<Record<LevelId, number>>({
@@ -122,7 +120,7 @@ export default function App() {
     master: 0,
   });
   const [question, setQuestion] = useState<Question>(() => {
-    const initialWords = wordsForLevel('starter');
+    const initialWords = wordsForLevel('beginner');
     return createQuestion(initialWords[0], initialWords);
   });
   const [seconds, setSeconds] = useState(ROUND_SECONDS);
@@ -450,7 +448,6 @@ export default function App() {
               </Pressable>
             )}
             <Text style={styles.homeFootnote}>원하는 단계에서 학습이나 1분 퀴즈를 시작해 보세요</Text>
-            <Text style={styles.artCredit} onPress={() => { void Linking.openURL('https://github.com/jdecked/twemoji').catch(() => undefined); }}>그림: Twemoji · CC BY 4.0</Text>
           </ScrollView>
           </HomeCardPager>
           <AdMobBanner />
@@ -478,7 +475,6 @@ export default function App() {
           </View>
           {studyWords[studyIndex] && (
             <ScrollView style={[styles.flashcard, studyRevealed && styles.flashcardOpen]} contentContainerStyle={styles.flashcardContent} showsVerticalScrollIndicator={false}>
-              {selectedLevel === 'starter' && <StarterWordIllustration word={studyWords[studyIndex].word} />}
               <Text style={styles.flashcardWord} numberOfLines={1} adjustsFontSizeToFit minimumFontScale={0.6}>{studyWords[studyIndex].word}</Text>
               <View style={styles.flashcardDivider} />
               {studyRevealed ? (
@@ -801,7 +797,6 @@ const styles = StyleSheet.create({
   questionBlock: { alignItems: 'center', paddingTop: 24, paddingBottom: 19 },
   questionEyebrow: { color: COLORS.muted, fontSize: 11, fontWeight: '600', marginBottom: 5 },
   questionWord: { color: COLORS.ink, fontSize: 36, fontWeight: '900', letterSpacing: -0.8 },
-  questionPhonetic: { color: '#777185', fontSize: 15, fontWeight: '600', letterSpacing: 0.3, marginTop: 4 },
   exampleText: { color: '#A09DAF', fontSize: 11, marginTop: 5, textAlign: 'center' },
   options: { gap: 9 },
   option: { minHeight: 52, flexDirection: 'row', alignItems: 'center', paddingHorizontal: 12, borderRadius: 15, borderWidth: 1, borderColor: '#EAE8F1', backgroundColor: COLORS.white },
@@ -834,7 +829,6 @@ const styles = StyleSheet.create({
   studyProgressFill: { height: 5, backgroundColor: COLORS.purple, borderRadius: 4 },
   flashcard: { flex: 1, minHeight: 0, marginTop: 19, marginBottom: 14, borderRadius: 25, backgroundColor: COLORS.white, borderWidth: 1, borderColor: '#F0EEF5', shadowColor: '#282041', shadowOpacity: 0.04, shadowRadius: 16, shadowOffset: { width: 0, height: 7 }, elevation: 2 },
   flashcardContent: { flexGrow: 1, alignItems: 'center', justifyContent: 'center', paddingHorizontal: 20, paddingVertical: 20 },
-  artCredit: { color: COLORS.muted, fontSize: 10, textAlign: 'center', marginTop: 6, textDecorationLine: 'underline' },
   flashcardOpen: { backgroundColor: '#FDFDFF' },
   flashcardWord: { width: '100%', textAlign: 'center', marginTop: 10, color: COLORS.ink, fontSize: 38, fontWeight: '900', letterSpacing: -1 },
   flashcardDivider: { width: 42, height: 3, marginTop: 22, marginBottom: 20, borderRadius: 2, backgroundColor: '#E9E5FB' },
