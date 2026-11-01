@@ -1,11 +1,7 @@
 import { useEffect, useState } from 'react';
 import { ActivityIndicator, BackHandler, FlatList, Image, Linking, Pressable, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { fetchTenpingAds, type TenpingAd } from '../services/tenping';
-import { fetchAdpickAds } from '../services/adpick';
-import { fetchShoppingDeals } from '../services/shopping';
-
-type CampaignAd = TenpingAd & { imageKind?: 'icon' | 'banner' | 'product'; salePrice?: number | null; originalPrice?: number | null };
+import { getCampaignSnapshot, refreshCampaignOnEntry, type CampaignAd, type CampaignProvider } from '../services/campaignCache';
 
 function AdCard({ ad, providerLabel }: { ad: CampaignAd; providerLabel: string }) {
   const [imageFailed, setImageFailed] = useState(false);
@@ -21,8 +17,8 @@ function AdCard({ ad, providerLabel }: { ad: CampaignAd; providerLabel: string }
       <Text style={styles.badge}>광고 · {providerLabel}{ad.category ? ` · ${ad.category}` : ''}</Text>
       <Text style={styles.title}>{ad.title}</Text>
       {ad.imageKind === 'product' && <View style={styles.prices}>
-        {ad.salePrice != null ? <Text style={styles.salePrice}>{ad.salePrice.toLocaleString('ko-KR')}원</Text> : <Text style={styles.muted}>가격은 판매처에서 확인해 주세요</Text>}
-        {ad.salePrice != null && ad.originalPrice != null && ad.originalPrice > ad.salePrice && <Text style={styles.originalPrice}>{ad.originalPrice.toLocaleString('ko-KR')}원</Text>}
+        {ad.salePrice != null && ad.salePrice > 0 ? <Text style={styles.salePrice}>{ad.salePrice.toLocaleString('ko-KR')}원</Text> : <Text style={styles.muted}>가격은 판매처에서 확인해 주세요</Text>}
+        {ad.salePrice != null && ad.salePrice > 0 && ad.originalPrice != null && ad.originalPrice > ad.salePrice && <Text style={styles.originalPrice}>{ad.originalPrice.toLocaleString('ko-KR')}원</Text>}
       </View>}
       {!!ad.description && <Text style={styles.description}>{ad.description}</Text>}
       <Pressable accessibilityRole="link" disabled={!ad.link} onPress={openAd} style={[styles.button, !ad.link && styles.disabled]}><Text style={styles.buttonText}>{ad.link ? ad.imageKind === 'product' ? '상품 보러 가기 ↗' : '광고 자세히 보기 ↗' : '연결 주소가 없는 광고입니다'}</Text></Pressable>
@@ -31,41 +27,30 @@ function AdCard({ ad, providerLabel }: { ad: CampaignAd; providerLabel: string }
   </View>;
 }
 
-export default function AdCampaignList({ onBack, provider = 'tenping', embedded = false, active = true }: { onBack: () => void; provider?: 'tenping' | 'adpick' | 'shopping'; embedded?: boolean; active?: boolean }) {
-  const providerLabel = provider === 'shopping' ? '애드픽 쇼핑' : provider === 'adpick' ? '애드픽' : '텐핑';
-  const [ads, setAds] = useState<CampaignAd[]>([]);
-  const [status, setStatus] = useState<'loading' | 'ready' | 'error'>('loading');
-  const [error, setError] = useState('');
-  const [request, setRequest] = useState(0);
+export default function AdCampaignList({ onBack, provider = 'tenping', embedded = false, active = true }: { onBack: () => void; provider?: CampaignProvider; embedded?: boolean; active?: boolean }) {
+  const isShopping = provider === 'shopping' || provider === 'recommendations';
+  const providerLabel = isShopping ? '애드픽 쇼핑' : provider === 'adpick' ? '애드픽' : '텐핑';
+  const [snapshot, setSnapshot] = useState(() => getCampaignSnapshot(provider));
+  const { ads, status, error } = snapshot;
   useEffect(() => {
     if (!active) return;
     const subscription = BackHandler.addEventListener('hardwareBackPress', () => { onBack(); return true; });
     return () => subscription.remove();
   }, [onBack, active]);
   useEffect(() => {
-    const controller = new AbortController();
-    let active = true;
-    const timeout = setTimeout(() => controller.abort(), 15000);
-    const fetchAds = provider === 'shopping' ? fetchShoppingDeals : provider === 'adpick' ? fetchAdpickAds : fetchTenpingAds;
-    void fetchAds(controller.signal).then(items => {
-      if (active) { setAds(items); setStatus('ready'); }
-    }).catch((cause: unknown) => {
-      if (active) {
-        const message = cause instanceof Error && cause.name !== 'TypeError' ? cause.message : '광고 서버에 연결하지 못했습니다. 네트워크를 확인하고 다시 시도해 주세요.';
-        setError(controller.signal.aborted ? '연결 시간이 초과되었습니다. 네트워크를 확인해 주세요.' : message);
-        setStatus('error');
-      }
-    }).finally(() => clearTimeout(timeout));
-    return () => { active = false; clearTimeout(timeout); controller.abort(); };
-  }, [request, provider]);
-  function reload() { setError(''); setStatus('loading'); setRequest(value => value + 1); }
+    if (!active) return;
+    let live = true;
+    const request = refreshCampaignOnEntry(provider);
+    void Promise.resolve().then(() => { if (live) setSnapshot(getCampaignSnapshot(provider)); });
+    void request.then(result => { if (live) setSnapshot(result); });
+    return () => { live = false; };
+  }, [active, provider]);
   return <SafeAreaView edges={embedded ? [] : ['bottom']} style={[styles.screen, embedded && styles.embedded]}>
-    <View style={styles.header}>{!embedded && <Pressable accessibilityRole="button" accessibilityLabel="학습 홈으로 돌아가기" onPress={onBack} hitSlop={12}><Text style={styles.back}>‹ 홈으로</Text></Pressable>}<Text style={styles.heading}>{provider === 'shopping' ? '쇼핑 핫딜' : `${providerLabel} 광고`}</Text><Pressable accessibilityRole="button" onPress={reload} disabled={status === 'loading'}><Text style={styles.back}>새로고침</Text></Pressable></View>
-    <Text style={styles.notice}>{providerLabel}에서 제공하는 광고입니다. {provider === 'shopping' ? '상품과 최종 가격은 외부 판매처에서 확인해 주세요.' : '자세히 보기는 외부 페이지로 연결됩니다.'}</Text>
-    {status === 'loading' && ads.length === 0 ? <View style={styles.center}><ActivityIndicator size="large" color="#6E5AE6" /><Text style={styles.muted}>광고를 불러오는 중이에요</Text></View> :
-      <FlatList<CampaignAd> nestedScrollEnabled data={ads} keyExtractor={ad => ad.id} renderItem={({ item }: { item: CampaignAd }) => <AdCard ad={item} providerLabel={providerLabel} />} contentContainerStyle={styles.list} refreshing={status === 'loading'} onRefresh={reload}
-        ListHeaderComponent={status === 'error' ? <View style={styles.state}><Text accessibilityRole="alert" style={styles.error}>{error}</Text><Pressable onPress={reload} style={styles.button}><Text style={styles.buttonText}>다시 시도</Text></Pressable></View> : null}
-        ListEmptyComponent={status === 'ready' ? <View style={styles.state}><Text style={styles.muted}>{provider === 'shopping' ? '현재 표시할 핫딜이 없습니다.' : '현재 표시할 광고가 없습니다.'}</Text></View> : null} />}
+    <View style={styles.header}>{!embedded && <Pressable accessibilityRole="button" accessibilityLabel="학습 홈으로 돌아가기" onPress={onBack} hitSlop={12}><Text style={styles.back}>‹ 홈으로</Text></Pressable>}<Text style={styles.heading}>{provider === 'shopping' ? '쇼핑 핫딜' : provider === 'recommendations' ? '쇼핑 추천상품' : `${providerLabel} 광고`}</Text>{status === 'loading' && ads.length > 0 && <ActivityIndicator color="#6E5AE6" />}</View>
+    {(status === 'idle' || status === 'loading') && ads.length === 0 ? <View style={styles.center}><ActivityIndicator size="large" color="#6E5AE6" /><Text style={styles.muted}>목록을 불러오는 중이에요</Text></View> :
+      <FlatList<CampaignAd> nestedScrollEnabled data={ads} keyExtractor={ad => ad.id} renderItem={({ item }: { item: CampaignAd }) => <AdCard ad={item} providerLabel={providerLabel} />} contentContainerStyle={styles.list}
+        ListHeaderComponent={status === 'error' ? <View style={styles.state}><Text accessibilityRole="alert" style={styles.error}>{error}</Text></View> : null}
+        ListEmptyComponent={status === 'ready' ? <View style={styles.state}><Text style={styles.muted}>{isShopping ? '현재 표시할 상품이 없습니다.' : '현재 표시할 광고가 없습니다.'}</Text></View> : null} />}
   </SafeAreaView>;
 }
 
@@ -75,8 +60,7 @@ const styles = StyleSheet.create({
   header: { paddingHorizontal: 22, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 12 },
   heading: { fontSize: 20, fontWeight: '900', color: '#24213A' },
   back: { fontSize: 13, fontWeight: '700', color: '#6E5AE6' },
-  notice: { fontSize: 12, lineHeight: 18, color: '#777185', paddingHorizontal: 22, marginVertical: 18 },
-  list: { paddingHorizontal: 20, paddingBottom: 24, gap: 16 },
+  list: { paddingHorizontal: 20, paddingTop: 18, paddingBottom: 24, gap: 16 },
   card: { borderRadius: 20, backgroundColor: '#FFFFFF', overflow: 'hidden', borderWidth: 1, borderColor: '#EAE8F1' },
   image: { width: '100%', aspectRatio: 1.5, backgroundColor: '#ECE9FF' },
   fillImage: { width: '100%', height: '100%' },

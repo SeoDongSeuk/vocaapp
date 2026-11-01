@@ -9,7 +9,7 @@ export default function HomeCardPager({ children }: { children: ReactNode }) {
   const [width, setWidth] = useState(0);
   const [page, setPage] = useState(0);
   const [visitedPages, setVisitedPages] = useState<number[]>([0]);
-  const labels = ['나의 학습 단계', '텐핑 광고', '애드픽 광고', '쇼핑 핫딜'];
+  const labels = ['나의 학습 단계', '쇼핑 핫딜', '쇼핑 추천상품', '애드픽 광고', '텐핑 광고'];
   const returnToPrevious = () => pager.current?.scrollTo({ x: Math.max(0, currentPage.current - 1) * width, animated: true });
   return <SafeAreaView edges={['bottom']} style={styles.container}>
     <View style={styles.hint} accessibilityLiveRegion="polite">
@@ -31,9 +31,10 @@ export default function HomeCardPager({ children }: { children: ReactNode }) {
           setVisitedPages(previous => previous.includes(next) ? previous : [...previous, next]);
         }}>
         <View style={{ width, height: '100%' }} accessibilityElementsHidden={page !== 0} importantForAccessibility={page === 0 ? 'auto' : 'no-hide-descendants'}>{children}</View>
-        <View style={{ width, height: '100%' }} accessibilityElementsHidden={page !== 1} importantForAccessibility={page === 1 ? 'auto' : 'no-hide-descendants'}>{visitedPages.includes(1) && <AdCampaignList provider="tenping" embedded active={page === 1} onBack={returnToPrevious} />}</View>
-        <View style={{ width, height: '100%' }} accessibilityElementsHidden={page !== 2} importantForAccessibility={page === 2 ? 'auto' : 'no-hide-descendants'}>{visitedPages.includes(2) && <AdCampaignList provider="adpick" embedded active={page === 2} onBack={returnToPrevious} />}</View>
-        <View style={{ width, height: '100%' }} accessibilityElementsHidden={page !== 3} importantForAccessibility={page === 3 ? 'auto' : 'no-hide-descendants'}>{visitedPages.includes(3) && <AdCampaignList provider="shopping" embedded active={page === 3} onBack={returnToPrevious} />}</View>
+        <View style={{ width, height: '100%' }} accessibilityElementsHidden={page !== 1} importantForAccessibility={page === 1 ? 'auto' : 'no-hide-descendants'}>{visitedPages.includes(1) && <AdCampaignList provider="shopping" embedded active={page === 1} onBack={returnToPrevious} />}</View>
+        <View style={{ width, height: '100%' }} accessibilityElementsHidden={page !== 2} importantForAccessibility={page === 2 ? 'auto' : 'no-hide-descendants'}>{visitedPages.includes(2) && <AdCampaignList provider="recommendations" embedded active={page === 2} onBack={returnToPrevious} />}</View>
+        <View style={{ width, height: '100%' }} accessibilityElementsHidden={page !== 3} importantForAccessibility={page === 3 ? 'auto' : 'no-hide-descendants'}>{visitedPages.includes(3) && <AdCampaignList provider="adpick" embedded active={page === 3} onBack={returnToPrevious} />}</View>
+        <View style={{ width, height: '100%' }} accessibilityElementsHidden={page !== 4} importantForAccessibility={page === 4 ? 'auto' : 'no-hide-descendants'}>{visitedPages.includes(4) && <AdCampaignList provider="tenping" embedded active={page === 4} onBack={returnToPrevious} />}</View>
       </ScrollView>}
     </View>
   </SafeAreaView>;
