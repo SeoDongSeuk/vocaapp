@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "워드챌린지",
+    "slug": "vocab-race",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/wordrush-splash.png",
+          "imageWidth": 320,
+          "resizeMode": "contain",
+          "backgroundColor": "#F7F6FB"
+        }
+      ],
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-3940256099942544~3347511713",
+          "iosAppId": "ca-app-pub-3940256099942544~1458002511"
+        }
+      ]
+    ],
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.wordrush.vocabrush",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro",
+      "splash": {
+        "image": "./assets/wordrush-splash.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#F7F6FB"
+      }
+    }
+  }
+}
