@@ -7,6 +7,7 @@ import AdMobBanner from './components/AdMobBanner';
 import HomeCardPager from './components/HomeCardPager';
 import ReminderSettingsScreen from './components/ReminderSettingsScreen';
 import WordSpeaker from './components/WordSpeaker';
+import StudySwipeCard from './components/StudySwipeCard';
 import { WORD_LEVEL, wordsForLevel, type LevelId, type Word } from './vocabulary';
 
 type Screen = 'splash' | 'welcome' | 'home' | 'study' | 'studyResult' | 'countdown' | 'playing' | 'result' | 'reminders';
@@ -14,7 +15,7 @@ type Question = { answer: Word; choices: Word[] };
 type WordCycle = { order: Word[]; cursor: number; lastWord: string | null };
 
 const ROUND_SECONDS = 60;
-const STUDY_SESSION_SIZE = 10;
+const STUDY_SESSION_SIZE = 30;
 const WELCOME_COMPLETED_KEY = 'wordrush.welcome.completed';
 const LEVELS: { id: LevelId; title: string; english: string; description: string }[] = [
   { id: 'beginner', title: '초급', english: 'BEGINNER', description: '초등학생을 위한 생활 기초 단어예요.' },
@@ -135,6 +136,7 @@ export default function App() {
   const [studyKnown, setStudyKnown] = useState<Word[]>([]);
   const [studyMissed, setStudyMissed] = useState<Word[]>([]);
   const [reviewWords, setReviewWords] = useState<Word[]>([]);
+  const lastMarkedStudyWord = useRef<string | null>(null);
   const wordCyclesRef = useRef<Record<LevelId, WordCycle> | null>(null);
   if (wordCyclesRef.current === null) {
     wordCyclesRef.current = {
@@ -174,9 +176,10 @@ export default function App() {
     const levelWords = wordsForLevel(level);
     const wordsToReview = reviewWords.filter((word) => WORD_LEVEL[word.word] === level);
     const nextWords = reviewOnly && wordsToReview.length > 0
-      ? shuffle(wordsToReview)
+      ? shuffle(wordsToReview).slice(0, STUDY_SESSION_SIZE)
       : takeCycleWords(wordCyclesRef.current![level], levelWords, STUDY_SESSION_SIZE);
     setStudyWords(nextWords);
+    lastMarkedStudyWord.current = null;
     setStudyIndex(0);
     setStudyRevealed(false);
     setStudyKnown([]);
@@ -195,7 +198,8 @@ export default function App() {
 
   const markStudyWord = (remembered: boolean) => {
     const currentWord = studyWords[studyIndex];
-    if (!currentWord) return;
+    if (!currentWord || lastMarkedStudyWord.current === currentWord.word) return;
+    lastMarkedStudyWord.current = currentWord.word;
 
     if (remembered) {
       setStudyKnown((current) => [...current, currentWord]);
@@ -345,7 +349,7 @@ export default function App() {
               <Text style={styles.artworkMeaning}>호기심 많은</Text>
               <Text style={styles.artworkExample}>She is curious about space.</Text>
             </View>
-            <View style={styles.artworkBadge}><Text style={styles.artworkBadgeIcon}>✓</Text><Text style={styles.artworkBadgeText}>하루 10단어</Text></View>
+            <View style={styles.artworkBadge}><Text style={styles.artworkBadgeIcon}>✓</Text><Text style={styles.artworkBadgeText}>한 번에 30단어</Text></View>
           </View>
 
           <View style={styles.welcomeFeatures}>
@@ -476,6 +480,7 @@ export default function App() {
             <View style={[styles.studyProgressFill, { width: `${((studyIndex + 1) / Math.max(studyWords.length, 1)) * 100}%` }]} />
           </View>
           {studyWords[studyIndex] && (
+            <StudySwipeCard key={studyWords[studyIndex].word} onKnown={() => markStudyWord(true)}>
             <ScrollView style={[styles.flashcard, studyRevealed && styles.flashcardOpen]} contentContainerStyle={styles.flashcardContent} showsVerticalScrollIndicator={false}>
               <Text style={styles.flashcardWord} numberOfLines={1} adjustsFontSizeToFit minimumFontScale={0.6}>{studyWords[studyIndex].word}</Text>
               <WordSpeaker key={studyWords[studyIndex].word} word={studyWords[studyIndex].word} />
@@ -494,6 +499,7 @@ export default function App() {
                 </Pressable>
               )}
             </ScrollView>
+            </StudySwipeCard>
           )}
           {studyRevealed ? (
             <View style={styles.studyActions}>
@@ -507,7 +513,7 @@ export default function App() {
               </Pressable>
             </View>
           ) : (
-            <Text style={styles.studyHint}>뜻을 떠올려 본 뒤 카드를 눌러 확인해요</Text>
+            <Text style={styles.studyHint}>뜻을 확인하거나 오른쪽으로 밀어 외운 단어를 넘겨요 →</Text>
           )}
         </SafeAreaView>
       )}
@@ -545,7 +551,7 @@ export default function App() {
             </Pressable>
           )}
           <Pressable style={({ pressed }) => [styles.primaryButton, studyMissed.length > 0 && styles.studySecondaryButton, pressed && styles.pressed]} onPress={() => startStudy()}>
-            <Text style={[styles.primaryButtonText, studyMissed.length > 0 && styles.studySecondaryButtonText]}>새 단어 10개 학습하기</Text><Text style={[styles.buttonArrow, studyMissed.length > 0 && styles.studySecondaryArrow]}>→</Text>
+            <Text style={[styles.primaryButtonText, studyMissed.length > 0 && styles.studySecondaryButtonText]}>새 단어 30개 학습하기</Text><Text style={[styles.buttonArrow, studyMissed.length > 0 && styles.studySecondaryArrow]}>→</Text>
           </Pressable>
           <Pressable style={styles.textButton} onPress={() => setScreen('home')}><Text style={styles.textButtonLabel}>홈으로</Text></Pressable>
         </ScrollView>
@@ -835,7 +841,7 @@ const styles = StyleSheet.create({
   studyProgressTotal: { color: COLORS.muted, fontSize: 12, fontWeight: '700' },
   studyProgressTrack: { height: 5, backgroundColor: '#E9E6F2', borderRadius: 4, overflow: 'hidden' },
   studyProgressFill: { height: 5, backgroundColor: COLORS.purple, borderRadius: 4 },
-  flashcard: { flex: 1, minHeight: 0, marginTop: 19, marginBottom: 14, borderRadius: 25, backgroundColor: COLORS.white, borderWidth: 1, borderColor: '#F0EEF5', shadowColor: '#282041', shadowOpacity: 0.04, shadowRadius: 16, shadowOffset: { width: 0, height: 7 }, elevation: 2 },
+  flashcard: { flex: 1, minHeight: 0, borderRadius: 25, backgroundColor: COLORS.white, borderWidth: 1, borderColor: '#F0EEF5', shadowColor: '#282041', shadowOpacity: 0.04, shadowRadius: 16, shadowOffset: { width: 0, height: 7 }, elevation: 2 },
   flashcardContent: { flexGrow: 1, alignItems: 'center', justifyContent: 'center', paddingHorizontal: 20, paddingVertical: 20 },
   flashcardOpen: { backgroundColor: '#FDFDFF' },
   flashcardWord: { width: '100%', textAlign: 'center', marginTop: 10, color: COLORS.ink, fontSize: 38, fontWeight: '900', letterSpacing: -1 },
@@ -893,4 +899,5 @@ const styles = StyleSheet.create({
   textButton: { height: 45, justifyContent: 'center', alignItems: 'center' },
   textButtonLabel: { color: COLORS.muted, fontSize: 12, fontWeight: '700' },
 });
+
 
