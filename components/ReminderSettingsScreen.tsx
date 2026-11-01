@@ -45,6 +45,7 @@ export default function ReminderSettingsScreen({ onBack }: { onBack: () => void 
         if (mounted.current) { setSaved(settings); setMessage(settings.enabled ? `매일 ${formatReminderTime(settings)}에 학습 알림을 보냅니다.` : '학습 알림을 껐습니다.'); }
       }
     } catch (cause) {
+      if (__DEV__) console.log('[Study reminder save failed] ' + JSON.stringify(cause instanceof Error ? { message: cause.message, code: (cause as Error & { code?: string }).code } : String(cause)));
       if (mounted.current) { setError(cause instanceof Error ? cause.message : '알림을 설정하지 못했습니다.'); setPermissionDenied(cause instanceof ReminderPermissionError); }
     } finally { lock.current = false; if (mounted.current) setBusy(false); }
   }

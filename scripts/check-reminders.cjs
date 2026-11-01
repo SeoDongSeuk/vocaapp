@@ -24,7 +24,13 @@ const notifications = {
   IosAuthorizationStatus: { PROVISIONAL: 3, EPHEMERAL: 4 }, AndroidImportance: { DEFAULT: 5, NONE: 2 },
   SchedulableTriggerInputTypes: { DAILY: 'daily', TIME_INTERVAL: 'timeInterval' },
   setNotificationHandler: value => { handler = value; },
-  setNotificationChannelAsync: async () => ({ importance: blockedChannel ? 2 : 5 }),
+  setNotificationChannelAsync: async (_, options) => {
+    // Reproduce affected Android bridges: supplying sound without audioAttributes
+    // enters a native path that dereferences the missing argument map.
+    if ('sound' in options && !options.audioAttributes) throw new Error('NullPointerException: missing audioAttributes');
+    assert.equal('sound' in options, false, 'Use Android default channel sound');
+    return { importance: blockedChannel ? 2 : 5 };
+  },
   getPermissionsAsync: async () => permission,
   requestPermissionsAsync: async () => { requests++; return permission; },
   getAllScheduledNotificationsAsync: async () => [...pending.values()],

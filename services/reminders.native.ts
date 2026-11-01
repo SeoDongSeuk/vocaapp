@@ -14,7 +14,9 @@ function allowed(permission: Notifications.NotificationPermissionsStatus): boole
 
 async function ensurePermission(): Promise<void> {
   if (Platform.OS === 'android') {
-    const channel = await Notifications.setNotificationChannelAsync(CHANNEL_ID, { name: '매일 학습 알림', importance: AndroidImportance.DEFAULT, sound: 'default' });
+    // Omit sound to keep Android's default. Some native versions dereference the
+    // absent audioAttributes map when a sound option is explicitly supplied.
+    const channel = await Notifications.setNotificationChannelAsync(CHANNEL_ID, { name: '매일 학습 알림', importance: AndroidImportance.DEFAULT });
     if (channel?.importance === AndroidImportance.NONE) throw new ReminderPermissionError();
   }
   let permission = await Notifications.getPermissionsAsync();
