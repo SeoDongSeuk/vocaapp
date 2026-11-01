@@ -365,7 +365,7 @@ export default function App() {
 
       {screen === 'home' && (
         <View style={styles.homeScreen}>
-          <View style={styles.homePagerHeader}><Header /><Pressable accessibilityRole="button" onPress={() => setScreen('reminders')} style={styles.reminderLink}><Text style={styles.reminderLinkText}>학습 알림 설정 🔔</Text></Pressable></View>
+          <View style={styles.homePagerHeader}><Header onReminder={() => setScreen('reminders')} /></View>
           <HomeCardPager>
           <ScrollView contentContainerStyle={styles.homeContent} nestedScrollEnabled showsVerticalScrollIndicator={false}>
             <View style={styles.levelCard}>
@@ -669,20 +669,20 @@ export default function App() {
   );
 }
 
-function Header({ trailing }: { trailing?: string }) {
+function Header({ trailing, onReminder }: { trailing?: string; onReminder?: () => void }) {
   return (
     <View style={styles.header}>
       <View style={styles.brand}>
         <View style={styles.brandMark}><Text style={styles.brandMarkText}>W</Text></View>
         <Text style={styles.brandName}>WORD <Text style={styles.brandNameAccent}>CHALLENGE</Text></Text>
       </View>
-      {trailing ? <Text style={styles.headerTrailing}>{trailing}</Text> : <View style={styles.onlineBadge}><View style={styles.onlineDot} /><Text style={styles.onlineText}>혼자 도전</Text></View>}
+      {trailing ? <Text style={styles.headerTrailing}>{trailing}</Text> : onReminder ? <Pressable accessibilityRole="button" onPress={onReminder} style={styles.reminderLink}><Text style={styles.reminderLinkText}>학습 알림 설정</Text></Pressable> : null}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  reminderLink: { alignSelf: 'flex-end', paddingVertical: 8, paddingHorizontal: 10, marginBottom: 4, backgroundColor: '#ECE9FF', borderRadius: 12 },
+  reminderLink: { paddingVertical: 10, paddingHorizontal: 10, backgroundColor: '#ECE9FF', borderRadius: 20 },
   reminderLinkText: { color: '#5745CB', fontSize: 12, fontWeight: '700' },
   homePagerHeader: { width: '100%', maxWidth: 520, alignSelf: 'center', paddingHorizontal: 22, paddingTop: 54 },
   root: { flex: 1, backgroundColor: COLORS.canvas },
@@ -741,9 +741,6 @@ const styles = StyleSheet.create({
   brandMarkText: { fontSize: 16, fontWeight: '900', color: COLORS.white, fontStyle: 'italic' },
   brandName: { color: COLORS.ink, fontSize: 14, fontWeight: '900', letterSpacing: 1.1 },
   brandNameAccent: { color: COLORS.purple },
-  onlineBadge: { flexDirection: 'row', alignItems: 'center', gap: 6, paddingHorizontal: 10, paddingVertical: 7, borderRadius: 20, backgroundColor: COLORS.white },
-  onlineDot: { width: 6, height: 6, borderRadius: 3, backgroundColor: '#42B77A' },
-  onlineText: { color: COLORS.muted, fontSize: 11, fontWeight: '700' },
   headerTrailing: { color: COLORS.muted, fontSize: 11, fontWeight: '800', letterSpacing: 0.7 },
   eyebrow: { flexDirection: 'row', alignItems: 'center', gap: 7, marginBottom: 15 },
   eyebrowDot: { width: 6, height: 6, borderRadius: 3, backgroundColor: '#E58A63' },
