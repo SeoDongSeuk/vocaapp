@@ -9,6 +9,9 @@
     },
     "preview": {
       "distribution": "internal",
+      "developmentClient": false,
+      "node": "24.22.1",
+      "pnpm": "12.16.1",
       "android": {
         "buildType": "apk"
       }

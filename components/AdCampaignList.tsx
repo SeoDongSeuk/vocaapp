@@ -49,8 +49,8 @@ export default function AdCampaignList({ onBack, provider = 'tenping', embedded 
     <View style={styles.header}>{!embedded && <Pressable accessibilityRole="button" accessibilityLabel="학습 홈으로 돌아가기" onPress={onBack} hitSlop={12}><Text style={styles.back}>‹ 홈으로</Text></Pressable>}<Text style={styles.heading}>{provider === 'shopping' ? '쇼핑 핫딜' : provider === 'recommendations' ? '쇼핑 추천상품' : providerLabel}</Text>{status === 'loading' && ads.length > 0 && <ActivityIndicator color="#6E5AE6" />}</View>
     {(status === 'idle' || status === 'loading') && ads.length === 0 ? <View style={styles.center}><ActivityIndicator size="large" color="#6E5AE6" /><Text style={styles.muted}>목록을 불러오는 중이에요</Text></View> :
       <FlatList<CampaignAd> nestedScrollEnabled data={ads} keyExtractor={ad => ad.id} renderItem={({ item }: { item: CampaignAd }) => <AdCard ad={item} providerLabel={providerLabel} />} contentContainerStyle={styles.list}
-        ListHeaderComponent={status === 'error' ? <View style={styles.state}><Text accessibilityRole="alert" style={styles.error}>{error}</Text></View> : null}
-        ListEmptyComponent={status === 'ready' ? <View style={styles.state}><Text style={styles.muted}>{isShopping ? '현재 표시할 상품이 없습니다.' : '현재 표시할 콘텐츠가 없습니다.'}</Text></View> : null} />}
+        ListHeaderComponent={status === 'error' ? <View style={styles.state}><Text accessibilityRole="alert" style={styles.error}>{error}</Text></View> : undefined}
+        ListEmptyComponent={status === 'ready' ? <View style={styles.state}><Text style={styles.muted}>{isShopping ? '현재 표시할 상품이 없습니다.' : '현재 표시할 콘텐츠가 없습니다.'}</Text></View> : undefined} />}
   </SafeAreaView>;
 }
 

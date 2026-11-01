@@ -5,12 +5,11 @@ import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import AdMobBanner from './components/AdMobBanner';
 import HomeCardPager from './components/HomeCardPager';
-import ReminderSettingsScreen from './components/ReminderSettingsScreen';
 import WordSpeaker from './components/WordSpeaker';
 import StudySwipeCard from './components/StudySwipeCard';
 import { WORD_LEVEL, wordsForLevel, type LevelId, type Word } from './vocabulary';
 
-type Screen = 'splash' | 'welcome' | 'home' | 'study' | 'studyResult' | 'countdown' | 'playing' | 'result' | 'reminders';
+type Screen = 'splash' | 'welcome' | 'home' | 'study' | 'studyResult' | 'countdown' | 'playing' | 'result';
 type Question = { answer: Word; choices: Word[] };
 type WordCycle = { order: Word[]; cursor: number; lastWord: string | null };
 
@@ -370,7 +369,7 @@ export default function App() {
 
       {screen === 'home' && (
         <View style={styles.homeScreen}>
-          <View style={styles.homePagerHeader}><Header onReminder={() => setScreen('reminders')} /></View>
+          <View style={styles.homePagerHeader}><Header /></View>
           <HomeCardPager>
           <ScrollView contentContainerStyle={styles.homeContent} nestedScrollEnabled showsVerticalScrollIndicator={false}>
             <View style={styles.levelCard}>
@@ -518,7 +517,6 @@ export default function App() {
         </SafeAreaView>
       )}
 
-      {screen === 'reminders' && <ReminderSettingsScreen onBack={() => setScreen('home')} />}
 
 
       {screen === 'studyResult' && (
@@ -680,21 +678,19 @@ export default function App() {
   );
 }
 
-function Header({ trailing, onReminder }: { trailing?: string; onReminder?: () => void }) {
+function Header({ trailing }: { trailing?: string }) {
   return (
     <View style={styles.header}>
       <View style={styles.brand}>
         <View style={styles.brandMark}><Text style={styles.brandMarkText}>W</Text></View>
         <Text style={styles.brandName}>WORD <Text style={styles.brandNameAccent}>CHALLENGE</Text></Text>
       </View>
-      {trailing ? <Text style={styles.headerTrailing}>{trailing}</Text> : onReminder ? <Pressable accessibilityRole="button" onPress={onReminder} style={styles.reminderLink}><Text style={styles.reminderLinkText}>학습 알림 설정</Text></Pressable> : null}
+      {trailing ? <Text style={styles.headerTrailing}>{trailing}</Text> : null}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  reminderLink: { paddingVertical: 10, paddingHorizontal: 10, backgroundColor: '#ECE9FF', borderRadius: 20 },
-  reminderLinkText: { color: '#5745CB', fontSize: 12, fontWeight: '700' },
   homePagerHeader: { width: '100%', maxWidth: 520, alignSelf: 'center', paddingHorizontal: 22, paddingTop: 54 },
   root: { flex: 1, backgroundColor: COLORS.canvas },
   homeScreen: { flex: 1 },
