@@ -9,11 +9,11 @@ const isExpoGo = Constants.expoGoConfig != null;
 let adsInitialization: Promise<unknown> | null = null;
 let cachedAdsModule: GoogleMobileAds | null | undefined;
 
-function loadGoogleMobileAds(): GoogleMobileAds | null {
+async function loadGoogleMobileAds(): Promise<GoogleMobileAds | null> {
   if (cachedAdsModule !== undefined) return cachedAdsModule;
 
   try {
-    cachedAdsModule = require('react-native-google-mobile-ads') as GoogleMobileAds;
+    cachedAdsModule = await import('react-native-google-mobile-ads');
   } catch {
     // Expo Go does not include this native module. Keep the app usable without ads there.
     cachedAdsModule = null;
@@ -29,19 +29,19 @@ export default function AdMobBanner() {
   useEffect(() => {
     if (!__DEV__ || isExpoGo) return;
 
-    const module = loadGoogleMobileAds();
-    if (!module) return;
-    setAdsModule(module);
-
     let isMounted = true;
-    adsInitialization ??= module.default().initialize().catch((error: unknown) => {
-      console.warn('AdMob SDK initialization failed:', error);
-      adsInitialization = null;
-      throw error;
-    });
-
-    void adsInitialization.then(() => {
-      if (isMounted) setIsReady(true);
+    void loadGoogleMobileAds().then(async (module) => {
+      if (!module || !isMounted) return;
+      adsInitialization ??= module.default().initialize().catch((error: unknown) => {
+        console.warn('AdMob SDK initialization failed:', error);
+        adsInitialization = null;
+        throw error;
+      });
+      await adsInitialization;
+      if (isMounted) {
+        setAdsModule(module);
+        setIsReady(true);
+      }
     }).catch(() => undefined);
 
     return () => {
