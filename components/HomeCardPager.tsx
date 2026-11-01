@@ -9,7 +9,7 @@ export default function HomeCardPager({ children }: { children: ReactNode }) {
   const [width, setWidth] = useState(0);
   const [page, setPage] = useState(0);
   const [visitedPages, setVisitedPages] = useState<number[]>([0]);
-  const labels = ['나의 학습 단계', '쇼핑 핫딜', '쇼핑 추천상품', '애드픽 광고', '텐핑 광고'];
+  const labels = ['나의 학습 단계', '쇼핑 핫딜', '쇼핑 추천상품', '애드픽', '텐핑'];
   const returnToPrevious = () => pager.current?.scrollTo({ x: Math.max(0, currentPage.current - 1) * width, animated: true });
   return <SafeAreaView edges={['bottom']} style={styles.container}>
     <View style={styles.hint} accessibilityLiveRegion="polite">

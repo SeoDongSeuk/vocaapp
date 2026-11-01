@@ -12,7 +12,7 @@ function webUrl(value: unknown): string | null {
 }
 
 export function parseAdpickAds(payload: unknown): AdpickAd[] {
-  if (!Array.isArray(payload)) throw new Error('애드픽에서 광고 목록을 가져오지 못했습니다.');
+  if (!Array.isArray(payload)) throw new Error('애드픽에서 콘텐츠 목록을 가져오지 못했습니다.');
   return payload.flatMap((item: unknown) => {
     if (!item || typeof item !== 'object') return [];
     const row = item as Record<string, unknown>;
@@ -34,6 +34,6 @@ export async function fetchAdpickAds(signal: AbortSignal): Promise<AdpickAd[]> {
   if (!affiliate) throw new Error('애드픽 제휴 ID가 설정되지 않았습니다.');
   const params = new URLSearchParams({ affid: affiliate, os: '', adtype: '', category: '', order: 'rand' });
   const response = await fetch(`https://adpick.co.kr/apis/offers.php?${params}`, { signal });
-  if (!response.ok) throw new Error(`광고 서버에 연결하지 못했습니다. (${response.status})`);
+  if (!response.ok) throw new Error(`콘텐츠 서버에 연결하지 못했습니다. (${response.status})`);
   return parseAdpickAds(await response.json());
 }
