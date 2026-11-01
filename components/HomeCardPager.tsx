@@ -1,19 +1,20 @@
 import { useRef, useState, type ComponentRef, type ReactNode } from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import TenpingAdList from './TenpingAdList';
+import AdCampaignList from './AdCampaignList';
 
 export default function HomeCardPager({ children }: { children: ReactNode }) {
   const pager = useRef<ComponentRef<typeof ScrollView>>(null);
   const currentPage = useRef(0);
   const [width, setWidth] = useState(0);
   const [page, setPage] = useState(0);
-  const [visitedAds, setVisitedAds] = useState(false);
-  const returnToStudy = () => pager.current?.scrollTo({ x: 0, animated: true });
+  const [visitedPages, setVisitedPages] = useState<number[]>([0]);
+  const labels = ['나의 학습 단계', '텐핑 광고', '애드픽 광고'];
+  const returnToPrevious = () => pager.current?.scrollTo({ x: Math.max(0, currentPage.current - 1) * width, animated: true });
   return <SafeAreaView edges={['bottom']} style={styles.container}>
     <View style={styles.hint} accessibilityLiveRegion="polite">
-      <Text style={styles.hintText}>{page === 0 ? '옆으로 밀면 광고 목록을 볼 수 있어요 →' : '← 옆으로 밀면 학습 단계로 돌아가요'}</Text>
-      <View style={styles.dots}><View style={[styles.dot, page === 0 && styles.active]} /><View style={[styles.dot, page === 1 && styles.active]} /></View>
+      <Text style={styles.hintText}>{labels[page]} · {page + 1}/3 · 좌우로 밀어 이동해요</Text>
+      <View style={styles.dots}>{labels.map((label, index) => <View key={label} style={[styles.dot, page === index && styles.active]} />)}</View>
     </View>
     <View style={styles.container} onLayout={event => {
       const next = event.nativeEvent.layout.width;
@@ -24,13 +25,14 @@ export default function HomeCardPager({ children }: { children: ReactNode }) {
     }}>
       {width > 0 && <ScrollView ref={pager} testID="home-card-pager" style={styles.container} horizontal pagingEnabled directionalLockEnabled nestedScrollEnabled showsHorizontalScrollIndicator={false} scrollEventThrottle={32}
         onScroll={event => {
-          const next = Math.max(0, Math.min(1, Math.round(event.nativeEvent.contentOffset.x / width)));
+          const next = Math.max(0, Math.min(2, Math.round(event.nativeEvent.contentOffset.x / width)));
           currentPage.current = next;
           setPage(next);
-          if (next === 1) setVisitedAds(true);
+          setVisitedPages(previous => previous.includes(next) ? previous : [...previous, next]);
         }}>
         <View style={{ width, height: '100%' }} accessibilityElementsHidden={page !== 0} importantForAccessibility={page === 0 ? 'auto' : 'no-hide-descendants'}>{children}</View>
-        <View style={{ width, height: '100%' }} accessibilityElementsHidden={page !== 1} importantForAccessibility={page === 1 ? 'auto' : 'no-hide-descendants'}>{visitedAds && <TenpingAdList embedded active={page === 1} onBack={returnToStudy} />}</View>
+        <View style={{ width, height: '100%' }} accessibilityElementsHidden={page !== 1} importantForAccessibility={page === 1 ? 'auto' : 'no-hide-descendants'}>{visitedPages.includes(1) && <AdCampaignList provider="tenping" embedded active={page === 1} onBack={returnToPrevious} />}</View>
+        <View style={{ width, height: '100%' }} accessibilityElementsHidden={page !== 2} importantForAccessibility={page === 2 ? 'auto' : 'no-hide-descendants'}>{visitedPages.includes(2) && <AdCampaignList provider="adpick" embedded active={page === 2} onBack={returnToPrevious} />}</View>
       </ScrollView>}
     </View>
   </SafeAreaView>;
