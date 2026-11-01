@@ -6,6 +6,7 @@ import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import AdMobBanner from './components/AdMobBanner';
 import HomeCardPager from './components/HomeCardPager';
 import ReminderSettingsScreen from './components/ReminderSettingsScreen';
+import WordSpeaker from './components/WordSpeaker';
 import { WORD_LEVEL, wordsForLevel, type LevelId, type Word } from './vocabulary';
 
 type Screen = 'splash' | 'welcome' | 'home' | 'study' | 'studyResult' | 'countdown' | 'playing' | 'result' | 'reminders';
@@ -477,6 +478,7 @@ export default function App() {
           {studyWords[studyIndex] && (
             <ScrollView style={[styles.flashcard, studyRevealed && styles.flashcardOpen]} contentContainerStyle={styles.flashcardContent} showsVerticalScrollIndicator={false}>
               <Text style={styles.flashcardWord} numberOfLines={1} adjustsFontSizeToFit minimumFontScale={0.6}>{studyWords[studyIndex].word}</Text>
+              <WordSpeaker key={studyWords[studyIndex].word} word={studyWords[studyIndex].word} />
               <View style={styles.flashcardDivider} />
               {studyRevealed ? (
                 <>
@@ -550,7 +552,8 @@ export default function App() {
       )}
 
       {(screen === 'countdown' || screen === 'playing') && (
-        <View style={styles.gameContent}>
+        <SafeAreaView edges={['bottom']} style={styles.gameScreen}>
+        <ScrollView key={question.answer.word} contentContainerStyle={styles.gameContent} showsVerticalScrollIndicator={false}>
           <Header trailing={`${activeLevel.english} CHALLENGE`} />
           <View style={styles.soloScoreBar}>
             <View style={styles.soloAvatar}><Text style={styles.soloAvatarText}>나</Text></View>
@@ -584,6 +587,7 @@ export default function App() {
               <View style={styles.questionBlock}>
                 <Text style={styles.questionEyebrow}>{activeLevel.title} · 뜻이 같은 단어를 골라요</Text>
                 <Text style={styles.questionWord}>{question.answer.word}</Text>
+                <WordSpeaker key={question.answer.word} word={question.answer.word} />
                 {question.answer.example ? <Text style={styles.exampleText}>{question.answer.example}</Text> : null}
               </View>
               <View style={styles.options}>
@@ -620,7 +624,8 @@ export default function App() {
               </View>
             </>
           )}
-        </View>
+        </ScrollView>
+        </SafeAreaView>
       )}
 
       {screen === 'result' && (
@@ -734,7 +739,8 @@ const styles = StyleSheet.create({
   launchSplashDotAccent: { backgroundColor: COLORS.purple },
   launchSplashDotGreen: { backgroundColor: '#42B77A' },
   homeContent: { width: '100%', maxWidth: 520, alignSelf: 'center', flexGrow: 1, paddingHorizontal: 22, paddingTop: 0, paddingBottom: 26 },
-  gameContent: { width: '100%', maxWidth: 520, alignSelf: 'center', flex: 1, paddingHorizontal: 22, paddingTop: 54, paddingBottom: 22 },
+  gameScreen: { flex: 1 },
+  gameContent: { width: '100%', maxWidth: 520, alignSelf: 'center', flexGrow: 1, paddingHorizontal: 22, paddingTop: 54, paddingBottom: 22 },
   header: { minHeight: 38, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
   brand: { flexDirection: 'row', alignItems: 'center', gap: 9 },
   brandMark: { width: 30, height: 30, borderRadius: 10, alignItems: 'center', justifyContent: 'center', backgroundColor: COLORS.purple },
