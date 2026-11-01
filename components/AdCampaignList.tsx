@@ -9,19 +9,19 @@ function AdCard({ ad, providerLabel }: { ad: CampaignAd; providerLabel: string }
   async function openAd() {
     if (!ad.link) return;
     try { await Linking.openURL(ad.link); setLinkError(''); }
-    catch { setLinkError('광고 페이지를 열지 못했습니다. 다시 시도해 주세요.'); }
+    catch { setLinkError('페이지를 열지 못했습니다. 다시 시도해 주세요.'); }
   }
   return <View style={styles.card}>
-    {ad.imageUrl && !imageFailed ? <View style={[styles.image, ad.imageKind === 'icon' && styles.iconFrame, ad.imageKind === 'product' && styles.productFrame]}><Image source={{ uri: ad.imageUrl }} style={ad.imageKind === 'icon' ? styles.appIcon : styles.fillImage} resizeMode={ad.imageKind === 'banner' || !ad.imageKind ? 'cover' : 'contain'} accessibilityLabel={ad.title} onError={() => setImageFailed(true)} /></View> : <View style={[styles.image, styles.placeholder]}><Text style={styles.muted}>광고 이미지</Text></View>}
+    {ad.imageUrl && !imageFailed ? <View style={[styles.image, ad.imageKind === 'icon' && styles.iconFrame, ad.imageKind === 'product' && styles.productFrame]}><Image source={{ uri: ad.imageUrl }} style={ad.imageKind === 'icon' ? styles.appIcon : styles.fillImage} resizeMode={ad.imageKind === 'banner' || !ad.imageKind ? 'cover' : 'contain'} accessibilityLabel={ad.title} onError={() => setImageFailed(true)} /></View> : <View style={[styles.image, styles.placeholder]}><Text style={styles.muted}>이미지</Text></View>}
     <View style={styles.cardBody}>
-      <Text style={styles.badge}>광고 · {providerLabel}{ad.category ? ` · ${ad.category}` : ''}</Text>
+      <Text style={styles.badge}>제휴 · {providerLabel}{ad.category ? ` · ${ad.category}` : ''}</Text>
       <Text style={styles.title}>{ad.title}</Text>
       {ad.imageKind === 'product' && <View style={styles.prices}>
         {ad.salePrice != null && ad.salePrice > 0 ? <Text style={styles.salePrice}>{ad.salePrice.toLocaleString('ko-KR')}원</Text> : <Text style={styles.muted}>가격은 판매처에서 확인해 주세요</Text>}
         {ad.salePrice != null && ad.salePrice > 0 && ad.originalPrice != null && ad.originalPrice > ad.salePrice && <Text style={styles.originalPrice}>{ad.originalPrice.toLocaleString('ko-KR')}원</Text>}
       </View>}
       {!!ad.description && <Text style={styles.description}>{ad.description}</Text>}
-      <Pressable accessibilityRole="link" disabled={!ad.link} onPress={openAd} style={[styles.button, !ad.link && styles.disabled]}><Text style={styles.buttonText}>{ad.link ? ad.imageKind === 'product' ? '상품 보러 가기 ↗' : '광고 자세히 보기 ↗' : '연결 주소가 없는 광고입니다'}</Text></Pressable>
+      <Pressable accessibilityRole="link" disabled={!ad.link} onPress={openAd} style={[styles.button, !ad.link && styles.disabled]}><Text style={styles.buttonText}>{ad.link ? ad.imageKind === 'product' ? '상품 보러 가기 ↗' : '자세히 보기 ↗' : '연결 주소가 없습니다'}</Text></Pressable>
       {!!linkError && <Text accessibilityRole="alert" style={styles.error}>{linkError}</Text>}
     </View>
   </View>;
@@ -46,11 +46,11 @@ export default function AdCampaignList({ onBack, provider = 'tenping', embedded 
     return () => { live = false; };
   }, [active, provider]);
   return <SafeAreaView edges={embedded ? [] : ['bottom']} style={[styles.screen, embedded && styles.embedded]}>
-    <View style={styles.header}>{!embedded && <Pressable accessibilityRole="button" accessibilityLabel="학습 홈으로 돌아가기" onPress={onBack} hitSlop={12}><Text style={styles.back}>‹ 홈으로</Text></Pressable>}<Text style={styles.heading}>{provider === 'shopping' ? '쇼핑 핫딜' : provider === 'recommendations' ? '쇼핑 추천상품' : `${providerLabel} 광고`}</Text>{status === 'loading' && ads.length > 0 && <ActivityIndicator color="#6E5AE6" />}</View>
+    <View style={styles.header}>{!embedded && <Pressable accessibilityRole="button" accessibilityLabel="학습 홈으로 돌아가기" onPress={onBack} hitSlop={12}><Text style={styles.back}>‹ 홈으로</Text></Pressable>}<Text style={styles.heading}>{provider === 'shopping' ? '쇼핑 핫딜' : provider === 'recommendations' ? '쇼핑 추천상품' : providerLabel}</Text>{status === 'loading' && ads.length > 0 && <ActivityIndicator color="#6E5AE6" />}</View>
     {(status === 'idle' || status === 'loading') && ads.length === 0 ? <View style={styles.center}><ActivityIndicator size="large" color="#6E5AE6" /><Text style={styles.muted}>목록을 불러오는 중이에요</Text></View> :
       <FlatList<CampaignAd> nestedScrollEnabled data={ads} keyExtractor={ad => ad.id} renderItem={({ item }: { item: CampaignAd }) => <AdCard ad={item} providerLabel={providerLabel} />} contentContainerStyle={styles.list}
         ListHeaderComponent={status === 'error' ? <View style={styles.state}><Text accessibilityRole="alert" style={styles.error}>{error}</Text></View> : null}
-        ListEmptyComponent={status === 'ready' ? <View style={styles.state}><Text style={styles.muted}>{isShopping ? '현재 표시할 상품이 없습니다.' : '현재 표시할 광고가 없습니다.'}</Text></View> : null} />}
+        ListEmptyComponent={status === 'ready' ? <View style={styles.state}><Text style={styles.muted}>{isShopping ? '현재 표시할 상품이 없습니다.' : '현재 표시할 콘텐츠가 없습니다.'}</Text></View> : null} />}
   </SafeAreaView>;
 }
 
