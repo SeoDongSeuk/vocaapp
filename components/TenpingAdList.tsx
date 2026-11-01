@@ -23,15 +23,16 @@ function AdCard({ ad }: { ad: TenpingAd }) {
   </View>;
 }
 
-export default function TenpingAdList({ onBack }: { onBack: () => void }) {
+export default function TenpingAdList({ onBack, embedded = false, active = true }: { onBack: () => void; embedded?: boolean; active?: boolean }) {
   const [ads, setAds] = useState<TenpingAd[]>([]);
   const [status, setStatus] = useState<'loading' | 'ready' | 'error'>('loading');
   const [error, setError] = useState('');
   const [request, setRequest] = useState(0);
   useEffect(() => {
+    if (!active) return;
     const subscription = BackHandler.addEventListener('hardwareBackPress', () => { onBack(); return true; });
     return () => subscription.remove();
-  }, [onBack]);
+  }, [onBack, active]);
   useEffect(() => {
     const controller = new AbortController();
     let active = true;
@@ -48,11 +49,11 @@ export default function TenpingAdList({ onBack }: { onBack: () => void }) {
     return () => { active = false; clearTimeout(timeout); controller.abort(); };
   }, [request]);
   function reload() { setError(''); setStatus('loading'); setRequest(value => value + 1); }
-  return <SafeAreaView edges={['bottom']} style={styles.screen}>
-    <View style={styles.header}><Pressable accessibilityRole="button" accessibilityLabel="학습 홈으로 돌아가기" onPress={onBack} hitSlop={12}><Text style={styles.back}>‹ 홈으로</Text></Pressable><Text style={styles.heading}>광고 목록</Text><Pressable accessibilityRole="button" onPress={reload} disabled={status === 'loading'}><Text style={styles.back}>새로고침</Text></Pressable></View>
+  return <SafeAreaView edges={embedded ? [] : ['bottom']} style={[styles.screen, embedded && styles.embedded]}>
+    <View style={styles.header}>{!embedded && <Pressable accessibilityRole="button" accessibilityLabel="학습 홈으로 돌아가기" onPress={onBack} hitSlop={12}><Text style={styles.back}>‹ 홈으로</Text></Pressable>}<Text style={styles.heading}>광고 목록</Text><Pressable accessibilityRole="button" onPress={reload} disabled={status === 'loading'}><Text style={styles.back}>새로고침</Text></Pressable></View>
     <Text style={styles.notice}>텐핑에서 제공하는 광고입니다. 자세히 보기는 외부 페이지로 연결됩니다.</Text>
     {status === 'loading' && ads.length === 0 ? <View style={styles.center}><ActivityIndicator size="large" color="#6E5AE6" /><Text style={styles.muted}>광고를 불러오는 중이에요</Text></View> :
-      <FlatList<TenpingAd> data={ads} keyExtractor={ad => ad.id} renderItem={({ item }: { item: TenpingAd }) => <AdCard ad={item} />} contentContainerStyle={styles.list} refreshing={status === 'loading'} onRefresh={reload}
+      <FlatList<TenpingAd> nestedScrollEnabled data={ads} keyExtractor={ad => ad.id} renderItem={({ item }: { item: TenpingAd }) => <AdCard ad={item} />} contentContainerStyle={styles.list} refreshing={status === 'loading'} onRefresh={reload}
         ListHeaderComponent={status === 'error' ? <View style={styles.state}><Text accessibilityRole="alert" style={styles.error}>{error}</Text><Pressable onPress={reload} style={styles.button}><Text style={styles.buttonText}>다시 시도</Text></Pressable></View> : null}
         ListEmptyComponent={status === 'ready' ? <View style={styles.state}><Text style={styles.muted}>현재 표시할 광고가 없습니다.</Text></View> : null} />}
   </SafeAreaView>;
@@ -60,6 +61,7 @@ export default function TenpingAdList({ onBack }: { onBack: () => void }) {
 
 const styles = StyleSheet.create({
   screen: { flex: 1, width: '100%', maxWidth: 520, alignSelf: 'center', paddingTop: 54 },
+  embedded: { paddingTop: 10 },
   header: { paddingHorizontal: 22, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 12 },
   heading: { fontSize: 20, fontWeight: '900', color: '#24213A' },
   back: { fontSize: 13, fontWeight: '700', color: '#6E5AE6' },
