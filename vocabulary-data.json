@@ -511,10 +511,10 @@
       "example": "Please come to my house after class."
     },
     {
-      "word": "have",
-      "phonetic": "/ˈhæv/",
-      "meaning": "가지다, 먹다",
-      "example": "I have a new notebook."
+      "word": "duck",
+      "phonetic": "/ˈdək/",
+      "meaning": "오리",
+      "example": "The duck is swimming in the pond."
     },
     {
       "word": "open",
@@ -581,9 +581,10 @@
       "meaning": "여성"
     },
     {
-      "word": "always",
-      "phonetic": "/ˈɔɫˌweɪz/, /ˈɔɫwiz/",
-      "meaning": "항상"
+      "word": "carrot",
+      "phonetic": "/ˈkæɹət/, /ˈkɛɹət/",
+      "meaning": "당근",
+      "example": "The rabbit likes this carrot."
     },
     {
       "word": "begin",
@@ -596,9 +597,10 @@
       "meaning": "믿다"
     },
     {
-      "word": "often",
-      "phonetic": "/ˈɔfən/, /ˈɔftən/",
-      "meaning": "수시로"
+      "word": "foot",
+      "phonetic": "/ˈfʊt/",
+      "meaning": "발",
+      "example": "She put one foot on the step."
     },
     {
       "word": "answer",
@@ -606,24 +608,25 @@
       "meaning": "대답"
     },
     {
-      "word": "there",
-      "phonetic": "/ˈðɛɹ/",
-      "meaning": "거기에"
+      "word": "sleep",
+      "phonetic": "/ˈsɫip/",
+      "meaning": "자다",
+      "example": "The baby sleeps in the afternoon."
     },
     {
-      "word": "then",
-      "phonetic": "/ˈðɛn/",
-      "meaning": "그때"
+      "word": "elephant",
+      "phonetic": "/ˈɛɫəfənt/",
+      "meaning": "코끼리"
     },
     {
-      "word": "also",
-      "phonetic": "/ˈɔɫsoʊ/",
-      "meaning": "또한"
+      "word": "playground",
+      "phonetic": "/ˈpɫeɪˌɡɹaʊn/, /ˈpɫeɪˌɡɹaʊnd/",
+      "meaning": "놀이터"
     },
     {
-      "word": "here",
-      "phonetic": "/ˈhiɹ/",
-      "meaning": "이리"
+      "word": "balloon",
+      "phonetic": "/bəˈɫun/",
+      "meaning": "풍선"
     },
     {
       "word": "meet",
@@ -646,19 +649,19 @@
       "meaning": "움직이다"
     },
     {
-      "word": "business",
-      "phonetic": "/ˈbɪznəs/, /ˈbɪznɪs/",
-      "meaning": "매매"
+      "word": "dinosaur",
+      "phonetic": "/ˈdaɪnəˌsɔɹ/",
+      "meaning": "공룡"
     },
     {
-      "word": "word",
-      "phonetic": "/ˈwɝd/",
-      "meaning": "말"
+      "word": "thirsty",
+      "phonetic": "/ˈθɝsti/",
+      "meaning": "목마른"
     },
     {
-      "word": "pay",
-      "phonetic": "/ˈpeɪ/",
-      "meaning": "지불하다"
+      "word": "mirror",
+      "phonetic": "/ˈmɪɹɝ/",
+      "meaning": "거울"
     },
     {
       "word": "happen",
@@ -676,9 +679,9 @@
       "meaning": "시"
     },
     {
-      "word": "price",
-      "phonetic": "/ˈpɹaɪs/",
-      "meaning": "값"
+      "word": "soap",
+      "phonetic": "/ˈsoʊp/",
+      "meaning": "비누"
     },
     {
       "word": "stand",
@@ -691,9 +694,9 @@
       "meaning": "상관하다"
     },
     {
-      "word": "soon",
-      "phonetic": "/ˈsun/",
-      "meaning": "곧"
+      "word": "spoon",
+      "phonetic": "/ˈspun/",
+      "meaning": "숟가락"
     },
     {
       "word": "test",
@@ -706,9 +709,9 @@
       "meaning": "분"
     },
     {
-      "word": "social",
-      "phonetic": "/ˈsoʊʃəɫ/",
-      "meaning": "사회적인"
+      "word": "fork",
+      "phonetic": "/ˈfɔɹk/",
+      "meaning": "포크"
     },
     {
       "word": "history",
@@ -731,9 +734,9 @@
       "meaning": "더하기하다"
     },
     {
-      "word": "rule",
-      "phonetic": "/ˈɹuɫ/",
-      "meaning": "규칙"
+      "word": "lemon",
+      "phonetic": "/ˈɫɛmən/",
+      "meaning": "레몬"
     },
     {
       "word": "morning",
@@ -741,9 +744,9 @@
       "meaning": "아침"
     },
     {
-      "word": "war",
-      "phonetic": "/ˈwɔɹ/",
-      "meaning": "전쟁"
+      "word": "honey",
+      "phonetic": "/ˈhəni/",
+      "meaning": "벌꿀"
     },
     {
       "word": "event",
@@ -761,14 +764,14 @@
       "meaning": "어린이"
     },
     {
-      "word": "news",
-      "phonetic": "/ˈnjuz/, /ˈnuz/",
-      "meaning": "소식"
+      "word": "oven",
+      "phonetic": "/ˈəvən/",
+      "meaning": "화덕"
     },
     {
-      "word": "percent",
-      "phonetic": "/pɝˈsɛnt/",
-      "meaning": "퍼센트"
+      "word": "pepper",
+      "phonetic": "/ˈpɛpɝ/",
+      "meaning": "후추"
     },
     {
       "word": "ground",
@@ -841,9 +844,9 @@
       "meaning": "아름답다"
     },
     {
-      "word": "organize",
-      "phonetic": "/ˈɔɹɡəˌnaɪz/",
-      "meaning": "조직하다"
+      "word": "onion",
+      "phonetic": "/ˈənjən/",
+      "meaning": "양파냄새"
     },
     {
       "word": "clean",
@@ -1076,9 +1079,9 @@
       "meaning": "숨쉬다"
     },
     {
-      "word": "pollution",
-      "phonetic": "/pəˈɫuʃən/",
-      "meaning": "오염"
+      "word": "pasta",
+      "phonetic": "/ˈpɑstə/",
+      "meaning": "파스타"
     },
     {
       "word": "poem",
@@ -1146,9 +1149,9 @@
       "meaning": "기본적"
     },
     {
-      "word": "interviewer",
-      "phonetic": "/ˈɪntɝvˌjuɝ/",
-      "meaning": "면접관"
+      "word": "pear",
+      "phonetic": "/ˈpɛɹ/",
+      "meaning": "성양배"
     },
     {
       "word": "shopping",
@@ -1196,14 +1199,14 @@
       "meaning": "맛있다"
     },
     {
-      "word": "girlfriend",
-      "phonetic": "/ˈɡɝɫˌfɹɛnd/",
-      "meaning": "여자친구"
+      "word": "mushroom",
+      "phonetic": "/ˈməʃɹum/",
+      "meaning": "버섯"
     },
     {
-      "word": "boyfriend",
-      "phonetic": "/ˈbɔɪˌfɹɛnd/",
-      "meaning": "남자친구"
+      "word": "toast",
+      "phonetic": "/ˈtoʊst/",
+      "meaning": "축배"
     },
     {
       "word": "sailor",
@@ -1281,14 +1284,14 @@
       "meaning": "지구"
     },
     {
-      "word": "never",
-      "phonetic": "/ˈnɛvɝ/",
-      "meaning": "절대로"
+      "word": "sausage",
+      "phonetic": "/ˈsɔsədʒ/, /ˈsɔsɪdʒ/",
+      "meaning": "순대"
     },
     {
-      "word": "case",
-      "phonetic": "/ˈkeɪs/",
-      "meaning": "경우"
+      "word": "cereal",
+      "phonetic": "/ˈsɪɹiəɫ/",
+      "meaning": "곡류"
     },
     {
       "word": "money",
@@ -1346,9 +1349,9 @@
       "meaning": "포도"
     },
     {
-      "word": "second",
-      "phonetic": "/ˈsɛkənd/",
-      "meaning": "초"
+      "word": "scarf",
+      "phonetic": "/ˈskɑɹf/",
+      "meaning": "목도리"
     },
     {
       "word": "face",
@@ -1356,9 +1359,9 @@
       "meaning": "얼굴"
     },
     {
-      "word": "once",
-      "phonetic": "/ˈwəns/",
-      "meaning": "한 번"
+      "word": "sunflower",
+      "phonetic": "/ˈsənˌfɫaʊɝ/",
+      "meaning": "해바라기"
     },
     {
       "word": "speak",
@@ -1393,7 +1396,7 @@
     {
       "word": "science",
       "phonetic": "/ˈsaɪəns/",
-      "meaning": "지식"
+      "meaning": "과학"
     },
     {
       "word": "afternoon",
@@ -1426,9 +1429,9 @@
       "meaning": "왼"
     },
     {
-      "word": "smoke",
-      "phonetic": "/ˈsmoʊk/",
-      "meaning": "피우다"
+      "word": "pea",
+      "phonetic": "/ˈpi/",
+      "meaning": "완두"
     },
     {
       "word": "plane",
@@ -1446,9 +1449,9 @@
       "meaning": "조용하다"
     },
     {
-      "word": "code",
-      "phonetic": "/ˈkoʊd/",
-      "meaning": "법전"
+      "word": "melon",
+      "phonetic": "/ˈmɛɫən/",
+      "meaning": "멜론"
     },
     {
       "word": "hall",
@@ -1476,9 +1479,9 @@
       "meaning": "셔츠"
     },
     {
-      "word": "spell",
-      "phonetic": "/ˈspɛɫ/",
-      "meaning": "철자하다"
+      "word": "raincoat",
+      "phonetic": "/ˈɹeɪnˌkoʊt/",
+      "meaning": "레인 코트"
     },
     {
       "word": "sir",
@@ -1591,9 +1594,9 @@
       "meaning": "강하다"
     },
     {
-      "word": "other",
-      "phonetic": "/ˈəðɝ/",
-      "meaning": "다른"
+      "word": "blanket",
+      "phonetic": "/ˈbɫæŋkət/, /ˈbɫæŋkɪt/",
+      "meaning": "모포"
     },
     {
       "word": "well",
@@ -1603,7 +1606,7 @@
     {
       "word": "look",
       "phonetic": "/ˈɫʊk/",
-      "meaning": "일견"
+      "meaning": "보다"
     },
     {
       "word": "thing",
@@ -1611,9 +1614,9 @@
       "meaning": "물건"
     },
     {
-      "word": "really",
-      "phonetic": "/ˈɹiɫi/, /ˈɹɪɫi/",
-      "meaning": "정말로"
+      "word": "comb",
+      "phonetic": "/ˈkoʊm/",
+      "meaning": "소면기"
     },
     {
       "word": "put",
@@ -1626,9 +1629,9 @@
       "meaning": "그룹"
     },
     {
-      "word": "let",
-      "phonetic": "/ˈɫɛt/",
-      "meaning": "임대하다"
+      "word": "sleepy",
+      "phonetic": "/ˈsɫipi/",
+      "meaning": "졸린"
     },
     {
       "word": "hear",
@@ -1671,9 +1674,9 @@
       "meaning": "오늘"
     },
     {
-      "word": "form",
-      "phonetic": "/ˈfɔɹm/",
-      "meaning": "형상"
+      "word": "granddaughter",
+      "phonetic": "/ˈɡɹænˌdɔtɝ/",
+      "meaning": "손녀"
     },
     {
       "word": "person",
@@ -1691,9 +1694,9 @@
       "meaning": "쪽"
     },
     {
-      "word": "sure",
-      "phonetic": "/ˈʃʊɹ/",
-      "meaning": "확실하다"
+      "word": "grandson",
+      "phonetic": "/ˈɡɹændˌsən/",
+      "meaning": "손자"
     },
     {
       "word": "age",
@@ -1716,9 +1719,9 @@
       "meaning": "가운데"
     },
     {
-      "word": "matter",
-      "phonetic": "/ˈmætɝ/",
-      "meaning": "물질"
+      "word": "turtle",
+      "phonetic": "/ˈtɝtəɫ/",
+      "meaning": "거북"
     },
     {
       "word": "stop",
@@ -1801,19 +1804,19 @@
       "meaning": "소년"
     },
     {
-      "word": "organization",
-      "phonetic": "/ˌɔɹɡənəˈzeɪʃən/",
-      "meaning": "조직"
+      "word": "shark",
+      "phonetic": "/ˈʃɑɹk/",
+      "meaning": "상어"
     },
     {
-      "word": "accord",
-      "phonetic": "/əˈkɔɹd/",
-      "meaning": "협정"
+      "word": "camel",
+      "phonetic": "/ˈkæməɫ/",
+      "meaning": "낙타"
     },
     {
-      "word": "list",
-      "phonetic": "/ˈɫɪst/",
-      "meaning": "명부"
+      "word": "squirrel",
+      "phonetic": "/ˈskwɝəɫ/",
+      "meaning": "다람쥐"
     },
     {
       "word": "wish",
@@ -1821,9 +1824,9 @@
       "meaning": "소원"
     },
     {
-      "word": "kill",
-      "phonetic": "/ˈkɪɫ/",
-      "meaning": "죽이다"
+      "word": "parrot",
+      "phonetic": "/ˈpɛɹət/",
+      "meaning": "앵무새"
     },
     {
       "word": "stage",
@@ -1846,9 +1849,9 @@
       "meaning": "확인하다"
     },
     {
-      "word": "personal",
-      "phonetic": "/ˈpɝsɪnəɫ/",
-      "meaning": "개인의"
+      "word": "puppy",
+      "phonetic": "/ˈpəpi/",
+      "meaning": "강아지"
     },
     {
       "word": "leader",
@@ -2201,9 +2204,9 @@
       "meaning": "습관"
     },
     {
-      "word": "self",
-      "phonetic": "/ˈsɛɫf/",
-      "meaning": "자신"
+      "word": "kitten",
+      "phonetic": "/ˈkɪtən/",
+      "meaning": "나비 자묘 아깽이"
     },
     {
       "word": "excuse",
@@ -2261,9 +2264,9 @@
       "meaning": "솔"
     },
     {
-      "word": "paragraph",
-      "phonetic": "/ˈpæɹəˌɡɹæf/, /ˈpɛɹəˌɡɹæf/",
-      "meaning": "단락"
+      "word": "feather",
+      "phonetic": "/ˈfɛðɝ/",
+      "meaning": "깃털"
     },
     {
       "word": "bat",
@@ -2286,9 +2289,9 @@
       "meaning": "원숭이"
     },
     {
-      "word": "pardon",
-      "phonetic": "/ˈpɑɹdən/",
-      "meaning": "용서"
+      "word": "seed",
+      "phonetic": "/ˈsid/",
+      "meaning": "맺히다"
     },
     {
       "word": "snake",
@@ -2296,9 +2299,9 @@
       "meaning": "뱀"
     },
     {
-      "word": "best",
-      "phonetic": "/ˈbɛst/",
-      "meaning": "최선"
+      "word": "lake",
+      "phonetic": "/ˈɫeɪk/",
+      "meaning": "호수"
     },
     {
       "word": "building",
@@ -2311,14 +2314,14 @@
       "meaning": "회합"
     },
     {
-      "word": "living",
-      "phonetic": "/ˈɫɪvɪŋ/",
-      "meaning": "생존"
+      "word": "forest",
+      "phonetic": "/ˈfɔɹəst/, /ˈfɔɹɪst/",
+      "meaning": "숲"
     },
     {
-      "word": "reading",
-      "phonetic": "/ˈɹɛdɪŋ/, /ˈɹidɪŋ/",
-      "meaning": "독서"
+      "word": "root",
+      "phonetic": "/ˈɹut/",
+      "meaning": "근수"
     },
     {
       "word": "airport",
@@ -2356,9 +2359,9 @@
       "meaning": "회화"
     },
     {
-      "word": "swimming",
-      "phonetic": "/ˈswɪmɪŋ/",
-      "meaning": "수영"
+      "word": "valley",
+      "phonetic": "/ˈvæɫi/",
+      "meaning": "계곡"
     },
     {
       "word": "cartoon",
@@ -2528,7 +2531,7 @@
     {
       "word": "please",
       "phonetic": "/ˈpɫiz/",
-      "meaning": "기쁘게 하다"
+      "meaning": "부탁해요, 제발"
     },
     {
       "word": "date",
@@ -2611,9 +2614,9 @@
       "meaning": "배"
     },
     {
-      "word": "sentence",
-      "phonetic": "/ˈsɛntəns/",
-      "meaning": "판결"
+      "word": "desert",
+      "phonetic": "/ˈdɛzɝt/, /dɪˈzɝt/",
+      "meaning": "사막"
     },
     {
       "word": "cool",
@@ -2731,9 +2734,9 @@
       "meaning": "자"
     },
     {
-      "word": "smoking",
-      "phonetic": "/ˈsmoʊkɪŋ/",
-      "meaning": "흡연"
+      "word": "coast",
+      "phonetic": "/ˈkoʊst/",
+      "meaning": "해안"
     },
     {
       "word": "palace",
@@ -2896,19 +2899,19 @@
       "meaning": "참"
     },
     {
-      "word": "technology",
-      "phonetic": "/tɛkˈnɑɫədʒi/",
-      "meaning": "기술"
+      "word": "shore",
+      "phonetic": "/ˈʃɔɹ/",
+      "meaning": "지주"
     },
     {
-      "word": "recognize",
-      "phonetic": "/ˈɹɛkəɡˌnaɪz/",
-      "meaning": "알아보다"
+      "word": "planet",
+      "phonetic": "/ˈpɫænət/",
+      "meaning": "운성"
     },
     {
-      "word": "successful",
-      "phonetic": "/səkˈsɛsfəɫ/",
-      "meaning": "성공적"
+      "word": "earth",
+      "phonetic": "/ˈɝθ/",
+      "meaning": "지면"
     },
     {
       "word": "football",
@@ -2938,22 +2941,22 @@
     {
       "word": "one",
       "phonetic": "/ˈwən/",
-      "meaning": "1달러 지폐"
+      "meaning": "하나, 1"
     },
     {
-      "word": "just",
-      "phonetic": "/ˈdʒəst/, /dʒɪst/",
-      "meaning": "공정하다"
+      "word": "air",
+      "phonetic": "/ˈɛɹ/",
+      "meaning": "공기"
     },
     {
-      "word": "now",
-      "phonetic": "/ˈnaʊ/",
-      "meaning": "지금"
+      "word": "space",
+      "phonetic": "/ˈspeɪs/",
+      "meaning": "공간"
     },
     {
-      "word": "first",
-      "phonetic": "/ˈfɝst/",
-      "meaning": "첫째"
+      "word": "shell",
+      "phonetic": "/ˈʃɛɫ/",
+      "meaning": "갑각"
     },
     {
       "word": "need",
@@ -2961,9 +2964,9 @@
       "meaning": "필요"
     },
     {
-      "word": "still",
-      "phonetic": "/ˈstɪɫ/",
-      "meaning": "여전히"
+      "word": "insect",
+      "phonetic": "/ˈɪnˌsɛkt/",
+      "meaning": "곤충"
     },
     {
       "word": "point",
@@ -2971,9 +2974,9 @@
       "meaning": "점"
     },
     {
-      "word": "become",
-      "phonetic": "/bɪˈkəm/",
-      "meaning": "되다"
+      "word": "bug",
+      "phonetic": "/ˈbəɡ/",
+      "meaning": "버그"
     },
     {
       "word": "course",
@@ -2981,14 +2984,14 @@
       "meaning": "코스"
     },
     {
-      "word": "again",
-      "phonetic": "/əˈɡeɪn/, /əˈɡɛn/",
-      "meaning": "다시"
+      "word": "rope",
+      "phonetic": "/ˈɹoʊp/",
+      "meaning": "밧줄"
     },
     {
-      "word": "keep",
-      "phonetic": "/ˈkip/",
-      "meaning": "지키다"
+      "word": "lamp",
+      "phonetic": "/ˈɫæmp/",
+      "meaning": "램프"
     },
     {
       "word": "bring",
@@ -3041,9 +3044,9 @@
       "meaning": "파티"
     },
     {
-      "word": "yet",
-      "phonetic": "/ˈjɛt/",
-      "meaning": "이윽고"
+      "word": "refrigerator",
+      "phonetic": "/ɹəˈfɹɪdʒɝˌeɪtɝ/, /ɹɪˈfɹɪdʒɝˌeɪtɝ/",
+      "meaning": "냉장고"
     },
     {
       "word": "visit",
@@ -3051,9 +3054,9 @@
       "meaning": "방문"
     },
     {
-      "word": "mind",
-      "phonetic": "/ˈmaɪnd/",
-      "meaning": "마음"
+      "word": "mug",
+      "phonetic": "/ˈməɡ/",
+      "meaning": "머그"
     },
     {
       "word": "office",
@@ -3076,9 +3079,9 @@
       "meaning": "색깔"
     },
     {
-      "word": "period",
-      "phonetic": "/ˈpɪɹiəd/",
-      "meaning": "마침표"
+      "word": "bench",
+      "phonetic": "/ˈbɛntʃ/",
+      "meaning": "벤치"
     },
     {
       "word": "note",
@@ -3086,9 +3089,9 @@
       "meaning": "기록"
     },
     {
-      "word": "type",
-      "phonetic": "/ˈtaɪp/",
-      "meaning": "유형"
+      "word": "glove",
+      "phonetic": "/ˈɡɫəv/",
+      "meaning": "장갑"
     },
     {
       "word": "game",
@@ -3131,14 +3134,14 @@
       "meaning": "서술하다"
     },
     {
-      "word": "maybe",
-      "phonetic": "/ˈmeɪbi/",
-      "meaning": "아마"
+      "word": "dessert",
+      "phonetic": "/dɪˈzɝt/",
+      "meaning": "후식"
     },
     {
-      "word": "join",
-      "phonetic": "/ˈdʒɔɪn/",
-      "meaning": "접속"
+      "word": "ankle",
+      "phonetic": "/ˈæŋkəɫ/",
+      "meaning": "발목"
     },
     {
       "word": "practice",
@@ -3146,9 +3149,9 @@
       "meaning": "의식"
     },
     {
-      "word": "front",
-      "phonetic": "/ˈfɹənt/",
-      "meaning": "정면"
+      "word": "soda",
+      "phonetic": "/ˈsoʊdə/",
+      "meaning": "탄산음료"
     },
     {
       "word": "picture",
@@ -3171,14 +3174,14 @@
       "meaning": "전장"
     },
     {
-      "word": "vote",
-      "phonetic": "/ˈvoʊt/",
-      "meaning": "투표"
+      "word": "spaghetti",
+      "phonetic": "/spəˈɡɛti/",
+      "meaning": "스파게티"
     },
     {
-      "word": "realize",
-      "phonetic": "/ˈɹiəˌɫaɪz/",
-      "meaning": "실현하다"
+      "word": "earring",
+      "phonetic": "/ˈiɹɪŋ/, /ˈɪɹɪŋ/",
+      "meaning": "귀고리"
     },
     {
       "word": "listen",
@@ -3191,14 +3194,14 @@
       "meaning": "동물"
     },
     {
-      "word": "fight",
-      "phonetic": "/ˈfaɪt/",
-      "meaning": "싸움"
+      "word": "scissors",
+      "phonetic": "/ˈsɪzɝz/",
+      "meaning": "가위"
     },
     {
-      "word": "discuss",
-      "phonetic": "/dɪˈskəs/",
-      "meaning": "토론하다"
+      "word": "purple",
+      "phonetic": "/ˈpɝpəɫ/",
+      "meaning": "자주색"
     },
     {
       "word": "fire",
@@ -3231,9 +3234,9 @@
       "meaning": "열쇠"
     },
     {
-      "word": "item",
-      "phonetic": "/ˈaɪtəm/",
-      "meaning": "아이템"
+      "word": "chess",
+      "phonetic": "/ˈtʃɛs/",
+      "meaning": "체스"
     },
     {
       "word": "hotel",
@@ -3248,7 +3251,7 @@
     {
       "word": "doctor",
       "phonetic": "/ˈdɑktɝ/, /ˈdɔktɝ/",
-      "meaning": "박사"
+      "meaning": "의사"
     },
     {
       "word": "sorry",
@@ -3356,9 +3359,9 @@
       "meaning": "애인"
     },
     {
-      "word": "spot",
-      "phonetic": "/ˈspɑt/",
-      "meaning": "점"
+      "word": "hockey",
+      "phonetic": "/ˈhɑki/",
+      "meaning": "하키"
     },
     {
       "word": "excellent",
@@ -3436,9 +3439,9 @@
       "meaning": "포켓볼"
     },
     {
-      "word": "sum",
-      "phonetic": "/ˈsəm/",
-      "meaning": "합계"
+      "word": "fog",
+      "phonetic": "/ˈfɑɡ/, /ˈfɔɡ/",
+      "meaning": "안개"
     },
     {
       "word": "carefully",
@@ -3526,9 +3529,9 @@
       "meaning": "원"
     },
     {
-      "word": "everywhere",
-      "phonetic": "/ˈɛvɹiˌwɛɹ/, /ˈɛvɹihˌwɛɹ/",
-      "meaning": "어디에나"
+      "word": "curry",
+      "phonetic": "/ˈkəɹi/, /ˈkɝi/",
+      "meaning": "카레"
     },
     {
       "word": "hat",
@@ -3581,9 +3584,9 @@
       "meaning": "톱니"
     },
     {
-      "word": "false",
-      "phonetic": "/ˈfɔɫs/",
-      "meaning": "거짓"
+      "word": "wheelchair",
+      "phonetic": "/ˈhwiɫˌtʃɛɹ/, /ˈwiɫˌtʃɛɹ/",
+      "meaning": "휠체어"
     },
     {
       "word": "album",
@@ -3666,9 +3669,9 @@
       "meaning": "빌다"
     },
     {
-      "word": "grammar",
-      "phonetic": "/ˈɡɹæmɝ/",
-      "meaning": "Korean: 문법"
+      "word": "sunglasses",
+      "phonetic": "/ˈsənˌɡɫæsɪz/",
+      "meaning": "선글라스"
     },
     {
       "word": "bell",
@@ -3686,9 +3689,9 @@
       "meaning": "가을"
     },
     {
-      "word": "blank",
-      "phonetic": "/ˈbɫæŋk/",
-      "meaning": "칸"
+      "word": "battery",
+      "phonetic": "/ˈbætɝi/",
+      "meaning": "배터리"
     },
     {
       "word": "poster",
@@ -3698,17 +3701,17 @@
     {
       "word": "two",
       "phonetic": "/ˈtu/",
-      "meaning": "2달러 지폐"
+      "meaning": "둘, 2"
     },
     {
-      "word": "following",
-      "phonetic": "/ˈfɑɫoʊɪŋ/",
-      "meaning": "팔로잉"
+      "word": "basket",
+      "phonetic": "/ˈbæskət/",
+      "meaning": "바구니"
     },
     {
-      "word": "better",
-      "phonetic": "/ˈbɛtɝ/",
-      "meaning": "더 좋은"
+      "word": "pan",
+      "phonetic": "/ˈpæn/",
+      "meaning": "상판대기"
     },
     {
       "word": "smith",
@@ -3721,9 +3724,9 @@
       "meaning": "흥미롭다"
     },
     {
-      "word": "closed",
-      "phonetic": "/ˈkɫoʊzd/",
-      "meaning": "닫은"
+      "word": "oak",
+      "phonetic": "/ˈoʊk/",
+      "meaning": "참나무"
     },
     {
       "word": "rose",
@@ -3731,9 +3734,9 @@
       "meaning": "장미나무"
     },
     {
-      "word": "broken",
-      "phonetic": "/ˈbɹoʊkən/",
-      "meaning": "부서진"
+      "word": "garage",
+      "phonetic": "/ɡɝˈɑʒ/",
+      "meaning": "개라지"
     },
     {
       "word": "turkey",
@@ -3786,9 +3789,9 @@
       "meaning": "변기"
     },
     {
-      "word": "excited",
-      "phonetic": "/ɪkˈsaɪtəd/, /ɪkˈsaɪtɪd/",
-      "meaning": "흥분하다"
+      "word": "comic",
+      "phonetic": "/ˈkɑmɪk/",
+      "meaning": "만화란"
     },
     {
       "word": "sunny",
@@ -3821,9 +3824,9 @@
       "meaning": "나리"
     },
     {
-      "word": "nationality",
-      "phonetic": "/ˌnæʃəˈnæɫəti/, /ˌnæʃəˈnæɫɪti/",
-      "meaning": "국적"
+      "word": "crown",
+      "phonetic": "/ˈkɹaʊn/",
+      "meaning": "극치"
     },
     {
       "word": "awake",
@@ -3871,384 +3874,384 @@
       "meaning": "햄버거"
     },
     {
-      "word": "be",
-      "phonetic": "/ˈbi/, /bi/",
-      "meaning": "~이다"
+      "word": "globe",
+      "phonetic": "/ˈɡɫoʊb/",
+      "meaning": "지구"
     },
     {
-      "word": "and",
-      "phonetic": "/ˈænd/, /ənd/",
-      "meaning": "그리고"
+      "word": "receipt",
+      "phonetic": "/ɹiˈsit/, /ɹɪˈsit/",
+      "meaning": "납부"
     },
     {
-      "word": "of",
-      "phonetic": "/ˈəv/",
-      "meaning": "~의"
+      "word": "toe",
+      "phonetic": "/ˈtoʊ/",
+      "meaning": "도구의 끝"
     },
     {
-      "word": "to",
-      "phonetic": "/ˈtu/, /tə/, /tɪ/",
-      "meaning": "~에"
+      "word": "jam",
+      "phonetic": "/ˈdʒæm/",
+      "meaning": "곤경"
     },
     {
-      "word": "you",
-      "phonetic": "/ˈju/",
-      "meaning": "너, 당신"
+      "word": "cleaner",
+      "phonetic": "/ˈkɫinɝ/",
+      "meaning": "청소부"
     },
     {
-      "word": "he",
-      "phonetic": "/ˈhi/",
-      "meaning": "그"
+      "word": "robin",
+      "phonetic": "/ˈɹɑbən/, /ˈɹɑbɪn/",
+      "meaning": "로빈"
     },
     {
-      "word": "they",
-      "phonetic": "/ˈðeɪ/",
-      "meaning": "그들"
+      "word": "perfume",
+      "phonetic": "/pɝfˈjum/",
+      "meaning": "방향"
     },
     {
-      "word": "not",
-      "phonetic": "/ˈnɑt/",
-      "meaning": "아니다"
+      "word": "chef",
+      "phonetic": "/ˈʃɛf/",
+      "meaning": "주방장"
     },
     {
-      "word": "we",
-      "phonetic": "/ˈwi/",
-      "meaning": "우리"
+      "word": "treasure",
+      "phonetic": "/ˈtɹɛʒɝ/",
+      "meaning": "보물"
     },
     {
-      "word": "with",
-      "phonetic": "/ˈwɪð/, /ˈwɪθ/, /wɪð/, /wɪθ/",
-      "meaning": "~와 함께"
+      "word": "wool",
+      "phonetic": "/ˈwʊɫ/",
+      "meaning": "양털"
     },
     {
-      "word": "this",
-      "phonetic": "/ˈðɪs/, /ðɪs/",
-      "meaning": "이것"
+      "word": "seafood",
+      "phonetic": "/ˈsiˌfud/",
+      "meaning": "어개"
     },
     {
-      "word": "do",
-      "phonetic": "/ˈdu/",
-      "meaning": "하다"
+      "word": "belly",
+      "phonetic": "/ˈbɛɫi/",
+      "meaning": "복부"
     },
     {
-      "word": "at",
-      "phonetic": "/ˈæt/",
-      "meaning": "~에서"
+      "word": "ham",
+      "phonetic": "/ˈhæm/",
+      "meaning": "햄"
     },
     {
-      "word": "she",
-      "phonetic": "/ˈʃi/",
-      "meaning": "그녀"
+      "word": "wallet",
+      "phonetic": "/ˈwɔɫət/",
+      "meaning": "바랑"
     },
     {
-      "word": "but",
-      "phonetic": "/ˈbət/",
-      "meaning": "그러나"
+      "word": "violin",
+      "phonetic": "/vaɪəˈɫɪn/",
+      "meaning": "바이올린"
     },
     {
-      "word": "from",
-      "phonetic": "/ˈfɹəm/",
-      "meaning": "~에서부터"
+      "word": "flour",
+      "phonetic": "/ˈfɫaʊɝ/, /ˈfɫaʊɹ/",
+      "meaning": "밀가루"
     },
     {
-      "word": "by",
-      "phonetic": "/ˈbaɪ/",
-      "meaning": "~에 의해"
+      "word": "bulb",
+      "phonetic": "/ˈbəɫb/",
+      "meaning": "구근"
     },
     {
-      "word": "will",
-      "phonetic": "/ˈwɪɫ/, /wəɫ/",
-      "meaning": "~할 것이다"
+      "word": "handbag",
+      "phonetic": "/ˈhændˌbæɡ/",
+      "meaning": "핸드백"
     },
     {
-      "word": "or",
-      "phonetic": "/ˈɔɹ/, /ɝ/",
-      "meaning": "또는"
+      "word": "drawer",
+      "phonetic": "/ˈdɹɔɹ/",
+      "meaning": "발행인"
     },
     {
-      "word": "if",
-      "phonetic": "/ˈɪf/, /ɪf/",
-      "meaning": "만약"
+      "word": "statue",
+      "phonetic": "/ˈstæˌtʃu/",
+      "meaning": "동상"
     },
     {
-      "word": "would",
-      "phonetic": "/ˈwʊd/",
-      "meaning": "~할 것이다"
+      "word": "dentist",
+      "phonetic": "/ˈdɛnɪst/, /ˈdɛntəst/, /ˈdɛntɪst/",
+      "meaning": "치과의사"
     },
     {
-      "word": "about",
-      "phonetic": "/əˈbaʊt/",
-      "meaning": "~에 대해"
+      "word": "steak",
+      "phonetic": "/ˈsteɪk/",
+      "meaning": "스테이크"
     },
     {
-      "word": "can",
-      "phonetic": "/ˈkæn/, /kən/",
-      "meaning": "~할 수 있다"
+      "word": "balcony",
+      "phonetic": "/ˈbæɫkəni/",
+      "meaning": "노대"
     },
     {
-      "word": "which",
-      "phonetic": "/ˈhwɪtʃ/, /ˈwɪtʃ/",
-      "meaning": "어느, 어떤"
+      "word": "elevator",
+      "phonetic": "/ˈɛɫəˌveɪtɝ/",
+      "meaning": "승강기"
     },
     {
-      "word": "get",
-      "phonetic": "/ˈɡɛt/, /ˈɡɪt/",
-      "meaning": "얻다"
+      "word": "painter",
+      "phonetic": "/ˈpeɪntɝ/",
+      "meaning": "화가"
     },
     {
-      "word": "who",
-      "phonetic": "/ˈhu/",
-      "meaning": "누구"
+      "word": "cooker",
+      "phonetic": "/ˈkʊkɝ/",
+      "meaning": "요리 도구"
     },
     {
-      "word": "when",
-      "phonetic": "/ˈhwɛn/, /ˈhwɪn/, /ˈwɛn/, /ˈwɪn/",
-      "meaning": "언제"
+      "word": "dancer",
+      "phonetic": "/ˈdænsɝ/",
+      "meaning": "무용가"
     },
     {
-      "word": "what",
-      "phonetic": "/ˈhwət/, /ˈwət/",
-      "meaning": "무엇"
+      "word": "chin",
+      "phonetic": "/ˈtʃɪn/",
+      "meaning": "턱끝"
     },
     {
-      "word": "some",
-      "phonetic": "/ˈsəm/",
-      "meaning": "몇몇, 약간의"
+      "word": "stove",
+      "phonetic": "/ˈstoʊv/",
+      "meaning": "난로"
     },
     {
-      "word": "out",
-      "phonetic": "/ˈaʊt/",
-      "meaning": "밖으로"
+      "word": "snack",
+      "phonetic": "/ˈsnæk/",
+      "meaning": "간식"
     },
     {
-      "word": "no",
-      "phonetic": "/ˈnoʊ/",
-      "meaning": "아니요, 없음"
+      "word": "sweater",
+      "phonetic": "/ˈswɛtɝ/",
+      "meaning": "스웨터"
     },
     {
-      "word": "because",
-      "phonetic": "/bɪˈkɑz/, /bɪˈkəz/, /bɪˈkɔz/, /bɪkəz/",
-      "meaning": "왜냐하면"
+      "word": "sock",
+      "phonetic": "/ˈsɑk/",
+      "meaning": "속스"
     },
     {
-      "word": "could",
-      "phonetic": "/ˈkʊd/",
-      "meaning": "~할 수 있었다"
+      "word": "jelly",
+      "phonetic": "/ˈdʒɛɫi/",
+      "meaning": "젤리"
     },
     {
-      "word": "than",
-      "phonetic": "/ˈðæn/, /ðən/",
-      "meaning": "~보다"
+      "word": "shampoo",
+      "phonetic": "/ʃæmˈpu/",
+      "meaning": "샴푸"
     },
     {
-      "word": "into",
-      "phonetic": "/ˈɪntu/, /ɪnˈtu/, /ɪntə/",
-      "meaning": "~안으로"
+      "word": "clown",
+      "phonetic": "/ˈkɫaʊn/",
+      "meaning": "익살꾼"
     },
     {
-      "word": "only",
-      "phonetic": "/ˈoʊnɫi/",
-      "meaning": "오직"
+      "word": "napkin",
+      "phonetic": "/ˈnæpkɪn/",
+      "meaning": "냅킨"
     },
     {
-      "word": "any",
-      "phonetic": "/ˈɛni/",
-      "meaning": "어떤"
+      "word": "lemonade",
+      "phonetic": "/ˈɫɛməˈneɪd/",
+      "meaning": "레몬수"
     },
     {
-      "word": "where",
-      "phonetic": "/ˈhwɛɹ/, /ˈwɛɹ/",
-      "meaning": "어디에"
+      "word": "cupboard",
+      "phonetic": "/ˈkəbɝd/",
+      "meaning": "벽장"
     },
     {
-      "word": "should",
-      "phonetic": "/ˈʃʊd/",
-      "meaning": "~해야 한다"
+      "word": "suitcase",
+      "phonetic": "/ˈsutˌkeɪs/",
+      "meaning": "슈트케이스"
     },
     {
-      "word": "much",
-      "phonetic": "/ˈmətʃ/",
-      "meaning": "많이"
+      "word": "tram",
+      "phonetic": "/ˈtɹæm/",
+      "meaning": "시가전차"
     },
     {
-      "word": "how",
-      "phonetic": "/ˈhaʊ/",
-      "meaning": "어떻게"
+      "word": "armchair",
+      "phonetic": "/ˈɑɹmˌtʃɛɹ/",
+      "meaning": "안락의자"
     },
     {
-      "word": "may",
-      "phonetic": "/ˈmeɪ/",
-      "meaning": "~할지도 모른다"
+      "word": "astronaut",
+      "phonetic": "/ˈæstɹəˌnɑt/",
+      "meaning": "우주비행사"
     },
     {
-      "word": "many",
-      "phonetic": "/ˈmɛni/",
-      "meaning": "많은"
+      "word": "escalator",
+      "phonetic": "/ˈɛskəˌɫeɪtɝ/",
+      "meaning": "자동계단"
     },
     {
-      "word": "before",
-      "phonetic": "/ˌbiˈfɔɹ/, /bɪˈfɔɹ/",
-      "meaning": "~전에"
+      "word": "bookcase",
+      "phonetic": "/ˈbʊkˌkeɪs/",
+      "meaning": "책장"
     },
     {
-      "word": "between",
-      "phonetic": "/bitˈwin/, /bɪtˈwin/",
-      "meaning": "사이에"
+      "word": "blackboard",
+      "phonetic": "/ˈbɫækˌbɔɹd/",
+      "meaning": "칠판"
     },
     {
-      "word": "too",
-      "phonetic": "/ˈtu/",
-      "meaning": "또한"
+      "word": "swimsuit",
+      "phonetic": "/ˈswɪmˌsut/",
+      "meaning": "수영복"
     },
     {
-      "word": "same",
-      "phonetic": "/ˈseɪm/",
-      "meaning": "같은"
+      "word": "racket",
+      "phonetic": "/ˈɹækɪt/",
+      "meaning": "라켓"
     },
     {
-      "word": "lot",
-      "phonetic": "/ˈɫɑt/, /ˈɫɔt/",
-      "meaning": "많은 양, 많이"
+      "word": "plate",
+      "phonetic": "/ˈpɫeɪt/",
+      "meaning": "접시"
     },
     {
-      "word": "both",
-      "phonetic": "/ˈboʊθ/",
-      "meaning": "둘 다"
+      "word": "ring",
+      "phonetic": "/ˈɹɪŋ/",
+      "meaning": "가락"
     },
     {
-      "word": "own",
-      "phonetic": "/ˈoʊn/",
-      "meaning": "자신의"
+      "word": "rock",
+      "phonetic": "/ˈɹɑk/",
+      "meaning": "록팬"
     },
     {
-      "word": "something",
-      "phonetic": "/ˈsəmθɪŋ/",
-      "meaning": "무엇인가"
+      "word": "gate",
+      "phonetic": "/ˈɡeɪt/",
+      "meaning": "관문"
     },
     {
-      "word": "another",
-      "phonetic": "/əˈnəðɝ/",
-      "meaning": "또 다른"
+      "word": "tap",
+      "phonetic": "/ˈtæp/",
+      "meaning": "똑똑"
     },
     {
-      "word": "each",
-      "phonetic": "/ˈitʃ/",
-      "meaning": "각각의"
+      "word": "lip",
+      "phonetic": "/ˈɫɪp/",
+      "meaning": "귀때"
     },
     {
-      "word": "off",
-      "phonetic": "/ˈɔf/",
-      "meaning": "꺼진, 떨어져"
+      "word": "chest",
+      "phonetic": "/ˈtʃɛst/",
+      "meaning": "가슴"
     },
     {
-      "word": "why",
-      "phonetic": "/ˈhwaɪ/, /ˈwaɪ/",
-      "meaning": "왜"
+      "word": "stomach",
+      "phonetic": "/ˈstəmək/",
+      "meaning": "위"
     },
     {
-      "word": "must",
-      "phonetic": "/ˈməst/",
-      "meaning": "~해야 한다"
+      "word": "belt",
+      "phonetic": "/ˈbɛɫt/",
+      "meaning": "벨트"
     },
     {
-      "word": "every",
-      "phonetic": "/ˈɛvɝi/, /ˈɛvɹi/",
-      "meaning": "모든"
+      "word": "coin",
+      "phonetic": "/ˈkɔɪn/",
+      "meaning": "동전"
     },
     {
-      "word": "under",
-      "phonetic": "/ˈəndɝ/",
-      "meaning": "아래에"
+      "word": "stamp",
+      "phonetic": "/ˈstæmp/",
+      "meaning": "도장"
     },
     {
-      "word": "yes",
-      "phonetic": "/ˈjɛs/",
-      "meaning": "네, 예"
+      "word": "envelope",
+      "phonetic": "/ˈɛnvəˌɫoʊp/",
+      "meaning": "봉투"
     },
     {
-      "word": "away",
-      "phonetic": "/əˈweɪ/",
-      "meaning": "멀리"
+      "word": "printer",
+      "phonetic": "/ˈpɹɪnɝ/, /ˈpɹɪntɝ/",
+      "meaning": "인서기"
     },
     {
-      "word": "anything",
-      "phonetic": "/ˈɛniˌθɪŋ/",
-      "meaning": "아무것"
+      "word": "fence",
+      "phonetic": "/ˈfɛns/",
+      "meaning": "펜싱"
     },
     {
-      "word": "nothing",
-      "phonetic": "/ˈnəθɪŋ/",
-      "meaning": "아무것도 없음"
+      "word": "cheek",
+      "phonetic": "/ˈtʃik/",
+      "meaning": "측면"
     },
     {
-      "word": "either",
-      "phonetic": "/ˈaɪðɝ/, /ˈiðɝ/",
-      "meaning": "둘 중 어느 쪽이든"
+      "word": "diary",
+      "phonetic": "/ˈdaɪɝi/, /ˈdaɪɹi/",
+      "meaning": "일기장"
     },
     {
-      "word": "ago",
-      "phonetic": "/əˈɡoʊ/",
-      "meaning": "전에"
+      "word": "stadium",
+      "phonetic": "/ˈsteɪdiəm/",
+      "meaning": "운동장"
     },
     {
-      "word": "along",
-      "phonetic": "/əˈɫɔŋ/",
-      "meaning": "따라"
+      "word": "calendar",
+      "phonetic": "/ˈkæɫəndɝ/",
+      "meaning": "역법"
     },
     {
-      "word": "toward",
-      "phonetic": "/ˈtɔɹd/, /təˈwɔɹd/",
-      "meaning": "~쪽으로"
+      "word": "bush",
+      "phonetic": "/ˈbʊʃ/",
+      "meaning": "삼림지"
     },
     {
-      "word": "everything",
-      "phonetic": "/ˈɛvɹiˌθɪŋ/",
-      "meaning": "만사"
+      "word": "kit",
+      "phonetic": "/ˈkɪt/",
+      "meaning": "장구"
     },
     {
-      "word": "someone",
-      "phonetic": "/ˈsəmˌwən/",
-      "meaning": "누군가"
+      "word": "diamond",
+      "phonetic": "/ˈdaɪmənd/",
+      "meaning": "금강석"
     },
     {
-      "word": "else",
-      "phonetic": "/ˈɛɫs/",
-      "meaning": "그 밖에"
+      "word": "lane",
+      "phonetic": "/ˈɫeɪn/",
+      "meaning": "시골길"
     },
     {
-      "word": "behind",
-      "phonetic": "/bɪˈhaɪnd/",
-      "meaning": "뒤에"
+      "word": "cab",
+      "phonetic": "/ˈkæb/",
+      "meaning": "기관사실"
     },
     {
-      "word": "site",
-      "phonetic": "/ˈsaɪt/",
-      "meaning": "장소, 현장"
+      "word": "dam",
+      "phonetic": "/ˈdæm/",
+      "meaning": "댐"
     },
     {
-      "word": "due",
-      "phonetic": "/ˈdju/, /ˈdu/",
-      "meaning": "예정된, ~때문에"
+      "word": "medal",
+      "phonetic": "/ˈmɛdəɫ/",
+      "meaning": "기장"
     },
     {
-      "word": "everyone",
-      "phonetic": "/ˈɛvɹiˌwən/",
-      "meaning": "모든 사람"
+      "word": "cooler",
+      "phonetic": "/ˈkuɫɝ/",
+      "meaning": "냉각기"
     },
     {
-      "word": "anyone",
-      "phonetic": "/ˈɛniˌwən/, /ˈɛniwən/",
-      "meaning": "누구든지"
+      "word": "fridge",
+      "phonetic": "/ˈfɹɪdʒ/",
+      "meaning": "냉장고"
     },
     {
-      "word": "below",
-      "phonetic": "/biˈɫoʊ/, /bɪˈɫoʊ/",
-      "meaning": "아래에"
+      "word": "bookshelf",
+      "phonetic": "/ˈbʊkˌʃɛɫf/",
+      "meaning": "서가"
     },
     {
-      "word": "yourself",
-      "phonetic": "/ˈjɔɹsɛɫf/, /jɝˈsɛɫf/, /jʊɹˈsɛɫf/",
-      "meaning": "당신 자신"
+      "word": "tights",
+      "phonetic": "/ˈtaɪts/",
+      "meaning": "티이츠"
     },
     {
       "word": "throw",
@@ -4261,9 +4264,9 @@
       "meaning": "괜찮은"
     },
     {
-      "word": "everybody",
-      "phonetic": "/ˈɛvɹiˌbɑdi/",
-      "meaning": "모두"
+      "word": "cricket",
+      "phonetic": "/ˈkɹɪkət/, /ˈkɹɪkɪt/",
+      "meaning": "크리켓"
     },
     {
       "word": "favorite",
@@ -4271,9 +4274,9 @@
       "meaning": "가장 좋아하는"
     },
     {
-      "word": "the",
-      "phonetic": "/ˈðə/, /ðə/, /ði/",
-      "meaning": "그"
+      "word": "rugby",
+      "phonetic": "/ˈɹəɡbi/",
+      "meaning": "럭비"
     },
     {
       "word": "photo",
@@ -4281,9 +4284,9 @@
       "meaning": "사진"
     },
     {
-      "word": "pop",
-      "phonetic": "/ˈpɑp/",
-      "meaning": "팝 음악, 인기 있는"
+      "word": "net",
+      "phonetic": "/ˈnɛt/",
+      "meaning": "네트"
     },
     {
       "word": "dear",
@@ -4291,9 +4294,9 @@
       "meaning": "소중한, 친애하는"
     },
     {
-      "word": "anybody",
-      "phonetic": "/ˈɛnibədi/",
-      "meaning": "누구든지"
+      "word": "badminton",
+      "phonetic": "/ˈbædˌmɪntən/",
+      "meaning": "배드민턴"
     },
     {
       "word": "lovely",
@@ -4311,14 +4314,14 @@
       "meaning": "안녕"
     },
     {
-      "word": "tight",
-      "phonetic": "/ˈtaɪt/",
-      "meaning": "꽉 끼는, 단단한"
+      "word": "skate",
+      "phonetic": "/ˈskeɪt/",
+      "meaning": "홍어"
     },
     {
-      "word": "beside",
-      "phonetic": "/ˌbiˈsaɪd/, /bɪˈsaɪd/",
-      "meaning": "곁에"
+      "word": "cave",
+      "phonetic": "/ˈkeɪv/",
+      "meaning": "동굴"
     },
     {
       "word": "mom",
@@ -4336,109 +4339,109 @@
       "meaning": "안녕하세요"
     },
     {
-      "word": "super",
-      "phonetic": "/ˈsupɝ/",
-      "meaning": "대단한, 아주 좋은"
+      "word": "ski",
+      "phonetic": "/ˈski/",
+      "meaning": "스키"
     },
     {
-      "word": "is",
-      "phonetic": "/ˈɪz/, /ɪz/",
-      "meaning": "~이다"
+      "word": "snowboard",
+      "phonetic": "/ˈsnoʊˌbɔɹd/",
+      "meaning": "스노우보드"
     },
     {
-      "word": "are",
-      "phonetic": "/ˈɑɹ/, /ɝ/",
-      "meaning": "~이다"
+      "word": "canoe",
+      "phonetic": "/kəˈnu/",
+      "meaning": "카누"
     },
     {
-      "word": "your",
-      "phonetic": "/ˈjɔɹ/, /ˈjʊɹ/",
-      "meaning": "당신의"
+      "word": "tent",
+      "phonetic": "/ˈtɛnt/",
+      "meaning": "텐트"
     },
     {
-      "word": "an",
-      "phonetic": "/ˈæn/, /ən/",
-      "meaning": "하나의"
+      "word": "pony",
+      "phonetic": "/ˈpoʊˌni/",
+      "meaning": "조랑말"
     },
     {
-      "word": "was",
-      "phonetic": "/ˈwɑz/, /wəz/",
-      "meaning": "~이었다"
+      "word": "lamb",
+      "phonetic": "/ˈɫæm/",
+      "meaning": "어린양"
     },
     {
-      "word": "us",
-      "phonetic": "/ˈəs/, /ˌjuˈɛs/",
-      "meaning": "우리를"
+      "word": "strawberry",
+      "phonetic": "/ˈstɹɔˌbɛɹi/",
+      "meaning": "딸기"
     },
     {
-      "word": "my",
-      "phonetic": "/ˈmaɪ/",
-      "meaning": "나의"
+      "word": "pineapple",
+      "phonetic": "/ˈpaɪˌnæpəɫ/",
+      "meaning": "파인애플"
     },
     {
-      "word": "has",
-      "phonetic": "/ˈhæz/, /həz/",
-      "meaning": "가지고 있다"
+      "word": "kiwi",
+      "phonetic": "/ˈkiwi/",
+      "meaning": "키위"
     },
     {
-      "word": "our",
-      "phonetic": "/ˈaʊɝ/, /ˈaʊɹ/, /ˈɑɹ/",
-      "meaning": "우리의"
+      "word": "cucumber",
+      "phonetic": "/ˈkjukəmbɝ/",
+      "meaning": "오이"
     },
     {
-      "word": "their",
-      "phonetic": "/ˈðɛɹ/",
-      "meaning": "그들의"
+      "word": "lettuce",
+      "phonetic": "/ˈɫɛtəs/",
+      "meaning": "상추"
     },
     {
-      "word": "his",
-      "phonetic": "/ˈhɪz/, /hɪz/",
-      "meaning": "그의"
+      "word": "broccoli",
+      "phonetic": "/ˈbɹɑkəɫi/, /ˈbɹɑkɫi/",
+      "meaning": "브로콜리"
     },
     {
-      "word": "am",
-      "phonetic": "/ˈæm/, /ˈeɪˈɛm/",
-      "meaning": "~이다, 있다"
+      "word": "salt",
+      "phonetic": "/ˈsɔɫt/",
+      "meaning": "소금"
     },
     {
-      "word": "were",
-      "phonetic": "/ˈwɝ/",
-      "meaning": "~이었다"
+      "word": "cream",
+      "phonetic": "/ˈkɹim/",
+      "meaning": "유지"
     },
     {
-      "word": "me",
-      "phonetic": "/ˈmi/",
-      "meaning": "나를"
+      "word": "yogurt",
+      "phonetic": "/ˈjoʊɡɝt/",
+      "meaning": "요구르트"
     },
     {
-      "word": "these",
-      "phonetic": "/ˈðiz/",
-      "meaning": "이것들"
+      "word": "popcorn",
+      "phonetic": "/ˈpɑpˌkɔɹn/",
+      "meaning": "팝콘"
     },
     {
-      "word": "its",
-      "phonetic": "/ˈɪts/, /ɪts/",
-      "meaning": "그것의"
+      "word": "lollipop",
+      "phonetic": "/ˈɫɑɫiˌpɑp/",
+      "meaning": "막대사탕"
     },
     {
-      "word": "had",
-      "phonetic": "/ˈhæd/",
-      "meaning": "가졌다"
+      "word": "acorn",
+      "phonetic": "/ˈeɪkɔɹn/",
+      "meaning": "도토리"
     },
     {
-      "word": "them",
-      "phonetic": "/ˈðɛm/, /ðəm/",
-      "meaning": "그들을"
+      "word": "pond",
+      "phonetic": "/ˈpɑnd/",
+      "meaning": "못"
     },
     {
-      "word": "her",
-      "phonetic": "/ˈhɝ/, /hɝ/",
-      "meaning": "그녀의"
+      "word": "waterfall",
+      "phonetic": "/ˈwɔtɝˌfɔɫ/",
+      "meaning": "폭포"
     },
     {
-      "word": "does",
-      "phonetic": "/ˈdəz/, /dɪz/",
-      "meaning": "하다"
+      "word": "stream",
+      "phonetic": "/ˈstɹim/",
+      "meaning": "시내"
     },
     {
       "word": "january",
@@ -4446,14 +4449,14 @@
       "meaning": "1월"
     },
     {
-      "word": "did",
-      "phonetic": "/ˈdɪd/, /dɪd/",
-      "meaning": "했다"
+      "word": "volcano",
+      "phonetic": "/vɑɫˈkeɪnoʊ/",
+      "meaning": "화산"
     },
     {
-      "word": "those",
-      "phonetic": "/ˈðoʊz/",
-      "meaning": "그것들"
+      "word": "ferry",
+      "phonetic": "/ˈfɛɹi/",
+      "meaning": "나룻배"
     },
     {
       "word": "three",
@@ -4461,9 +4464,9 @@
       "meaning": "셋"
     },
     {
-      "word": "him",
-      "phonetic": "/ˈhɪm/, /ɪm/",
-      "meaning": "그를"
+      "word": "tractor",
+      "phonetic": "/ˈtɹæktɝ/",
+      "meaning": "트랙타"
     },
     {
       "word": "december",
@@ -4536,9 +4539,9 @@
       "meaning": "금요일"
     },
     {
-      "word": "doing",
-      "phonetic": "/ˈduɪŋ/",
-      "meaning": "하는 것, 행동"
+      "word": "ambulance",
+      "phonetic": "/ˈæmbjəɫəns/",
+      "meaning": "앰뷸런스"
     },
     {
       "word": "monday",
@@ -4576,9 +4579,9 @@
       "meaning": "수요일"
     },
     {
-      "word": "interested",
-      "phonetic": "/ˈɪntɝəstəd/, /ˈɪntɝɪstɪd/, /ˈɪntɹəstɪd/, /ˈɪntɹɪstɪd/",
-      "meaning": "관심 있는"
+      "word": "kettle",
+      "phonetic": "/ˈkɛtəɫ/",
+      "meaning": "주전자"
     },
     {
       "word": "ten",
@@ -4591,9 +4594,9 @@
       "meaning": "일곱"
     },
     {
-      "word": "whose",
-      "phonetic": "/ˈhuz/",
-      "meaning": "누구의"
+      "word": "cushion",
+      "phonetic": "/ˈkʊʃən/",
+      "meaning": "쿠션"
     },
     {
       "word": "eight",
@@ -4611,19 +4614,19 @@
       "meaning": "스물"
     },
     {
-      "word": "yours",
-      "phonetic": "/ˈjɔɹz/, /ˈjʊɹz/, /jɝz/",
-      "meaning": "당신의 것"
+      "word": "pillow",
+      "phonetic": "/ˈpɪɫoʊ/",
+      "meaning": "베개"
     },
     {
-      "word": "exciting",
-      "phonetic": "/ɪkˈsaɪtɪŋ/",
-      "meaning": "신나는, 흥미진진한"
+      "word": "carpet",
+      "phonetic": "/ˈkɑɹpət/",
+      "meaning": "양탄자"
     },
     {
-      "word": "dancing",
-      "phonetic": "/ˈdænsɪŋ/",
-      "meaning": "춤추기"
+      "word": "curtain",
+      "phonetic": "/ˈkɝtən/",
+      "meaning": "커튼"
     },
     {
       "word": "glasses",
@@ -4686,9 +4689,9 @@
       "meaning": "경찰관"
     },
     {
-      "word": "ours",
-      "phonetic": "/ˈaʊɝz/, /ˈaʊɹz/, /ˈɑɹz/",
-      "meaning": "우리의 것"
+      "word": "roof",
+      "phonetic": "/ˈɹuf/, /ˈɹʊf/",
+      "meaning": "지붕"
     },
     {
       "word": "sixty",
@@ -4746,9 +4749,9 @@
       "meaning": "열일곱"
     },
     {
-      "word": "hers",
-      "phonetic": "/ˈhɝz/, /hɝz/",
-      "meaning": "그녀의 것"
+      "word": "sink",
+      "phonetic": "/ˈsɪŋk/",
+      "meaning": "싱크"
     },
     {
       "word": "snowy",
@@ -4761,14 +4764,14 @@
       "meaning": "흐린"
     },
     {
-      "word": "cd",
-      "phonetic": "/ˌsiˈdi/",
-      "meaning": "컴팩트 디스크, CD"
+      "word": "wardrobe",
+      "phonetic": "/ˈwɔɹˌdɹoʊb/",
+      "meaning": "옷장"
     },
     {
-      "word": "use",
-      "phonetic": "/ˈjus/, /ˈjuz/",
-      "meaning": "쓰다"
+      "word": "parcel",
+      "phonetic": "/ˈpɑɹsəɫ/",
+      "meaning": "소포"
     },
     {
       "word": "back",
@@ -4797,25 +4800,24 @@
       "meaning": "다음의"
     },
     {
-      "word": "while",
-      "phonetic": "/ˈhwaɪɫ/, /ˈwaɪɫ/",
-      "meaning": "한참"
+      "word": "chalk",
+      "phonetic": "/ˈtʃɑk/, /ˈtʃɔk/",
+      "meaning": "백악"
     },
     {
       "word": "home",
       "phonetic": "/ˈhoʊm/",
-      "meaning": "고향"
+      "meaning": "집, 가정"
     },
     {
-      "word": "seem",
-      "phonetic": "/ˈsim/",
-      "meaning": "보이다"
+      "word": "glue",
+      "phonetic": "/ˈɡɫu/",
+      "meaning": "풀"
     },
     {
-      "word": "kind",
-      "phonetic": "/ˈkaɪnd/",
-      "meaning": "친절한",
-      "example": "Our new teacher is kind."
+      "word": "calculator",
+      "phonetic": "/ˈkæɫkjəˌɫeɪtɝ/",
+      "meaning": "계산기"
     },
     {
       "word": "early",
@@ -4838,19 +4840,19 @@
       "meaning": "낮다"
     },
     {
-      "word": "actually",
-      "phonetic": "/ˈækˌtʃuəɫi/, /ˈækʃəɫi/, /ˈæktʃɫi/",
-      "meaning": "사실"
+      "word": "keyboard",
+      "phonetic": "/ˈkiˌbɔɹd/",
+      "meaning": "자판"
     },
     {
-      "word": "ever",
-      "phonetic": "/ˈɛvɝ/",
-      "meaning": "언제든"
+      "word": "screen",
+      "phonetic": "/ˈskɹin/",
+      "meaning": "화면"
     },
     {
-      "word": "deal",
-      "phonetic": "/ˈdiɫ/",
-      "meaning": "합의"
+      "word": "headphone",
+      "phonetic": "/ˈhɛdˌfoʊn/",
+      "meaning": "헤드폰"
     },
     {
       "word": "return",
@@ -4863,24 +4865,24 @@
       "meaning": "투명"
     },
     {
-      "word": "remain",
-      "phonetic": "/ɹiˈmeɪn/, /ɹɪˈmeɪn/",
-      "meaning": "머무르다"
+      "word": "trumpet",
+      "phonetic": "/ˈtɹəmpət/",
+      "meaning": "트럼펫"
     },
     {
-      "word": "situation",
-      "phonetic": "/ˌsɪtʃuˈeɪʃən/",
-      "meaning": "상태"
+      "word": "flute",
+      "phonetic": "/ˈfɫut/",
+      "meaning": "플루트"
     },
     {
-      "word": "certain",
-      "phonetic": "/ˈsɝtən/",
-      "meaning": "확실하다"
+      "word": "whistle",
+      "phonetic": "/ˈhwɪsəɫ/, /ˈwɪsəɫ/",
+      "meaning": "휘파람을 불다"
     },
     {
-      "word": "act",
-      "phonetic": "/ˈækt/",
-      "meaning": "행위"
+      "word": "slide",
+      "phonetic": "/ˈsɫaɪd/",
+      "meaning": "슬라이드"
     },
     {
       "word": "road",
@@ -4889,49 +4891,49 @@
       "example": "Be careful when you cross the road."
     },
     {
-      "word": "national",
-      "phonetic": "/ˈnæʃənəɫ/, /ˈnæʃnəɫ/",
-      "meaning": "국가의"
+      "word": "roller",
+      "phonetic": "/ˈɹoʊɫɝ/",
+      "meaning": "롤러"
     },
     {
-      "word": "trade",
-      "phonetic": "/ˈtɹeɪd/",
-      "meaning": "거래"
+      "word": "helmet",
+      "phonetic": "/ˈhɛɫmət/",
+      "meaning": "투구"
     },
     {
-      "word": "common",
-      "phonetic": "/ˈkɑmən/",
-      "meaning": "상호"
+      "word": "boot",
+      "phonetic": "/ˈbut/",
+      "meaning": "장화"
     },
     {
-      "word": "century",
-      "phonetic": "/ˈsɛntʃɝi/",
-      "meaning": "세기"
+      "word": "sandal",
+      "phonetic": "/ˈsændəɫ/",
+      "meaning": "샌들"
     },
     {
-      "word": "response",
-      "phonetic": "/ɹiˈspɑns/, /ɹɪˈspɑns/",
-      "meaning": "대답"
+      "word": "zipper",
+      "phonetic": "/ˈzɪpɝ/",
+      "meaning": "패스너"
     },
     {
-      "word": "manage",
-      "phonetic": "/ˈmænədʒ/, /ˈmænɪdʒ/",
-      "meaning": "관리하다"
+      "word": "sleeve",
+      "phonetic": "/ˈsɫiv/",
+      "meaning": "소매"
     },
     {
-      "word": "recently",
-      "phonetic": "/ˈɹisənɫi/, /ˈɹisəntɫi/",
-      "meaning": "근래"
+      "word": "collar",
+      "phonetic": "/ˈkɑɫɝ/",
+      "meaning": "칼라"
     },
     {
-      "word": "represent",
-      "phonetic": "/ˌɹɛpɹɪˈzɛnt/",
-      "meaning": "대표하다"
+      "word": "cotton",
+      "phonetic": "/ˈkɑtən/, /ˈkɔtən/",
+      "meaning": "면화"
     },
     {
-      "word": "international",
-      "phonetic": "/ˌɪnɝˈnæʃənəɫ/, /ˌɪntɝˈnæʃənəɫ/",
-      "meaning": "국제"
+      "word": "bubble",
+      "phonetic": "/ˈbəbəɫ/",
+      "meaning": "거품"
     },
     {
       "word": "plant",
@@ -4939,14 +4941,14 @@
       "meaning": "식물"
     },
     {
-      "word": "influence",
-      "phonetic": "/ˈɪnfɫuəns/",
-      "meaning": "영향력"
+      "word": "faucet",
+      "phonetic": "/ˈfɔsət/",
+      "meaning": "수도꼭지"
     },
     {
-      "word": "attempt",
-      "phonetic": "/əˈtɛmpt/",
-      "meaning": "시도하다"
+      "word": "toaster",
+      "phonetic": "/ˈtoʊstɝ/",
+      "meaning": "토스터"
     },
     {
       "word": "simple",
@@ -4954,79 +4956,79 @@
       "meaning": "간단하다"
     },
     {
-      "word": "average",
-      "phonetic": "/ˈævɝɪdʒ/, /ˈævɹədʒ/, /ˈævɹɪdʒ/",
-      "meaning": "평균"
+      "word": "freezer",
+      "phonetic": "/ˈfɹizɝ/",
+      "meaning": "냉동고"
     },
     {
-      "word": "production",
-      "phonetic": "/pɝˈdəkʃən/, /pɹəˈdəkʃən/, /pɹoʊˈdəkʃən/",
-      "meaning": "생산"
+      "word": "jewel",
+      "phonetic": "/ˈdʒuəɫ/, /ˈdʒuɫ/",
+      "meaning": "보석"
     },
     {
-      "word": "drug",
-      "phonetic": "/ˈdɹəɡ/",
-      "meaning": "마약"
+      "word": "comet",
+      "phonetic": "/ˈkɑmət/",
+      "meaning": "혜성"
     },
     {
-      "word": "success",
-      "phonetic": "/səkˈsɛs/",
-      "meaning": "성공"
+      "word": "sweatshirt",
+      "phonetic": "/ˈswɛtˌʃɝt/",
+      "meaning": "스웨트셔츠"
     },
     {
-      "word": "director",
-      "phonetic": "/daɪˈɹɛktɝ/, /dɝˈɛktɝ/, /diˈɹɛktɝ/, /dɪˈɹɛktɝ/",
-      "meaning": "감독"
+      "word": "dragon",
+      "phonetic": "/ˈdɹæɡən/",
+      "meaning": "용"
     },
     {
-      "word": "achieve",
-      "phonetic": "/əˈtʃiv/",
-      "meaning": "달성하다"
+      "word": "lobster",
+      "phonetic": "/ˈɫɑbstɝ/",
+      "meaning": "대하"
     },
     {
-      "word": "cent",
-      "phonetic": "/ˈsɛnt/",
-      "meaning": "센트"
+      "word": "otter",
+      "phonetic": "/ˈɑtɝ/",
+      "meaning": "수달"
     },
     {
-      "word": "military",
-      "phonetic": "/ˈmɪɫəˌtɛɹi/, /ˈmɪɫɪˌtɛɹi/",
-      "meaning": "군대"
+      "word": "aquarium",
+      "phonetic": "/əˈkwɛɹiəm/",
+      "meaning": "수조"
     },
     {
-      "word": "nation",
-      "phonetic": "/ˈneɪʃən/",
-      "meaning": "국가"
+      "word": "beetle",
+      "phonetic": "/ˈbitəɫ/",
+      "meaning": "갑충"
     },
     {
-      "word": "statement",
-      "phonetic": "/ˈsteɪtmənt/",
-      "meaning": "성명"
+      "word": "syrup",
+      "phonetic": "/ˈsɝəp/, /ˈsɪɹəp/",
+      "meaning": "시럽"
     },
     {
-      "word": "strike",
-      "phonetic": "/ˈstɹaɪk/",
-      "meaning": "파업"
+      "word": "chestnut",
+      "phonetic": "/ˈtʃɛsˌnət/, /ˈtʃɛstˌnət/",
+      "meaning": "밤"
     },
     {
-      "word": "seek",
-      "phonetic": "/ˈsik/",
-      "meaning": "찾다"
+      "word": "sesame",
+      "phonetic": "/ˈsɛsəmi/",
+      "meaning": "참깨"
     },
     {
-      "word": "release",
-      "phonetic": "/ɹiˈɫis/",
-      "meaning": "석방하다"
+      "word": "drummer",
+      "phonetic": "/ˈdɹəmɝ/",
+      "meaning": "드러머"
     },
     {
-      "word": "solution",
-      "phonetic": "/səˈɫuʃən/",
-      "meaning": "해답"
+      "word": "lizard",
+      "phonetic": "/ˈɫɪzɝd/",
+      "meaning": "도마뱀"
     },
     {
-      "word": "pressure",
-      "phonetic": "/ˈpɹɛʃɝ/",
-      "meaning": "압력"
+      "word": "necklace",
+      "phonetic": "/ˈnɛkɫəs/",
+      "meaning": "목걸이"
     },
     {
       "word": "promise",
@@ -5034,54 +5036,54 @@
       "meaning": "약속하다"
     },
     {
-      "word": "task",
-      "phonetic": "/ˈtæsk/",
-      "meaning": "일"
+      "word": "bracelet",
+      "phonetic": "/ˈbɹeɪsɫət/",
+      "meaning": "팔찌"
     },
     {
-      "word": "doubt",
-      "phonetic": "/ˈdaʊt/",
-      "meaning": "의혹"
+      "word": "crow",
+      "phonetic": "/ˈkɹoʊ/",
+      "meaning": "까마귀"
     },
     {
-      "word": "bill",
-      "phonetic": "/ˈbɪɫ/",
-      "meaning": "법률안"
+      "word": "hedgehog",
+      "phonetic": "/ˈhɛdʒˌhɑɡ/",
+      "meaning": "고슴도치"
     },
     {
-      "word": "search",
-      "phonetic": "/ˈsɝtʃ/",
-      "meaning": "찾다"
+      "word": "goose",
+      "phonetic": "/ˈɡus/",
+      "meaning": "기러기"
     },
     {
-      "word": "basic",
-      "phonetic": "/ˈbeɪsɪk/",
-      "meaning": "기초의"
+      "word": "almond",
+      "phonetic": "/ˈɑmənd/",
+      "meaning": "아몬드"
     },
     {
-      "word": "debate",
-      "phonetic": "/dəˈbeɪt/",
-      "meaning": "의논"
+      "word": "cabbage",
+      "phonetic": "/ˈkæbədʒ/, /ˈkæbɪdʒ/",
+      "meaning": "양배추"
     },
     {
-      "word": "discover",
-      "phonetic": "/dɪˈskəvɝ/",
-      "meaning": "발견하다"
+      "word": "garlic",
+      "phonetic": "/ˈɡɑɹɫɪk/",
+      "meaning": "마늘"
     },
     {
-      "word": "daily",
-      "phonetic": "/ˈdeɪɫi/",
-      "meaning": "일보"
+      "word": "fountain",
+      "phonetic": "/ˈfaʊntən/",
+      "meaning": "분수"
     },
     {
-      "word": "university",
-      "phonetic": "/ˌjunəˈvɝsəti/",
-      "meaning": "대학"
+      "word": "thunder",
+      "phonetic": "/ˈθəndɝ/",
+      "meaning": "우레"
     },
     {
-      "word": "easily",
-      "phonetic": "/ˈizəɫi/",
-      "meaning": "쉽게"
+      "word": "lightning",
+      "phonetic": "/ˈɫaɪtnɪŋ/",
+      "meaning": "번개"
     },
     {
       "word": "shape",
@@ -5089,35 +5091,32 @@
       "meaning": "모양"
     },
     {
-      "word": "replace",
-      "phonetic": "/ˌɹiˈpɫeɪs/, /ɝˈpɫeɪs/",
-      "meaning": "교체하다"
+      "word": "cliff",
+      "phonetic": "/ˈkɫɪf/",
+      "meaning": "절벽"
     }
   ],
   "beginner": [
     {
-      "word": "duck",
-      "phonetic": "/ˈdək/",
-      "meaning": "오리",
-      "example": "The duck is swimming in the pond."
+      "word": "have",
+      "phonetic": "/ˈhæv/",
+      "meaning": "가지다, 먹다",
+      "example": "I have a new notebook."
     },
     {
-      "word": "carrot",
-      "phonetic": "/ˈkæɹət/, /ˈkɛɹət/",
-      "meaning": "당근",
-      "example": "The rabbit likes this carrot."
+      "word": "always",
+      "phonetic": "/ˈɔɫˌweɪz/, /ˈɔɫwiz/",
+      "meaning": "항상"
     },
     {
-      "word": "foot",
-      "phonetic": "/ˈfʊt/",
-      "meaning": "발",
-      "example": "She put one foot on the step."
+      "word": "often",
+      "phonetic": "/ˈɔfən/, /ˈɔftən/",
+      "meaning": "수시로"
     },
     {
-      "word": "sleep",
-      "phonetic": "/ˈsɫip/",
-      "meaning": "자다",
-      "example": "The baby sleeps in the afternoon."
+      "word": "there",
+      "phonetic": "/ˈðɛɹ/",
+      "meaning": "거기에"
     },
     {
       "word": "go",
@@ -5338,9 +5337,9 @@
       "meaning": "쏘다"
     },
     {
-      "word": "roof",
-      "phonetic": "/ˈɹuf/, /ˈɹʊf/",
-      "meaning": "지붕"
+      "word": "ours",
+      "phonetic": "/ˈaʊɝz/, /ˈaʊɹz/, /ˈɑɹz/",
+      "meaning": "우리의 것"
     },
     {
       "word": "unknown",
@@ -5358,9 +5357,9 @@
       "meaning": "젖은"
     },
     {
-      "word": "sink",
-      "phonetic": "/ˈsɪŋk/",
-      "meaning": "싱크"
+      "word": "hers",
+      "phonetic": "/ˈhɝz/, /hɝz/",
+      "meaning": "그녀의 것"
     },
     {
       "word": "hero",
@@ -5378,9 +5377,9 @@
       "meaning": "겁먹게 만들다"
     },
     {
-      "word": "mirror",
-      "phonetic": "/ˈmɪɹɝ/",
-      "meaning": "거울"
+      "word": "pay",
+      "phonetic": "/ˈpeɪ/",
+      "meaning": "지불하다"
     },
     {
       "word": "flood",
@@ -5408,9 +5407,9 @@
       "meaning": "먼지"
     },
     {
-      "word": "salt",
-      "phonetic": "/ˈsɔɫt/",
-      "meaning": "소금"
+      "word": "am",
+      "phonetic": "/ˈæm/, /ˈeɪˈɛm/",
+      "meaning": "~이다, 있다"
     },
     {
       "word": "injure",
@@ -5563,9 +5562,9 @@
       "meaning": "폴더"
     },
     {
-      "word": "soap",
-      "phonetic": "/ˈsoʊp/",
-      "meaning": "비누"
+      "word": "price",
+      "phonetic": "/ˈpɹaɪs/",
+      "meaning": "값"
     },
     {
       "word": "clerk",
@@ -5583,9 +5582,9 @@
       "meaning": "살인자"
     },
     {
-      "word": "bench",
-      "phonetic": "/ˈbɛntʃ/",
-      "meaning": "벤치"
+      "word": "period",
+      "phonetic": "/ˈpɪɹiəd/",
+      "meaning": "마침표"
     },
     {
       "word": "screw",
@@ -5608,9 +5607,9 @@
       "meaning": "할머님"
     },
     {
-      "word": "garlic",
-      "phonetic": "/ˈɡɑɹɫɪk/",
-      "meaning": "마늘"
+      "word": "discover",
+      "phonetic": "/dɪˈskəvɝ/",
+      "meaning": "발견하다"
     },
     {
       "word": "annoying",
@@ -5638,9 +5637,9 @@
       "meaning": "수중"
     },
     {
-      "word": "glove",
-      "phonetic": "/ˈɡɫəv/",
-      "meaning": "장갑"
+      "word": "type",
+      "phonetic": "/ˈtaɪp/",
+      "meaning": "유형"
     },
     {
       "word": "breeze",
@@ -5648,14 +5647,14 @@
       "meaning": "산들바람"
     },
     {
-      "word": "dessert",
-      "phonetic": "/dɪˈzɝt/",
-      "meaning": "후식"
+      "word": "maybe",
+      "phonetic": "/ˈmeɪbi/",
+      "meaning": "아마"
     },
     {
-      "word": "ankle",
-      "phonetic": "/ˈæŋkəɫ/",
-      "meaning": "발목"
+      "word": "join",
+      "phonetic": "/ˈdʒɔɪn/",
+      "meaning": "접속"
     },
     {
       "word": "asleep",
@@ -5663,9 +5662,9 @@
       "meaning": "잠들다"
     },
     {
-      "word": "soda",
-      "phonetic": "/ˈsoʊdə/",
-      "meaning": "탄산음료"
+      "word": "front",
+      "phonetic": "/ˈfɹənt/",
+      "meaning": "정면"
     },
     {
       "word": "spill",
@@ -5708,19 +5707,19 @@
       "meaning": "해변"
     },
     {
-      "word": "spaghetti",
-      "phonetic": "/spəˈɡɛti/",
-      "meaning": "스파게티"
+      "word": "vote",
+      "phonetic": "/ˈvoʊt/",
+      "meaning": "투표"
     },
     {
-      "word": "earring",
-      "phonetic": "/ˈiɹɪŋ/, /ˈɪɹɪŋ/",
-      "meaning": "귀고리"
+      "word": "realize",
+      "phonetic": "/ˈɹiəˌɫaɪz/",
+      "meaning": "실현하다"
     },
     {
-      "word": "badminton",
-      "phonetic": "/ˈbædˌmɪntən/",
-      "meaning": "배드민턴"
+      "word": "anybody",
+      "phonetic": "/ˈɛnibədi/",
+      "meaning": "누구든지"
     },
     {
       "word": "luckily",
@@ -5758,9 +5757,9 @@
       "meaning": "강조하다"
     },
     {
-      "word": "scissors",
-      "phonetic": "/ˈsɪzɝz/",
-      "meaning": "가위"
+      "word": "fight",
+      "phonetic": "/ˈfaɪt/",
+      "meaning": "싸움"
     },
     {
       "word": "powerful",
@@ -5793,9 +5792,9 @@
       "meaning": "그림자"
     },
     {
-      "word": "desert",
-      "phonetic": "/ˈdɛzɝt/, /dɪˈzɝt/",
-      "meaning": "사막"
+      "word": "sentence",
+      "phonetic": "/ˈsɛntəns/",
+      "meaning": "판결"
     },
     {
       "word": "slave",
@@ -5813,9 +5812,9 @@
       "meaning": "자랑"
     },
     {
-      "word": "shell",
-      "phonetic": "/ˈʃɛɫ/",
-      "meaning": "갑각"
+      "word": "first",
+      "phonetic": "/ˈfɝst/",
+      "meaning": "첫째"
     },
     {
       "word": "leather",
@@ -5838,19 +5837,19 @@
       "meaning": "원자"
     },
     {
-      "word": "chess",
-      "phonetic": "/ˈtʃɛs/",
-      "meaning": "체스"
+      "word": "item",
+      "phonetic": "/ˈaɪtəm/",
+      "meaning": "아이템"
     },
     {
-      "word": "insect",
-      "phonetic": "/ˈɪnˌsɛkt/",
-      "meaning": "곤충"
+      "word": "still",
+      "phonetic": "/ˈstɪɫ/",
+      "meaning": "여전히"
     },
     {
-      "word": "rope",
-      "phonetic": "/ˈɹoʊp/",
-      "meaning": "밧줄"
+      "word": "again",
+      "phonetic": "/əˈɡeɪn/, /əˈɡɛn/",
+      "meaning": "다시"
     },
     {
       "word": "third",
@@ -5868,9 +5867,9 @@
       "meaning": "각본"
     },
     {
-      "word": "hockey",
-      "phonetic": "/ˈhɑki/",
-      "meaning": "하키"
+      "word": "spot",
+      "phonetic": "/ˈspɑt/",
+      "meaning": "점"
     },
     {
       "word": "downtown",
@@ -5888,14 +5887,14 @@
       "meaning": "공포"
     },
     {
-      "word": "purple",
-      "phonetic": "/ˈpɝpəɫ/",
-      "meaning": "자주색"
+      "word": "discuss",
+      "phonetic": "/dɪˈskəs/",
+      "meaning": "토론하다"
     },
     {
-      "word": "lamp",
-      "phonetic": "/ˈɫæmp/",
-      "meaning": "램프"
+      "word": "keep",
+      "phonetic": "/ˈkip/",
+      "meaning": "지키다"
     },
     {
       "word": "photographer",
@@ -5923,9 +5922,9 @@
       "meaning": "신부"
     },
     {
-      "word": "fog",
-      "phonetic": "/ˈfɑɡ/, /ˈfɔɡ/",
-      "meaning": "안개"
+      "word": "sum",
+      "phonetic": "/ˈsəm/",
+      "meaning": "합계"
     },
     {
       "word": "earthquake",
@@ -5938,9 +5937,9 @@
       "meaning": "수표"
     },
     {
-      "word": "elephant",
-      "phonetic": "/ˈɛɫəfənt/",
-      "meaning": "코끼리"
+      "word": "then",
+      "phonetic": "/ˈðɛn/",
+      "meaning": "그때"
     },
     {
       "word": "champagne",
@@ -5948,19 +5947,19 @@
       "meaning": "샴페인"
     },
     {
-      "word": "refrigerator",
-      "phonetic": "/ɹəˈfɹɪdʒɝˌeɪtɝ/, /ɹɪˈfɹɪdʒɝˌeɪtɝ/",
-      "meaning": "냉장고"
+      "word": "yet",
+      "phonetic": "/ˈjɛt/",
+      "meaning": "이윽고"
     },
     {
-      "word": "mug",
-      "phonetic": "/ˈməɡ/",
-      "meaning": "머그"
+      "word": "mind",
+      "phonetic": "/ˈmaɪnd/",
+      "meaning": "마음"
     },
     {
-      "word": "playground",
-      "phonetic": "/ˈpɫeɪˌɡɹaʊn/, /ˈpɫeɪˌɡɹaʊnd/",
-      "meaning": "놀이터"
+      "word": "also",
+      "phonetic": "/ˈɔɫsoʊ/",
+      "meaning": "또한"
     },
     {
       "word": "cola",
@@ -5968,9 +5967,9 @@
       "meaning": "콜라"
     },
     {
-      "word": "wheelchair",
-      "phonetic": "/ˈhwiɫˌtʃɛɹ/, /ˈwiɫˌtʃɛɹ/",
-      "meaning": "휠체어"
+      "word": "false",
+      "phonetic": "/ˈfɔɫs/",
+      "meaning": "거짓"
     },
     {
       "word": "barber",
@@ -5978,14 +5977,14 @@
       "meaning": "이발사"
     },
     {
-      "word": "curry",
-      "phonetic": "/ˈkəɹi/, /ˈkɝi/",
-      "meaning": "카레"
+      "word": "everywhere",
+      "phonetic": "/ˈɛvɹiˌwɛɹ/, /ˈɛvɹihˌwɛɹ/",
+      "meaning": "어디에나"
     },
     {
-      "word": "spoon",
-      "phonetic": "/ˈspun/",
-      "meaning": "숟가락"
+      "word": "soon",
+      "phonetic": "/ˈsun/",
+      "meaning": "곧"
     },
     {
       "word": "scenery",
@@ -6438,14 +6437,14 @@
       "meaning": "그것 자체"
     },
     {
-      "word": "air",
-      "phonetic": "/ˈɛɹ/",
-      "meaning": "공기"
+      "word": "just",
+      "phonetic": "/ˈdʒəst/, /dʒɪst/",
+      "meaning": "공정하다"
     },
     {
-      "word": "space",
-      "phonetic": "/ˈspeɪs/",
-      "meaning": "공간"
+      "word": "now",
+      "phonetic": "/ˈnaʊ/",
+      "meaning": "지금"
     },
     {
       "word": "single",
@@ -6833,9 +6832,9 @@
       "meaning": "신용장"
     },
     {
-      "word": "ring",
-      "phonetic": "/ˈɹɪŋ/",
-      "meaning": "가락"
+      "word": "both",
+      "phonetic": "/ˈboʊθ/",
+      "meaning": "둘 다"
     },
     {
       "word": "dead",
@@ -6848,9 +6847,9 @@
       "meaning": "선호하다"
     },
     {
-      "word": "screen",
-      "phonetic": "/ˈskɹin/",
-      "meaning": "화면"
+      "word": "ever",
+      "phonetic": "/ˈɛvɝ/",
+      "meaning": "언제든"
     },
     {
       "word": "track",
@@ -6868,9 +6867,9 @@
       "meaning": "원래의"
     },
     {
-      "word": "rock",
-      "phonetic": "/ˈɹɑk/",
-      "meaning": "록팬"
+      "word": "own",
+      "phonetic": "/ˈoʊn/",
+      "meaning": "자신의"
     },
     {
       "word": "agency",
@@ -7153,9 +7152,9 @@
       "meaning": "가스"
     },
     {
-      "word": "net",
-      "phonetic": "/ˈnɛt/",
-      "meaning": "네트"
+      "word": "pop",
+      "phonetic": "/ˈpɑp/",
+      "meaning": "팝 음악, 인기 있는"
     },
     {
       "word": "secretary",
@@ -7263,9 +7262,9 @@
       "meaning": "줍다"
     },
     {
-      "word": "earth",
-      "phonetic": "/ˈɝθ/",
-      "meaning": "지면"
+      "word": "successful",
+      "phonetic": "/səkˈsɛsfəɫ/",
+      "meaning": "성공적"
     },
     {
       "word": "path",
@@ -7523,14 +7522,14 @@
       "meaning": "기반"
     },
     {
-      "word": "forest",
-      "phonetic": "/ˈfɔɹəst/, /ˈfɔɹɪst/",
-      "meaning": "숲"
+      "word": "living",
+      "phonetic": "/ˈɫɪvɪŋ/",
+      "meaning": "생존"
     },
     {
-      "word": "root",
-      "phonetic": "/ˈɹut/",
-      "meaning": "근수"
+      "word": "reading",
+      "phonetic": "/ˈɹɛdɪŋ/, /ˈɹidɪŋ/",
+      "meaning": "독서"
     },
     {
       "word": "west",
@@ -7713,9 +7712,9 @@
       "meaning": "격발"
     },
     {
-      "word": "plate",
-      "phonetic": "/ˈpɫeɪt/",
-      "meaning": "접시"
+      "word": "lot",
+      "phonetic": "/ˈɫɑt/, /ˈɫɔt/",
+      "meaning": "많은 양, 많이"
     },
     {
       "word": "steal",
@@ -7748,9 +7747,9 @@
       "meaning": "그위에"
     },
     {
-      "word": "coast",
-      "phonetic": "/ˈkoʊst/",
-      "meaning": "해안"
+      "word": "smoking",
+      "phonetic": "/ˈsmoʊkɪŋ/",
+      "meaning": "흡연"
     },
     {
       "word": "ill",
@@ -7828,14 +7827,14 @@
       "meaning": "노크"
     },
     {
-      "word": "seed",
-      "phonetic": "/ˈsid/",
-      "meaning": "맺히다"
+      "word": "pardon",
+      "phonetic": "/ˈpɑɹdən/",
+      "meaning": "용서"
     },
     {
-      "word": "lake",
-      "phonetic": "/ˈɫeɪk/",
-      "meaning": "호수"
+      "word": "best",
+      "phonetic": "/ˈbɛst/",
+      "meaning": "최선"
     },
     {
       "word": "metal",
@@ -7903,9 +7902,9 @@
       "meaning": "교육상의"
     },
     {
-      "word": "slide",
-      "phonetic": "/ˈsɫaɪd/",
-      "meaning": "슬라이드"
+      "word": "act",
+      "phonetic": "/ˈækt/",
+      "meaning": "행위"
     },
     {
       "word": "partly",
@@ -8003,9 +8002,9 @@
       "meaning": "정장"
     },
     {
-      "word": "gate",
-      "phonetic": "/ˈɡeɪt/",
-      "meaning": "관문"
+      "word": "something",
+      "phonetic": "/ˈsəmθɪŋ/",
+      "meaning": "무엇인가"
     },
     {
       "word": "mood",
@@ -8128,9 +8127,9 @@
       "meaning": "든든하다"
     },
     {
-      "word": "planet",
-      "phonetic": "/ˈpɫænət/",
-      "meaning": "운성"
+      "word": "recognize",
+      "phonetic": "/ˈɹɛkəɡˌnaɪz/",
+      "meaning": "알아보다"
     },
     {
       "word": "web",
@@ -8188,14 +8187,14 @@
       "meaning": "반한"
     },
     {
-      "word": "tap",
-      "phonetic": "/ˈtæp/",
-      "meaning": "똑똑"
+      "word": "another",
+      "phonetic": "/əˈnəðɝ/",
+      "meaning": "또 다른"
     },
     {
-      "word": "lip",
-      "phonetic": "/ˈɫɪp/",
-      "meaning": "귀때"
+      "word": "each",
+      "phonetic": "/ˈitʃ/",
+      "meaning": "각각의"
     },
     {
       "word": "lend",
@@ -8228,9 +8227,9 @@
       "meaning": "관례"
     },
     {
-      "word": "cream",
-      "phonetic": "/ˈkɹim/",
-      "meaning": "유지"
+      "word": "were",
+      "phonetic": "/ˈwɝ/",
+      "meaning": "~이었다"
     },
     {
       "word": "bury",
@@ -8243,9 +8242,9 @@
       "meaning": "용납"
     },
     {
-      "word": "valley",
-      "phonetic": "/ˈvæɫi/",
-      "meaning": "계곡"
+      "word": "swimming",
+      "phonetic": "/ˈswɪmɪŋ/",
+      "meaning": "수영"
     },
     {
       "word": "float",
@@ -8293,9 +8292,9 @@
       "meaning": "거칠게"
     },
     {
-      "word": "chest",
-      "phonetic": "/ˈtʃɛst/",
-      "meaning": "가슴"
+      "word": "off",
+      "phonetic": "/ˈɔf/",
+      "meaning": "꺼진, 떨어져"
     },
     {
       "word": "golf",
@@ -8378,9 +8377,9 @@
       "meaning": "신비"
     },
     {
-      "word": "ski",
-      "phonetic": "/ˈski/",
-      "meaning": "스키"
+      "word": "super",
+      "phonetic": "/ˈsupɝ/",
+      "meaning": "대단한, 아주 좋은"
     },
     {
       "word": "menu",
@@ -8388,9 +8387,9 @@
       "meaning": "메뉴"
     },
     {
-      "word": "coin",
-      "phonetic": "/ˈkɔɪn/",
-      "meaning": "동전"
+      "word": "every",
+      "phonetic": "/ˈɛvɝi/, /ˈɛvɹi/",
+      "meaning": "모든"
     },
     {
       "word": "trick",
@@ -8403,9 +8402,9 @@
       "meaning": "제조업자"
     },
     {
-      "word": "belt",
-      "phonetic": "/ˈbɛɫt/",
-      "meaning": "벨트"
+      "word": "must",
+      "phonetic": "/ˈməst/",
+      "meaning": "~해야 한다"
     },
     {
       "word": "invent",
@@ -8428,9 +8427,9 @@
       "meaning": "괴기한"
     },
     {
-      "word": "stomach",
-      "phonetic": "/ˈstəmək/",
-      "meaning": "위"
+      "word": "why",
+      "phonetic": "/ˈhwaɪ/, /ˈwaɪ/",
+      "meaning": "왜"
     },
     {
       "word": "championship",
@@ -8443,19 +8442,19 @@
       "meaning": "달리"
     },
     {
-      "word": "stamp",
-      "phonetic": "/ˈstæmp/",
-      "meaning": "도장"
+      "word": "under",
+      "phonetic": "/ˈəndɝ/",
+      "meaning": "아래에"
     },
     {
-      "word": "envelope",
-      "phonetic": "/ˈɛnvəˌɫoʊp/",
-      "meaning": "봉투"
+      "word": "yes",
+      "phonetic": "/ˈjɛs/",
+      "meaning": "네, 예"
     },
     {
-      "word": "printer",
-      "phonetic": "/ˈpɹɪnɝ/, /ˈpɹɪntɝ/",
-      "meaning": "인서기"
+      "word": "away",
+      "phonetic": "/əˈweɪ/",
+      "meaning": "멀리"
     },
     {
       "word": "anxious",
@@ -8468,9 +8467,9 @@
       "meaning": "모험"
     },
     {
-      "word": "fence",
-      "phonetic": "/ˈfɛns/",
-      "meaning": "펜싱"
+      "word": "anything",
+      "phonetic": "/ˈɛniˌθɪŋ/",
+      "meaning": "아무것"
     },
     {
       "word": "fiction",
@@ -8513,9 +8512,9 @@
       "meaning": "빛깔"
     },
     {
-      "word": "shore",
-      "phonetic": "/ˈʃɔɹ/",
-      "meaning": "지주"
+      "word": "technology",
+      "phonetic": "/tɛkˈnɑɫədʒi/",
+      "meaning": "기술"
     },
     {
       "word": "wander",
@@ -8543,9 +8542,9 @@
       "meaning": "멋진"
     },
     {
-      "word": "cheek",
-      "phonetic": "/ˈtʃik/",
-      "meaning": "측면"
+      "word": "nothing",
+      "phonetic": "/ˈnəθɪŋ/",
+      "meaning": "아무것도 없음"
     },
     {
       "word": "alright",
@@ -8613,9 +8612,9 @@
       "meaning": "바로"
     },
     {
-      "word": "diary",
-      "phonetic": "/ˈdaɪɝi/, /ˈdaɪɹi/",
-      "meaning": "일기장"
+      "word": "either",
+      "phonetic": "/ˈaɪðɝ/, /ˈiðɝ/",
+      "meaning": "둘 중 어느 쪽이든"
     },
     {
       "word": "disadvantage",
@@ -8703,9 +8702,9 @@
       "meaning": "단수"
     },
     {
-      "word": "stadium",
-      "phonetic": "/ˈsteɪdiəm/",
-      "meaning": "운동장"
+      "word": "ago",
+      "phonetic": "/əˈɡoʊ/",
+      "meaning": "전에"
     },
     {
       "word": "textbook",
@@ -8788,9 +8787,9 @@
       "meaning": "완료된"
     },
     {
-      "word": "calendar",
-      "phonetic": "/ˈkæɫəndɝ/",
-      "meaning": "역법"
+      "word": "along",
+      "phonetic": "/əˈɫɔŋ/",
+      "meaning": "따라"
     },
     {
       "word": "advertising",
@@ -8823,9 +8822,9 @@
       "meaning": "뛰기"
     },
     {
-      "word": "bush",
-      "phonetic": "/ˈbʊʃ/",
-      "meaning": "삼림지"
+      "word": "toward",
+      "phonetic": "/ˈtɔɹd/, /təˈwɔɹd/",
+      "meaning": "~쪽으로"
     },
     {
       "word": "developed",
@@ -8833,9 +8832,9 @@
       "meaning": "선진의"
     },
     {
-      "word": "kit",
-      "phonetic": "/ˈkɪt/",
-      "meaning": "장구"
+      "word": "everything",
+      "phonetic": "/ˈɛvɹiˌθɪŋ/",
+      "meaning": "만사"
     },
     {
       "word": "max",
@@ -8853,9 +8852,9 @@
       "meaning": "온화한"
     },
     {
-      "word": "battery",
-      "phonetic": "/ˈbætɝi/",
-      "meaning": "배터리"
+      "word": "blank",
+      "phonetic": "/ˈbɫæŋk/",
+      "meaning": "칸"
     },
     {
       "word": "beginning",
@@ -8863,9 +8862,9 @@
       "meaning": "개시"
     },
     {
-      "word": "basket",
-      "phonetic": "/ˈbæskət/",
-      "meaning": "바구니"
+      "word": "following",
+      "phonetic": "/ˈfɑɫoʊɪŋ/",
+      "meaning": "팔로잉"
     },
     {
       "word": "ending",
@@ -8873,14 +8872,14 @@
       "meaning": "결말"
     },
     {
-      "word": "bug",
-      "phonetic": "/ˈbəɡ/",
-      "meaning": "버그"
+      "word": "become",
+      "phonetic": "/bɪˈkəm/",
+      "meaning": "되다"
     },
     {
-      "word": "diamond",
-      "phonetic": "/ˈdaɪmənd/",
-      "meaning": "금강석"
+      "word": "someone",
+      "phonetic": "/ˈsəmˌwən/",
+      "meaning": "누군가"
     },
     {
       "word": "missing",
@@ -8938,9 +8937,9 @@
       "meaning": "걷기"
     },
     {
-      "word": "lane",
-      "phonetic": "/ˈɫeɪn/",
-      "meaning": "시골길"
+      "word": "else",
+      "phonetic": "/ˈɛɫs/",
+      "meaning": "그 밖에"
     },
     {
       "word": "blonde",
@@ -8948,14 +8947,14 @@
       "meaning": "금발의"
     },
     {
-      "word": "pan",
-      "phonetic": "/ˈpæn/",
-      "meaning": "상판대기"
+      "word": "better",
+      "phonetic": "/ˈbɛtɝ/",
+      "meaning": "더 좋은"
     },
     {
-      "word": "oak",
-      "phonetic": "/ˈoʊk/",
-      "meaning": "참나무"
+      "word": "closed",
+      "phonetic": "/ˈkɫoʊzd/",
+      "meaning": "닫은"
     },
     {
       "word": "drawing",
@@ -9013,19 +9012,19 @@
       "meaning": "멋대로함"
     },
     {
-      "word": "garage",
-      "phonetic": "/ɡɝˈɑʒ/",
-      "meaning": "개라지"
+      "word": "broken",
+      "phonetic": "/ˈbɹoʊkən/",
+      "meaning": "부서진"
     },
     {
-      "word": "comic",
-      "phonetic": "/ˈkɑmɪk/",
-      "meaning": "만화란"
+      "word": "excited",
+      "phonetic": "/ɪkˈsaɪtəd/, /ɪkˈsaɪtɪd/",
+      "meaning": "흥분하다"
     },
     {
-      "word": "crown",
-      "phonetic": "/ˈkɹaʊn/",
-      "meaning": "극치"
+      "word": "nationality",
+      "phonetic": "/ˌnæʃəˈnæɫəti/, /ˌnæʃəˈnæɫɪti/",
+      "meaning": "국적"
     },
     {
       "word": "worse",
@@ -9033,19 +9032,19 @@
       "meaning": "더욱 나쁜"
     },
     {
-      "word": "globe",
-      "phonetic": "/ˈɡɫoʊb/",
-      "meaning": "지구"
+      "word": "be",
+      "phonetic": "/ˈbi/, /bi/",
+      "meaning": "~이다"
     },
     {
-      "word": "receipt",
-      "phonetic": "/ɹiˈsit/, /ɹɪˈsit/",
-      "meaning": "납부"
+      "word": "and",
+      "phonetic": "/ˈænd/, /ənd/",
+      "meaning": "그리고"
     },
     {
-      "word": "toe",
-      "phonetic": "/ˈtoʊ/",
-      "meaning": "도구의 끝"
+      "word": "of",
+      "phonetic": "/ˈəv/",
+      "meaning": "~의"
     },
     {
       "word": "intelligent",
@@ -9068,9 +9067,9 @@
       "meaning": "만족한"
     },
     {
-      "word": "rugby",
-      "phonetic": "/ˈɹəɡbi/",
-      "meaning": "럭비"
+      "word": "the",
+      "phonetic": "/ˈðə/, /ðə/, /ði/",
+      "meaning": "그"
     },
     {
       "word": "convenient",
@@ -9088,9 +9087,9 @@
       "meaning": "십대의"
     },
     {
-      "word": "jam",
-      "phonetic": "/ˈdʒæm/",
-      "meaning": "곤경"
+      "word": "to",
+      "phonetic": "/ˈtu/, /tə/, /tɪ/",
+      "meaning": "~에"
     },
     {
       "word": "convenience",
@@ -9103,19 +9102,19 @@
       "meaning": "사이클링"
     },
     {
-      "word": "cleaner",
-      "phonetic": "/ˈkɫinɝ/",
-      "meaning": "청소부"
+      "word": "you",
+      "phonetic": "/ˈju/",
+      "meaning": "너, 당신"
     },
     {
-      "word": "cricket",
-      "phonetic": "/ˈkɹɪkət/, /ˈkɹɪkɪt/",
-      "meaning": "크리켓"
+      "word": "everybody",
+      "phonetic": "/ˈɛvɹiˌbɑdi/",
+      "meaning": "모두"
     },
     {
-      "word": "robin",
-      "phonetic": "/ˈɹɑbən/, /ˈɹɑbɪn/",
-      "meaning": "로빈"
+      "word": "he",
+      "phonetic": "/ˈhi/",
+      "meaning": "그"
     },
     {
       "word": "olympic",
@@ -9133,9 +9132,9 @@
       "meaning": "등반"
     },
     {
-      "word": "perfume",
-      "phonetic": "/pɝfˈjum/",
-      "meaning": "방향"
+      "word": "they",
+      "phonetic": "/ˈðeɪ/",
+      "meaning": "그들"
     },
     {
       "word": "hiking",
@@ -9153,9 +9152,9 @@
       "meaning": "필름통"
     },
     {
-      "word": "sunglasses",
-      "phonetic": "/ˈsənˌɡɫæsɪz/",
-      "meaning": "선글라스"
+      "word": "grammar",
+      "phonetic": "/ˈɡɹæmɝ/",
+      "meaning": "Korean: 문법"
     },
     {
       "word": "rap",
@@ -9173,14 +9172,14 @@
       "meaning": "친구"
     },
     {
-      "word": "honey",
-      "phonetic": "/ˈhəni/",
-      "meaning": "벌꿀"
+      "word": "war",
+      "phonetic": "/ˈwɔɹ/",
+      "meaning": "전쟁"
     },
     {
-      "word": "oven",
-      "phonetic": "/ˈəvən/",
-      "meaning": "화덕"
+      "word": "news",
+      "phonetic": "/ˈnjuz/, /ˈnuz/",
+      "meaning": "소식"
     },
     {
       "word": "sandy",
@@ -9188,14 +9187,14 @@
       "meaning": "모래의"
     },
     {
-      "word": "pepper",
-      "phonetic": "/ˈpɛpɝ/",
-      "meaning": "후추"
+      "word": "percent",
+      "phonetic": "/pɝˈsɛnt/",
+      "meaning": "퍼센트"
     },
     {
-      "word": "chef",
-      "phonetic": "/ˈʃɛf/",
-      "meaning": "주방장"
+      "word": "not",
+      "phonetic": "/ˈnɑt/",
+      "meaning": "아니다"
     },
     {
       "word": "slim",
@@ -9213,19 +9212,19 @@
       "meaning": "고사리"
     },
     {
-      "word": "cab",
-      "phonetic": "/ˈkæb/",
-      "meaning": "기관사실"
+      "word": "behind",
+      "phonetic": "/bɪˈhaɪnd/",
+      "meaning": "뒤에"
     },
     {
-      "word": "dam",
-      "phonetic": "/ˈdæm/",
-      "meaning": "댐"
+      "word": "site",
+      "phonetic": "/ˈsaɪt/",
+      "meaning": "장소, 현장"
     },
     {
-      "word": "lemon",
-      "phonetic": "/ˈɫɛmən/",
-      "meaning": "레몬"
+      "word": "rule",
+      "phonetic": "/ˈɹuɫ/",
+      "meaning": "규칙"
     },
     {
       "word": "reunion",
@@ -9238,9 +9237,9 @@
       "meaning": "당황한"
     },
     {
-      "word": "treasure",
-      "phonetic": "/ˈtɹɛʒɝ/",
-      "meaning": "보물"
+      "word": "we",
+      "phonetic": "/ˈwi/",
+      "meaning": "우리"
     },
     {
       "word": "inspiration",
@@ -9263,9 +9262,9 @@
       "meaning": "날조"
     },
     {
-      "word": "fork",
-      "phonetic": "/ˈfɔɹk/",
-      "meaning": "포크"
+      "word": "social",
+      "phonetic": "/ˈsoʊʃəɫ/",
+      "meaning": "사회적인"
     },
     {
       "word": "batch",
@@ -9273,14 +9272,14 @@
       "meaning": "일괄"
     },
     {
-      "word": "medal",
-      "phonetic": "/ˈmɛdəɫ/",
-      "meaning": "기장"
+      "word": "due",
+      "phonetic": "/ˈdju/, /ˈdu/",
+      "meaning": "예정된, ~때문에"
     },
     {
-      "word": "wool",
-      "phonetic": "/ˈwʊɫ/",
-      "meaning": "양털"
+      "word": "with",
+      "phonetic": "/ˈwɪð/, /ˈwɪθ/, /wɪð/, /wɪθ/",
+      "meaning": "~와 함께"
     },
     {
       "word": "surfing",
@@ -9293,9 +9292,9 @@
       "meaning": "독창력"
     },
     {
-      "word": "seafood",
-      "phonetic": "/ˈsiˌfud/",
-      "meaning": "어개"
+      "word": "this",
+      "phonetic": "/ˈðɪs/, /ðɪs/",
+      "meaning": "이것"
     },
     {
       "word": "runner",
@@ -9303,14 +9302,14 @@
       "meaning": "러너"
     },
     {
-      "word": "belly",
-      "phonetic": "/ˈbɛɫi/",
-      "meaning": "복부"
+      "word": "do",
+      "phonetic": "/ˈdu/",
+      "meaning": "하다"
     },
     {
-      "word": "cooler",
-      "phonetic": "/ˈkuɫɝ/",
-      "meaning": "냉각기"
+      "word": "everyone",
+      "phonetic": "/ˈɛvɹiˌwən/",
+      "meaning": "모든 사람"
     },
     {
       "word": "disco",
@@ -9333,14 +9332,14 @@
       "meaning": "투사"
     },
     {
-      "word": "balloon",
-      "phonetic": "/bəˈɫun/",
-      "meaning": "풍선"
+      "word": "here",
+      "phonetic": "/ˈhiɹ/",
+      "meaning": "이리"
     },
     {
-      "word": "ham",
-      "phonetic": "/ˈhæm/",
-      "meaning": "햄"
+      "word": "at",
+      "phonetic": "/ˈæt/",
+      "meaning": "~에서"
     },
     {
       "word": "worried",
@@ -9353,9 +9352,9 @@
       "meaning": "고철"
     },
     {
-      "word": "onion",
-      "phonetic": "/ˈənjən/",
-      "meaning": "양파냄새"
+      "word": "organize",
+      "phonetic": "/ˈɔɹɡəˌnaɪz/",
+      "meaning": "조직하다"
     },
     {
       "word": "peaceful",
@@ -9368,9 +9367,9 @@
       "meaning": "옷을 입은"
     },
     {
-      "word": "wallet",
-      "phonetic": "/ˈwɔɫət/",
-      "meaning": "바랑"
+      "word": "she",
+      "phonetic": "/ˈʃi/",
+      "meaning": "그녀"
     },
     {
       "word": "fare",
@@ -9378,9 +9377,9 @@
       "meaning": "대접받다"
     },
     {
-      "word": "pasta",
-      "phonetic": "/ˈpɑstə/",
-      "meaning": "파스타"
+      "word": "pollution",
+      "phonetic": "/pəˈɫuʃən/",
+      "meaning": "오염"
     },
     {
       "word": "beginner",
@@ -9408,14 +9407,14 @@
       "meaning": "멸종 위기의"
     },
     {
-      "word": "fridge",
-      "phonetic": "/ˈfɹɪdʒ/",
-      "meaning": "냉장고"
+      "word": "anyone",
+      "phonetic": "/ˈɛniˌwən/, /ˈɛniwən/",
+      "meaning": "누구든지"
     },
     {
-      "word": "blanket",
-      "phonetic": "/ˈbɫæŋkət/, /ˈbɫæŋkɪt/",
-      "meaning": "모포"
+      "word": "other",
+      "phonetic": "/ˈəðɝ/",
+      "meaning": "다른"
     },
     {
       "word": "bloom",
@@ -9423,9 +9422,9 @@
       "meaning": "쇳덩이"
     },
     {
-      "word": "violin",
-      "phonetic": "/vaɪəˈɫɪn/",
-      "meaning": "바이올린"
+      "word": "but",
+      "phonetic": "/ˈbət/",
+      "meaning": "그러나"
     },
     {
       "word": "mysterious",
@@ -9443,9 +9442,9 @@
       "meaning": "헐한"
     },
     {
-      "word": "flour",
-      "phonetic": "/ˈfɫaʊɝ/, /ˈfɫaʊɹ/",
-      "meaning": "밀가루"
+      "word": "from",
+      "phonetic": "/ˈfɹəm/",
+      "meaning": "~에서부터"
     },
     {
       "word": "bored",
@@ -9458,34 +9457,34 @@
       "meaning": "시골"
     },
     {
-      "word": "skate",
-      "phonetic": "/ˈskeɪt/",
-      "meaning": "홍어"
+      "word": "tight",
+      "phonetic": "/ˈtaɪt/",
+      "meaning": "꽉 끼는, 단단한"
     },
     {
-      "word": "bulb",
-      "phonetic": "/ˈbəɫb/",
-      "meaning": "구근"
+      "word": "by",
+      "phonetic": "/ˈbaɪ/",
+      "meaning": "~에 의해"
     },
     {
-      "word": "handbag",
-      "phonetic": "/ˈhændˌbæɡ/",
-      "meaning": "핸드백"
+      "word": "will",
+      "phonetic": "/ˈwɪɫ/, /wəɫ/",
+      "meaning": "~할 것이다"
     },
     {
-      "word": "drawer",
-      "phonetic": "/ˈdɹɔɹ/",
-      "meaning": "발행인"
+      "word": "or",
+      "phonetic": "/ˈɔɹ/, /ɝ/",
+      "meaning": "또는"
     },
     {
-      "word": "statue",
-      "phonetic": "/ˈstæˌtʃu/",
-      "meaning": "동상"
+      "word": "if",
+      "phonetic": "/ˈɪf/, /ɪf/",
+      "meaning": "만약"
     },
     {
-      "word": "dentist",
-      "phonetic": "/ˈdɛnɪst/, /ˈdɛntəst/, /ˈdɛntɪst/",
-      "meaning": "치과의사"
+      "word": "would",
+      "phonetic": "/ˈwʊd/",
+      "meaning": "~할 것이다"
     },
     {
       "word": "relaxed",
@@ -9503,9 +9502,9 @@
       "meaning": "볶다"
     },
     {
-      "word": "steak",
-      "phonetic": "/ˈsteɪk/",
-      "meaning": "스테이크"
+      "word": "about",
+      "phonetic": "/əˈbaʊt/",
+      "meaning": "~에 대해"
     },
     {
       "word": "fried",
@@ -9513,9 +9512,9 @@
       "meaning": "튀긴"
     },
     {
-      "word": "pear",
-      "phonetic": "/ˈpɛɹ/",
-      "meaning": "성양배"
+      "word": "interviewer",
+      "phonetic": "/ˈɪntɝvˌjuɝ/",
+      "meaning": "면접관"
     },
     {
       "word": "daylight",
@@ -9523,29 +9522,29 @@
       "meaning": "일광"
     },
     {
-      "word": "balcony",
-      "phonetic": "/ˈbæɫkəni/",
-      "meaning": "노대"
+      "word": "can",
+      "phonetic": "/ˈkæn/, /kən/",
+      "meaning": "~할 수 있다"
     },
     {
-      "word": "elevator",
-      "phonetic": "/ˈɛɫəˌveɪtɝ/",
-      "meaning": "승강기"
+      "word": "which",
+      "phonetic": "/ˈhwɪtʃ/, /ˈwɪtʃ/",
+      "meaning": "어느, 어떤"
     },
     {
-      "word": "painter",
-      "phonetic": "/ˈpeɪntɝ/",
-      "meaning": "화가"
+      "word": "get",
+      "phonetic": "/ˈɡɛt/, /ˈɡɪt/",
+      "meaning": "얻다"
     },
     {
-      "word": "cooker",
-      "phonetic": "/ˈkʊkɝ/",
-      "meaning": "요리 도구"
+      "word": "who",
+      "phonetic": "/ˈhu/",
+      "meaning": "누구"
     },
     {
-      "word": "dancer",
-      "phonetic": "/ˈdænsɝ/",
-      "meaning": "무용가"
+      "word": "when",
+      "phonetic": "/ˈhwɛn/, /ˈhwɪn/, /ˈwɛn/, /ˈwɪn/",
+      "meaning": "언제"
     },
     {
       "word": "fortunately",
@@ -9558,9 +9557,9 @@
       "meaning": "서점"
     },
     {
-      "word": "chin",
-      "phonetic": "/ˈtʃɪn/",
-      "meaning": "턱끝"
+      "word": "what",
+      "phonetic": "/ˈhwət/, /ˈwət/",
+      "meaning": "무엇"
     },
     {
       "word": "curse",
@@ -9578,9 +9577,9 @@
       "meaning": "관광"
     },
     {
-      "word": "stove",
-      "phonetic": "/ˈstoʊv/",
-      "meaning": "난로"
+      "word": "some",
+      "phonetic": "/ˈsəm/",
+      "meaning": "몇몇, 약간의"
     },
     {
       "word": "sadly",
@@ -9593,9 +9592,9 @@
       "meaning": "새뜻한"
     },
     {
-      "word": "snack",
-      "phonetic": "/ˈsnæk/",
-      "meaning": "간식"
+      "word": "out",
+      "phonetic": "/ˈaʊt/",
+      "meaning": "밖으로"
     },
     {
       "word": "learner",
@@ -9603,19 +9602,19 @@
       "meaning": "학습자"
     },
     {
-      "word": "sweater",
-      "phonetic": "/ˈswɛtɝ/",
-      "meaning": "스웨터"
+      "word": "no",
+      "phonetic": "/ˈnoʊ/",
+      "meaning": "아니요, 없음"
     },
     {
-      "word": "sock",
-      "phonetic": "/ˈsɑk/",
-      "meaning": "속스"
+      "word": "because",
+      "phonetic": "/bɪˈkɑz/, /bɪˈkəz/, /bɪˈkɔz/, /bɪkəz/",
+      "meaning": "왜냐하면"
     },
     {
-      "word": "jelly",
-      "phonetic": "/ˈdʒɛɫi/",
-      "meaning": "젤리"
+      "word": "could",
+      "phonetic": "/ˈkʊd/",
+      "meaning": "~할 수 있었다"
     },
     {
       "word": "petrol",
@@ -9638,9 +9637,9 @@
       "meaning": "바베큐"
     },
     {
-      "word": "shampoo",
-      "phonetic": "/ʃæmˈpu/",
-      "meaning": "샴푸"
+      "word": "than",
+      "phonetic": "/ˈðæn/, /ðən/",
+      "meaning": "~보다"
     },
     {
       "word": "sunlight",
@@ -9648,9 +9647,9 @@
       "meaning": "일광"
     },
     {
-      "word": "feather",
-      "phonetic": "/ˈfɛðɝ/",
-      "meaning": "깃털"
+      "word": "paragraph",
+      "phonetic": "/ˈpæɹəˌɡɹæf/, /ˈpɛɹəˌɡɹæf/",
+      "meaning": "단락"
     },
     {
       "word": "kindly",
@@ -9658,14 +9657,14 @@
       "meaning": "제발"
     },
     {
-      "word": "mushroom",
-      "phonetic": "/ˈməʃɹum/",
-      "meaning": "버섯"
+      "word": "girlfriend",
+      "phonetic": "/ˈɡɝɫˌfɹɛnd/",
+      "meaning": "여자친구"
     },
     {
-      "word": "toast",
-      "phonetic": "/ˈtoʊst/",
-      "meaning": "축배"
+      "word": "boyfriend",
+      "phonetic": "/ˈbɔɪˌfɹɛnd/",
+      "meaning": "남자친구"
     },
     {
       "word": "happily",
@@ -9678,19 +9677,19 @@
       "meaning": "붐비는"
     },
     {
-      "word": "dinosaur",
-      "phonetic": "/ˈdaɪnəˌsɔɹ/",
-      "meaning": "공룡"
+      "word": "business",
+      "phonetic": "/ˈbɪznəs/, /ˈbɪznɪs/",
+      "meaning": "매매"
     },
     {
-      "word": "scarf",
-      "phonetic": "/ˈskɑɹf/",
-      "meaning": "목도리"
+      "word": "second",
+      "phonetic": "/ˈsɛkənd/",
+      "meaning": "초"
     },
     {
-      "word": "clown",
-      "phonetic": "/ˈkɫaʊn/",
-      "meaning": "익살꾼"
+      "word": "into",
+      "phonetic": "/ˈɪntu/, /ɪnˈtu/, /ɪntə/",
+      "meaning": "~안으로"
     },
     {
       "word": "thief",
@@ -9703,14 +9702,14 @@
       "meaning": "원활하게"
     },
     {
-      "word": "sausage",
-      "phonetic": "/ˈsɔsədʒ/, /ˈsɔsɪdʒ/",
-      "meaning": "순대"
+      "word": "never",
+      "phonetic": "/ˈnɛvɝ/",
+      "meaning": "절대로"
     },
     {
-      "word": "cereal",
-      "phonetic": "/ˈsɪɹiəɫ/",
-      "meaning": "곡류"
+      "word": "case",
+      "phonetic": "/ˈkeɪs/",
+      "meaning": "경우"
     },
     {
       "word": "energetic",
@@ -9733,9 +9732,9 @@
       "meaning": "불행한"
     },
     {
-      "word": "headphone",
-      "phonetic": "/ˈhɛdˌfoʊn/",
-      "meaning": "헤드폰"
+      "word": "deal",
+      "phonetic": "/ˈdiɫ/",
+      "meaning": "합의"
     },
     {
       "word": "grilled",
@@ -9813,19 +9812,19 @@
       "meaning": "울다"
     },
     {
-      "word": "bookshelf",
-      "phonetic": "/ˈbʊkˌʃɛɫf/",
-      "meaning": "서가"
+      "word": "below",
+      "phonetic": "/biˈɫoʊ/, /bɪˈɫoʊ/",
+      "meaning": "아래에"
     },
     {
-      "word": "comb",
-      "phonetic": "/ˈkoʊm/",
-      "meaning": "소면기"
+      "word": "really",
+      "phonetic": "/ˈɹiɫi/, /ˈɹɪɫi/",
+      "meaning": "정말로"
     },
     {
-      "word": "sleepy",
-      "phonetic": "/ˈsɫipi/",
-      "meaning": "졸린"
+      "word": "let",
+      "phonetic": "/ˈɫɛt/",
+      "meaning": "임대하다"
     },
     {
       "word": "pronunciation",
@@ -9833,9 +9832,9 @@
       "meaning": "발음"
     },
     {
-      "word": "swimsuit",
-      "phonetic": "/ˈswɪmˌsut/",
-      "meaning": "수영복"
+      "word": "too",
+      "phonetic": "/ˈtu/",
+      "meaning": "또한"
     },
     {
       "word": "polite",
@@ -9848,9 +9847,9 @@
       "meaning": "바람이 센"
     },
     {
-      "word": "sunflower",
-      "phonetic": "/ˈsənˌfɫaʊɝ/",
-      "meaning": "해바라기"
+      "word": "once",
+      "phonetic": "/ˈwəns/",
+      "meaning": "한 번"
     },
     {
       "word": "pleasing",
@@ -9863,14 +9862,14 @@
       "meaning": "그들의 것"
     },
     {
-      "word": "pea",
-      "phonetic": "/ˈpi/",
-      "meaning": "완두"
+      "word": "smoke",
+      "phonetic": "/ˈsmoʊk/",
+      "meaning": "피우다"
     },
     {
-      "word": "blackboard",
-      "phonetic": "/ˈbɫækˌbɔɹd/",
-      "meaning": "칠판"
+      "word": "between",
+      "phonetic": "/bitˈwin/, /bɪtˈwin/",
+      "meaning": "사이에"
     },
     {
       "word": "roundabout",
@@ -9878,9 +9877,9 @@
       "meaning": "간접의"
     },
     {
-      "word": "tights",
-      "phonetic": "/ˈtaɪts/",
-      "meaning": "티이츠"
+      "word": "yourself",
+      "phonetic": "/ˈjɔɹsɛɫf/, /jɝˈsɛɫf/, /jʊɹˈsɛɫf/",
+      "meaning": "당신 자신"
     },
     {
       "word": "mosque",
@@ -9968,9 +9967,9 @@
       "meaning": "거북하다"
     },
     {
-      "word": "racket",
-      "phonetic": "/ˈɹækɪt/",
-      "meaning": "라켓"
+      "word": "same",
+      "phonetic": "/ˈseɪm/",
+      "meaning": "같은"
     },
     {
       "word": "silently",
@@ -9993,9 +9992,9 @@
       "meaning": "나타"
     },
     {
-      "word": "napkin",
-      "phonetic": "/ˈnæpkɪn/",
-      "meaning": "냅킨"
+      "word": "only",
+      "phonetic": "/ˈoʊnɫi/",
+      "meaning": "오직"
     },
     {
       "word": "annoy",
@@ -10008,29 +10007,29 @@
       "meaning": "더럽히다"
     },
     {
-      "word": "lemonade",
-      "phonetic": "/ˈɫɛməˈneɪd/",
-      "meaning": "레몬수"
+      "word": "any",
+      "phonetic": "/ˈɛni/",
+      "meaning": "어떤"
     },
     {
-      "word": "raincoat",
-      "phonetic": "/ˈɹeɪnˌkoʊt/",
-      "meaning": "레인 코트"
+      "word": "spell",
+      "phonetic": "/ˈspɛɫ/",
+      "meaning": "철자하다"
     },
     {
-      "word": "melon",
-      "phonetic": "/ˈmɛɫən/",
-      "meaning": "멜론"
+      "word": "code",
+      "phonetic": "/ˈkoʊd/",
+      "meaning": "법전"
     },
     {
-      "word": "thirsty",
-      "phonetic": "/ˈθɝsti/",
-      "meaning": "목마른"
+      "word": "word",
+      "phonetic": "/ˈwɝd/",
+      "meaning": "말"
     },
     {
-      "word": "cupboard",
-      "phonetic": "/ˈkəbɝd/",
-      "meaning": "벽장"
+      "word": "where",
+      "phonetic": "/ˈhwɛɹ/, /ˈwɛɹ/",
+      "meaning": "어디에"
     },
     {
       "word": "impatient",
@@ -10038,29 +10037,29 @@
       "meaning": "성마르다"
     },
     {
-      "word": "granddaughter",
-      "phonetic": "/ˈɡɹænˌdɔtɝ/",
-      "meaning": "손녀"
+      "word": "form",
+      "phonetic": "/ˈfɔɹm/",
+      "meaning": "형상"
     },
     {
-      "word": "grandson",
-      "phonetic": "/ˈɡɹændˌsən/",
-      "meaning": "손자"
+      "word": "sure",
+      "phonetic": "/ˈʃʊɹ/",
+      "meaning": "확실하다"
     },
     {
-      "word": "suitcase",
-      "phonetic": "/ˈsutˌkeɪs/",
-      "meaning": "슈트케이스"
+      "word": "should",
+      "phonetic": "/ˈʃʊd/",
+      "meaning": "~해야 한다"
     },
     {
-      "word": "tram",
-      "phonetic": "/ˈtɹæm/",
-      "meaning": "시가전차"
+      "word": "much",
+      "phonetic": "/ˈmətʃ/",
+      "meaning": "많이"
     },
     {
-      "word": "armchair",
-      "phonetic": "/ˈɑɹmˌtʃɛɹ/",
-      "meaning": "안락의자"
+      "word": "how",
+      "phonetic": "/ˈhaʊ/",
+      "meaning": "어떻게"
     },
     {
       "word": "drugstore",
@@ -10073,14 +10072,14 @@
       "meaning": "여경관"
     },
     {
-      "word": "astronaut",
-      "phonetic": "/ˈæstɹəˌnɑt/",
-      "meaning": "우주비행사"
+      "word": "may",
+      "phonetic": "/ˈmeɪ/",
+      "meaning": "~할지도 모른다"
     },
     {
-      "word": "escalator",
-      "phonetic": "/ˈɛskəˌɫeɪtɝ/",
-      "meaning": "자동계단"
+      "word": "many",
+      "phonetic": "/ˈmɛni/",
+      "meaning": "많은"
     },
     {
       "word": "lunchtime",
@@ -10088,9 +10087,9 @@
       "meaning": "점심때"
     },
     {
-      "word": "bookcase",
-      "phonetic": "/ˈbʊkˌkeɪs/",
-      "meaning": "책장"
+      "word": "before",
+      "phonetic": "/ˌbiˈfɔɹ/, /bɪˈfɔɹ/",
+      "meaning": "~전에"
     },
     {
       "word": "kilo",
@@ -11205,9 +11204,9 @@
       "meaning": "아무데도"
     },
     {
-      "word": "carpet",
-      "phonetic": "/ˈkɑɹpət/",
-      "meaning": "양탄자"
+      "word": "exciting",
+      "phonetic": "/ɪkˈsaɪtɪŋ/",
+      "meaning": "신나는, 흥미진진한"
     },
     {
       "word": "liquid",
@@ -11230,9 +11229,9 @@
       "meaning": "사라지다"
     },
     {
-      "word": "curtain",
-      "phonetic": "/ˈkɝtən/",
-      "meaning": "커튼"
+      "word": "dancing",
+      "phonetic": "/ˈdænsɪŋ/",
+      "meaning": "춤추기"
     },
     {
       "word": "darkness",
@@ -11395,9 +11394,9 @@
       "meaning": "원예"
     },
     {
-      "word": "bracelet",
-      "phonetic": "/ˈbɹeɪsɫət/",
-      "meaning": "팔찌"
+      "word": "task",
+      "phonetic": "/ˈtæsk/",
+      "meaning": "일"
     },
     {
       "word": "haven",
@@ -11435,9 +11434,9 @@
       "meaning": "체육관"
     },
     {
-      "word": "necklace",
-      "phonetic": "/ˈnɛkɫəs/",
-      "meaning": "목걸이"
+      "word": "pressure",
+      "phonetic": "/ˈpɹɛʃɝ/",
+      "meaning": "압력"
     },
     {
       "word": "technological",
@@ -11495,9 +11494,9 @@
       "meaning": "여배우"
     },
     {
-      "word": "fountain",
-      "phonetic": "/ˈfaʊntən/",
-      "meaning": "분수"
+      "word": "daily",
+      "phonetic": "/ˈdeɪɫi/",
+      "meaning": "매일의, 매일"
     },
     {
       "word": "grave",
@@ -11510,9 +11509,9 @@
       "meaning": "아침놀"
     },
     {
-      "word": "puppy",
-      "phonetic": "/ˈpəpi/",
-      "meaning": "강아지"
+      "word": "personal",
+      "phonetic": "/ˈpɝsɪnəɫ/",
+      "meaning": "개인의"
     },
     {
       "word": "sticker",
@@ -11530,14 +11529,14 @@
       "meaning": "조심"
     },
     {
-      "word": "lamb",
-      "phonetic": "/ˈɫæm/",
-      "meaning": "어린양"
+      "word": "was",
+      "phonetic": "/ˈwɑz/, /wəz/",
+      "meaning": "~이었다"
     },
     {
-      "word": "pillow",
-      "phonetic": "/ˈpɪɫoʊ/",
-      "meaning": "베개"
+      "word": "yours",
+      "phonetic": "/ˈjɔɹz/, /ˈjʊɹz/, /jɝz/",
+      "meaning": "당신의 것"
     },
     {
       "word": "wrist",
@@ -11565,9 +11564,9 @@
       "meaning": "생존자"
     },
     {
-      "word": "jewel",
-      "phonetic": "/ˈdʒuəɫ/, /ˈdʒuɫ/",
-      "meaning": "보석"
+      "word": "production",
+      "phonetic": "/pɝˈdəkʃən/, /pɹəˈdəkʃən/, /pɹoʊˈdəkʃən/",
+      "meaning": "생산"
     },
     {
       "word": "moss",
@@ -11660,9 +11659,9 @@
       "meaning": "잔해"
     },
     {
-      "word": "trumpet",
-      "phonetic": "/ˈtɹəmpət/",
-      "meaning": "트럼펫"
+      "word": "remain",
+      "phonetic": "/ɹiˈmeɪn/, /ɹɪˈmeɪn/",
+      "meaning": "머무르다"
     },
     {
       "word": "extensively",
@@ -11700,9 +11699,9 @@
       "meaning": "놀란"
     },
     {
-      "word": "kitten",
-      "phonetic": "/ˈkɪtən/",
-      "meaning": "나비 자묘 아깽이"
+      "word": "self",
+      "phonetic": "/ˈsɛɫf/",
+      "meaning": "자신"
     },
     {
       "word": "referee",
@@ -11850,9 +11849,9 @@
       "meaning": "모기"
     },
     {
-      "word": "whistle",
-      "phonetic": "/ˈhwɪsəɫ/, /ˈwɪsəɫ/",
-      "meaning": "휘파람을 불다"
+      "word": "certain",
+      "phonetic": "/ˈsɝtən/",
+      "meaning": "확실하다"
     },
     {
       "word": "last",
@@ -11930,9 +11929,9 @@
       "meaning": "회복시키다"
     },
     {
-      "word": "stream",
-      "phonetic": "/ˈstɹim/",
-      "meaning": "시내"
+      "word": "does",
+      "phonetic": "/ˈdəz/, /dɪz/",
+      "meaning": "하다"
     },
     {
       "word": "muscle",
@@ -12060,9 +12059,9 @@
       "meaning": "청각"
     },
     {
-      "word": "cotton",
-      "phonetic": "/ˈkɑtən/, /ˈkɔtən/",
-      "meaning": "면화"
+      "word": "represent",
+      "phonetic": "/ˌɹɛpɹɪˈzɛnt/",
+      "meaning": "대표하다"
     },
     {
       "word": "biography",
@@ -12110,9 +12109,9 @@
       "meaning": "해넘이"
     },
     {
-      "word": "sleeve",
-      "phonetic": "/ˈsɫiv/",
-      "meaning": "소매"
+      "word": "manage",
+      "phonetic": "/ˈmænədʒ/, /ˈmænɪdʒ/",
+      "meaning": "관리하다"
     },
     {
       "word": "recycling",
@@ -12135,9 +12134,9 @@
       "meaning": "거미"
     },
     {
-      "word": "pond",
-      "phonetic": "/ˈpɑnd/",
-      "meaning": "못"
+      "word": "them",
+      "phonetic": "/ˈðɛm/, /ðəm/",
+      "meaning": "그들을"
     },
     {
       "word": "passport",
@@ -12170,9 +12169,9 @@
       "meaning": "라이터"
     },
     {
-      "word": "cliff",
-      "phonetic": "/ˈkɫɪf/",
-      "meaning": "절벽"
+      "word": "replace",
+      "phonetic": "/ˌɹiˈpɫeɪs/, /ɝˈpɫeɪs/",
+      "meaning": "교체하다"
     },
     {
       "word": "gossip",
@@ -12220,9 +12219,9 @@
       "meaning": "마차"
     },
     {
-      "word": "crow",
-      "phonetic": "/ˈkɹoʊ/",
-      "meaning": "까마귀"
+      "word": "doubt",
+      "phonetic": "/ˈdaʊt/",
+      "meaning": "의혹"
     },
     {
       "word": "alphabet",
@@ -12240,9 +12239,9 @@
       "meaning": "생화학"
     },
     {
-      "word": "ambulance",
-      "phonetic": "/ˈæmbjəɫəns/",
-      "meaning": "앰뷸런스"
+      "word": "doing",
+      "phonetic": "/ˈduɪŋ/",
+      "meaning": "하는 것, 행동"
     },
     {
       "word": "cruel",
@@ -12255,9 +12254,9 @@
       "meaning": "결원"
     },
     {
-      "word": "strawberry",
-      "phonetic": "/ˈstɹɔˌbɛɹi/",
-      "meaning": "딸기"
+      "word": "us",
+      "phonetic": "/ˈəs/, /ˌjuˈɛs/",
+      "meaning": "우리를"
     },
     {
       "word": "voyage",
@@ -12265,9 +12264,9 @@
       "meaning": "여행"
     },
     {
-      "word": "flute",
-      "phonetic": "/ˈfɫut/",
-      "meaning": "플루트"
+      "word": "situation",
+      "phonetic": "/ˌsɪtʃuˈeɪʃən/",
+      "meaning": "상태"
     },
     {
       "word": "straw",
@@ -12285,9 +12284,9 @@
       "meaning": "치료되다"
     },
     {
-      "word": "wardrobe",
-      "phonetic": "/ˈwɔɹˌdɹoʊb/",
-      "meaning": "옷장"
+      "word": "cd",
+      "phonetic": "/ˌsiˈdi/",
+      "meaning": "컴팩트 디스크, CD"
     },
     {
       "word": "guilt",
@@ -12320,9 +12319,9 @@
       "meaning": "기타리스트"
     },
     {
-      "word": "parrot",
-      "phonetic": "/ˈpɛɹət/",
-      "meaning": "앵무새"
+      "word": "kill",
+      "phonetic": "/ˈkɪɫ/",
+      "meaning": "죽이다"
     },
     {
       "word": "shave",
@@ -13135,9 +13134,9 @@
       "meaning": "맑다"
     },
     {
-      "word": "boot",
-      "phonetic": "/ˈbut/",
-      "meaning": "장화"
+      "word": "common",
+      "phonetic": "/ˈkɑmən/",
+      "meaning": "흔한, 공통의"
     },
     {
       "word": "dealer",
@@ -13300,9 +13299,9 @@
       "meaning": "희극"
     },
     {
-      "word": "tent",
-      "phonetic": "/ˈtɛnt/",
-      "meaning": "텐트"
+      "word": "your",
+      "phonetic": "/ˈjɔɹ/, /ˈjʊɹ/",
+      "meaning": "당신의"
     },
     {
       "word": "probability",
@@ -13355,9 +13354,10 @@
       "meaning": "피를 흘리다"
     },
     {
-      "word": "calculator",
-      "phonetic": "/ˈkæɫkjəˌɫeɪtɝ/",
-      "meaning": "계산기"
+      "word": "kind",
+      "phonetic": "/ˈkaɪnd/",
+      "meaning": "친절한",
+      "example": "Our new teacher is kind."
     },
     {
       "word": "chemistry",
@@ -13440,9 +13440,9 @@
       "meaning": "핵심"
     },
     {
-      "word": "parcel",
-      "phonetic": "/ˈpɑɹsəɫ/",
-      "meaning": "소포"
+      "word": "use",
+      "phonetic": "/ˈjus/, /ˈjuz/",
+      "meaning": "쓰다"
     },
     {
       "word": "partial",
@@ -13665,9 +13665,9 @@
       "meaning": "보존"
     },
     {
-      "word": "ferry",
-      "phonetic": "/ˈfɛɹi/",
-      "meaning": "나룻배"
+      "word": "those",
+      "phonetic": "/ˈðoʊz/",
+      "meaning": "그것들"
     },
     {
       "word": "chaos",
@@ -13700,9 +13700,9 @@
       "meaning": "화려한"
     },
     {
-      "word": "collar",
-      "phonetic": "/ˈkɑɫɝ/",
-      "meaning": "칼라"
+      "word": "recently",
+      "phonetic": "/ˈɹisənɫi/, /ˈɹisəntɫi/",
+      "meaning": "근래"
     },
     {
       "word": "priest",
@@ -13735,9 +13735,9 @@
       "meaning": "순찰"
     },
     {
-      "word": "thunder",
-      "phonetic": "/ˈθəndɝ/",
-      "meaning": "우레"
+      "word": "university",
+      "phonetic": "/ˌjunəˈvɝsəti/",
+      "meaning": "대학"
     },
     {
       "word": "basement",
@@ -13750,9 +13750,9 @@
       "meaning": "우리"
     },
     {
-      "word": "helmet",
-      "phonetic": "/ˈhɛɫmət/",
-      "meaning": "투구"
+      "word": "trade",
+      "phonetic": "/ˈtɹeɪd/",
+      "meaning": "거래"
     },
     {
       "word": "geology",
@@ -13805,9 +13805,9 @@
       "meaning": "히터"
     },
     {
-      "word": "turtle",
-      "phonetic": "/ˈtɝtəɫ/",
-      "meaning": "거북"
+      "word": "matter",
+      "phonetic": "/ˈmætɝ/",
+      "meaning": "물질"
     },
     {
       "word": "librarian",
@@ -13845,9 +13845,9 @@
       "meaning": "땀"
     },
     {
-      "word": "freezer",
-      "phonetic": "/ˈfɹizɝ/",
-      "meaning": "냉동고"
+      "word": "average",
+      "phonetic": "/ˈævɝɪdʒ/, /ˈævɹədʒ/, /ˈævɹɪdʒ/",
+      "meaning": "평균"
     },
     {
       "word": "alcoholic",
@@ -13920,9 +13920,9 @@
       "meaning": "산술"
     },
     {
-      "word": "popcorn",
-      "phonetic": "/ˈpɑpˌkɔɹn/",
-      "meaning": "팝콘"
+      "word": "these",
+      "phonetic": "/ˈðiz/",
+      "meaning": "이것들"
     },
     {
       "word": "herd",
@@ -14015,9 +14015,9 @@
       "meaning": "조심스럽다"
     },
     {
-      "word": "sandal",
-      "phonetic": "/ˈsændəɫ/",
-      "meaning": "샌들"
+      "word": "century",
+      "phonetic": "/ˈsɛntʃɝi/",
+      "meaning": "세기"
     },
     {
       "word": "pollutant",
@@ -14325,9 +14325,9 @@
       "meaning": "박수"
     },
     {
-      "word": "bubble",
-      "phonetic": "/ˈbəbəɫ/",
-      "meaning": "거품"
+      "word": "international",
+      "phonetic": "/ˌɪnɝˈnæʃənəɫ/, /ˌɪntɝˈnæʃənəɫ/",
+      "meaning": "국제"
     },
     {
       "word": "constitution",
@@ -14460,9 +14460,9 @@
       "meaning": "묵다"
     },
     {
-      "word": "keyboard",
-      "phonetic": "/ˈkiˌbɔɹd/",
-      "meaning": "자판"
+      "word": "actually",
+      "phonetic": "/ˈækˌtʃuəɫi/, /ˈækʃəɫi/, /ˈæktʃɫi/",
+      "meaning": "사실"
     },
     {
       "word": "modem",
@@ -14510,9 +14510,9 @@
       "meaning": "관세"
     },
     {
-      "word": "camel",
-      "phonetic": "/ˈkæməɫ/",
-      "meaning": "낙타"
+      "word": "accord",
+      "phonetic": "/əˈkɔɹd/",
+      "meaning": "협정"
     },
     {
       "word": "railway",
@@ -14565,14 +14565,14 @@
       "meaning": "뿔"
     },
     {
-      "word": "cave",
-      "phonetic": "/ˈkeɪv/",
-      "meaning": "동굴"
+      "word": "beside",
+      "phonetic": "/ˌbiˈsaɪd/, /bɪˈsaɪd/",
+      "meaning": "곁에"
     },
     {
-      "word": "lightning",
-      "phonetic": "/ˈɫaɪtnɪŋ/",
-      "meaning": "번개"
+      "word": "easily",
+      "phonetic": "/ˈizəɫi/",
+      "meaning": "쉽게"
     },
     {
       "word": "scratch",
@@ -14625,9 +14625,9 @@
       "meaning": "서커스"
     },
     {
-      "word": "snowboard",
-      "phonetic": "/ˈsnoʊˌbɔɹd/",
-      "meaning": "스노우보드"
+      "word": "is",
+      "phonetic": "/ˈɪz/, /ɪz/",
+      "meaning": "~이다"
     },
     {
       "word": "gallon",
@@ -14705,14 +14705,14 @@
       "meaning": "돌파"
     },
     {
-      "word": "sweatshirt",
-      "phonetic": "/ˈswɛtˌʃɝt/",
-      "meaning": "스웨트셔츠"
+      "word": "success",
+      "phonetic": "/səkˈsɛs/",
+      "meaning": "성공"
     },
     {
-      "word": "cushion",
-      "phonetic": "/ˈkʊʃən/",
-      "meaning": "쿠션"
+      "word": "whose",
+      "phonetic": "/ˈhuz/",
+      "meaning": "누구의"
     },
     {
       "word": "dishwasher",
@@ -14745,9 +14745,9 @@
       "meaning": "파괴적"
     },
     {
-      "word": "comet",
-      "phonetic": "/ˈkɑmət/",
-      "meaning": "혜성"
+      "word": "drug",
+      "phonetic": "/ˈdɹəɡ/",
+      "meaning": "마약"
     },
     {
       "word": "warmth",
@@ -14755,9 +14755,9 @@
       "meaning": "온기"
     },
     {
-      "word": "volcano",
-      "phonetic": "/vɑɫˈkeɪnoʊ/",
-      "meaning": "화산"
+      "word": "did",
+      "phonetic": "/ˈdɪd/, /dɪd/",
+      "meaning": "했다"
     },
     {
       "word": "crossroads",
@@ -14785,9 +14785,9 @@
       "meaning": "가냘프다"
     },
     {
-      "word": "pineapple",
-      "phonetic": "/ˈpaɪˌnæpəɫ/",
-      "meaning": "파인애플"
+      "word": "my",
+      "phonetic": "/ˈmaɪ/",
+      "meaning": "나의"
     },
     {
       "word": "ape",
@@ -14795,9 +14795,9 @@
       "meaning": "원숭이"
     },
     {
-      "word": "kettle",
-      "phonetic": "/ˈkɛtəɫ/",
-      "meaning": "주전자"
+      "word": "interested",
+      "phonetic": "/ˈɪntɝəstəd/, /ˈɪntɝɪstɪd/, /ˈɪntɹəstɪd/, /ˈɪntɹɪstɪd/",
+      "meaning": "관심 있는"
     },
     {
       "word": "paddle",
@@ -14810,9 +14810,9 @@
       "meaning": "푸주한"
     },
     {
-      "word": "cabbage",
-      "phonetic": "/ˈkæbədʒ/, /ˈkæbɪdʒ/",
-      "meaning": "양배추"
+      "word": "debate",
+      "phonetic": "/dəˈbeɪt/",
+      "meaning": "의논"
     },
     {
       "word": "sidewalk",
@@ -14820,9 +14820,9 @@
       "meaning": "보도"
     },
     {
-      "word": "waterfall",
-      "phonetic": "/ˈwɔtɝˌfɔɫ/",
-      "meaning": "폭포"
+      "word": "her",
+      "phonetic": "/ˈhɝ/, /hɝ/",
+      "meaning": "그녀의"
     },
     {
       "word": "stall",
@@ -14840,9 +14840,9 @@
       "meaning": "고릴라"
     },
     {
-      "word": "cucumber",
-      "phonetic": "/ˈkjukəmbɝ/",
-      "meaning": "오이"
+      "word": "our",
+      "phonetic": "/ˈaʊɝ/, /ˈaʊɹ/, /ˈɑɹ/",
+      "meaning": "우리의"
     },
     {
       "word": "magician",
@@ -14860,9 +14860,9 @@
       "meaning": "어려움"
     },
     {
-      "word": "lettuce",
-      "phonetic": "/ˈɫɛtəs/",
-      "meaning": "상추"
+      "word": "their",
+      "phonetic": "/ˈðɛɹ/",
+      "meaning": "그들의"
     },
     {
       "word": "forehead",
@@ -14875,9 +14875,9 @@
       "meaning": "육필"
     },
     {
-      "word": "broccoli",
-      "phonetic": "/ˈbɹɑkəɫi/, /ˈbɹɑkɫi/",
-      "meaning": "브로콜리"
+      "word": "his",
+      "phonetic": "/ˈhɪz/, /hɪz/",
+      "meaning": "그의"
     },
     {
       "word": "take",
@@ -16592,9 +16592,9 @@
       "meaning": "갑옷"
     },
     {
-      "word": "shark",
-      "phonetic": "/ˈʃɑɹk/",
-      "meaning": "상어"
+      "word": "organization",
+      "phonetic": "/ˌɔɹɡənəˈzeɪʃən/",
+      "meaning": "조직"
     },
     {
       "word": "yearly",
@@ -16607,9 +16607,9 @@
       "meaning": "지형"
     },
     {
-      "word": "aquarium",
-      "phonetic": "/əˈkwɛɹiəm/",
-      "meaning": "수조"
+      "word": "military",
+      "phonetic": "/ˈmɪɫəˌtɛɹi/, /ˈmɪɫɪˌtɛɹi/",
+      "meaning": "군대"
     },
     {
       "word": "bouquet",
@@ -16627,9 +16627,9 @@
       "meaning": "신화"
     },
     {
-      "word": "canoe",
-      "phonetic": "/kəˈnu/",
-      "meaning": "카누"
+      "word": "are",
+      "phonetic": "/ˈɑɹ/, /ɝ/",
+      "meaning": "~이다"
     },
     {
       "word": "apprentice",
@@ -16662,9 +16662,9 @@
       "meaning": "주식"
     },
     {
-      "word": "otter",
-      "phonetic": "/ˈɑtɝ/",
-      "meaning": "수달"
+      "word": "cent",
+      "phonetic": "/ˈsɛnt/",
+      "meaning": "센트"
     },
     {
       "word": "inherent",
@@ -17027,9 +17027,9 @@
       "meaning": "취소"
     },
     {
-      "word": "roller",
-      "phonetic": "/ˈɹoʊɫɝ/",
-      "meaning": "롤러"
+      "word": "national",
+      "phonetic": "/ˈnæʃənəɫ/, /ˈnæʃnəɫ/",
+      "meaning": "국가의"
     },
     {
       "word": "chick",
@@ -17997,9 +17997,9 @@
       "meaning": "사랑적"
     },
     {
-      "word": "dragon",
-      "phonetic": "/ˈdɹæɡən/",
-      "meaning": "용"
+      "word": "director",
+      "phonetic": "/daɪˈɹɛktɝ/, /dɝˈɛktɝ/, /diˈɹɛktɝ/, /dɪˈɹɛktɝ/",
+      "meaning": "감독"
     },
     {
       "word": "bestiality",
@@ -18762,9 +18762,9 @@
       "meaning": "착취"
     },
     {
-      "word": "goose",
-      "phonetic": "/ˈɡus/",
-      "meaning": "기러기"
+      "word": "search",
+      "phonetic": "/ˈsɝtʃ/",
+      "meaning": "찾다"
     },
     {
       "word": "hostile",
@@ -18937,9 +18937,9 @@
       "meaning": "평판"
     },
     {
-      "word": "hedgehog",
-      "phonetic": "/ˈhɛdʒˌhɑɡ/",
-      "meaning": "고슴도치"
+      "word": "bill",
+      "phonetic": "/ˈbɪɫ/",
+      "meaning": "법률안"
     },
     {
       "word": "salve",
@@ -19432,9 +19432,9 @@
       "meaning": "십자말"
     },
     {
-      "word": "tractor",
-      "phonetic": "/ˈtɹæktɝ/",
-      "meaning": "트랙타"
+      "word": "him",
+      "phonetic": "/ˈhɪm/, /ɪm/",
+      "meaning": "그를"
     },
     {
       "word": "theta",
@@ -19457,9 +19457,9 @@
       "meaning": "작별"
     },
     {
-      "word": "pony",
-      "phonetic": "/ˈpoʊˌni/",
-      "meaning": "조랑말"
+      "word": "an",
+      "phonetic": "/ˈæn/, /ən/",
+      "meaning": "하나의"
     },
     {
       "word": "kindergarten",
@@ -20007,9 +20007,9 @@
       "meaning": "유명하다"
     },
     {
-      "word": "glue",
-      "phonetic": "/ˈɡɫu/",
-      "meaning": "풀"
+      "word": "seem",
+      "phonetic": "/ˈsim/",
+      "meaning": "보이다"
     },
     {
       "word": "ninth",
@@ -20187,9 +20187,9 @@
       "meaning": "부싯돌"
     },
     {
-      "word": "beetle",
-      "phonetic": "/ˈbitəɫ/",
-      "meaning": "갑충"
+      "word": "nation",
+      "phonetic": "/ˈneɪʃən/",
+      "meaning": "국가"
     },
     {
       "word": "wedge",
@@ -20202,9 +20202,9 @@
       "meaning": "게이머"
     },
     {
-      "word": "syrup",
-      "phonetic": "/ˈsɝəp/, /ˈsɪɹəp/",
-      "meaning": "시럽"
+      "word": "statement",
+      "phonetic": "/ˈsteɪtmənt/",
+      "meaning": "성명"
     },
     {
       "word": "monogram",
@@ -20217,9 +20217,9 @@
       "meaning": "바카라"
     },
     {
-      "word": "chestnut",
-      "phonetic": "/ˈtʃɛsˌnət/, /ˈtʃɛstˌnət/",
-      "meaning": "밤"
+      "word": "strike",
+      "phonetic": "/ˈstɹaɪk/",
+      "meaning": "파업"
     },
     {
       "word": "spear",
@@ -20227,9 +20227,9 @@
       "meaning": "창"
     },
     {
-      "word": "sesame",
-      "phonetic": "/ˈsɛsəmi/",
-      "meaning": "참깨"
+      "word": "seek",
+      "phonetic": "/ˈsik/",
+      "meaning": "찾다"
     },
     {
       "word": "subwoofer",
@@ -20262,9 +20262,9 @@
       "meaning": "카라테"
     },
     {
-      "word": "drummer",
-      "phonetic": "/ˈdɹəmɝ/",
-      "meaning": "드러머"
+      "word": "release",
+      "phonetic": "/ɹiˈɫis/",
+      "meaning": "석방하다"
     },
     {
       "word": "diva",
@@ -20544,9 +20544,9 @@
       "meaning": "공평하다"
     },
     {
-      "word": "lobster",
-      "phonetic": "/ˈɫɑbstɝ/",
-      "meaning": "대하"
+      "word": "achieve",
+      "phonetic": "/əˈtʃiv/",
+      "meaning": "달성하다"
     },
     {
       "word": "pops",
@@ -24829,9 +24829,9 @@
       "meaning": "벨소리"
     },
     {
-      "word": "zipper",
-      "phonetic": "/ˈzɪpɝ/",
-      "meaning": "패스너"
+      "word": "response",
+      "phonetic": "/ɹiˈspɑns/, /ɹɪˈspɑns/",
+      "meaning": "대답"
     },
     {
       "word": "lymphatic",
@@ -26481,9 +26481,9 @@
       "meaning": "클로버"
     },
     {
-      "word": "chalk",
-      "phonetic": "/ˈtʃɑk/, /ˈtʃɔk/",
-      "meaning": "백악"
+      "word": "while",
+      "phonetic": "/ˈhwaɪɫ/, /ˈwaɪɫ/",
+      "meaning": "한참"
     },
     {
       "word": "puppet",
@@ -26621,9 +26621,9 @@
       "meaning": "브랜디"
     },
     {
-      "word": "lizard",
-      "phonetic": "/ˈɫɪzɝd/",
-      "meaning": "도마뱀"
+      "word": "solution",
+      "phonetic": "/səˈɫuʃən/",
+      "meaning": "해답"
     },
     {
       "word": "blueprint",
@@ -26836,9 +26836,9 @@
       "meaning": "메인프레임"
     },
     {
-      "word": "yogurt",
-      "phonetic": "/ˈjoʊɡɝt/",
-      "meaning": "요구르트"
+      "word": "me",
+      "phonetic": "/ˈmi/",
+      "meaning": "나를"
     },
     {
       "word": "salute",
@@ -27301,9 +27301,9 @@
       "meaning": "땅거미"
     },
     {
-      "word": "faucet",
-      "phonetic": "/ˈfɔsət/",
-      "meaning": "수도꼭지"
+      "word": "influence",
+      "phonetic": "/ˈɪnfɫuəns/",
+      "meaning": "영향력"
     },
     {
       "word": "savanna",
@@ -27551,9 +27551,9 @@
       "meaning": "사생자"
     },
     {
-      "word": "almond",
-      "phonetic": "/ˈɑmənd/",
-      "meaning": "아몬드"
+      "word": "basic",
+      "phonetic": "/ˈbeɪsɪk/",
+      "meaning": "기초의"
     },
     {
       "word": "pillar",
@@ -27746,9 +27746,9 @@
       "meaning": "연무"
     },
     {
-      "word": "toaster",
-      "phonetic": "/ˈtoʊstɝ/",
-      "meaning": "토스터"
+      "word": "attempt",
+      "phonetic": "/əˈtɛmpt/",
+      "meaning": "시도하다"
     },
     {
       "word": "emblem",
@@ -27886,9 +27886,9 @@
       "meaning": "당원집회"
     },
     {
-      "word": "acorn",
-      "phonetic": "/ˈeɪkɔɹn/",
-      "meaning": "도토리"
+      "word": "had",
+      "phonetic": "/ˈhæd/",
+      "meaning": "가졌다"
     },
     {
       "word": "flirt",
@@ -28521,9 +28521,9 @@
       "meaning": "기름띠"
     },
     {
-      "word": "lollipop",
-      "phonetic": "/ˈɫɑɫiˌpɑp/",
-      "meaning": "막대사탕"
+      "word": "its",
+      "phonetic": "/ˈɪts/, /ɪts/",
+      "meaning": "그것의"
     },
     {
       "word": "impedance",
@@ -28991,9 +28991,9 @@
       "meaning": "이중모음"
     },
     {
-      "word": "squirrel",
-      "phonetic": "/ˈskwɝəɫ/",
-      "meaning": "다람쥐"
+      "word": "list",
+      "phonetic": "/ˈɫɪst/",
+      "meaning": "명부"
     },
     {
       "word": "quadratic",
@@ -29261,9 +29261,9 @@
       "meaning": "절망"
     },
     {
-      "word": "kiwi",
-      "phonetic": "/ˈkiwi/",
-      "meaning": "키위"
+      "word": "has",
+      "phonetic": "/ˈhæz/, /həz/",
+      "meaning": "가지고 있다"
     },
     {
       "word": "seasoning",

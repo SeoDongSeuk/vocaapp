@@ -1,0 +1,986 @@
+[
+  {
+    "removed": "have",
+    "added": "duck"
+  },
+  {
+    "removed": "always",
+    "added": "carrot"
+  },
+  {
+    "removed": "often",
+    "added": "foot"
+  },
+  {
+    "removed": "there",
+    "added": "sleep"
+  },
+  {
+    "removed": "then",
+    "added": "elephant"
+  },
+  {
+    "removed": "also",
+    "added": "playground"
+  },
+  {
+    "removed": "here",
+    "added": "balloon"
+  },
+  {
+    "removed": "business",
+    "added": "dinosaur"
+  },
+  {
+    "removed": "word",
+    "added": "thirsty"
+  },
+  {
+    "removed": "pay",
+    "added": "mirror"
+  },
+  {
+    "removed": "price",
+    "added": "soap"
+  },
+  {
+    "removed": "soon",
+    "added": "spoon"
+  },
+  {
+    "removed": "social",
+    "added": "fork"
+  },
+  {
+    "removed": "rule",
+    "added": "lemon"
+  },
+  {
+    "removed": "war",
+    "added": "honey"
+  },
+  {
+    "removed": "news",
+    "added": "oven"
+  },
+  {
+    "removed": "percent",
+    "added": "pepper"
+  },
+  {
+    "removed": "organize",
+    "added": "onion"
+  },
+  {
+    "removed": "pollution",
+    "added": "pasta"
+  },
+  {
+    "removed": "interviewer",
+    "added": "pear"
+  },
+  {
+    "removed": "girlfriend",
+    "added": "mushroom"
+  },
+  {
+    "removed": "boyfriend",
+    "added": "toast"
+  },
+  {
+    "removed": "never",
+    "added": "sausage"
+  },
+  {
+    "removed": "case",
+    "added": "cereal"
+  },
+  {
+    "removed": "second",
+    "added": "scarf"
+  },
+  {
+    "removed": "once",
+    "added": "sunflower"
+  },
+  {
+    "removed": "smoke",
+    "added": "pea"
+  },
+  {
+    "removed": "code",
+    "added": "melon"
+  },
+  {
+    "removed": "spell",
+    "added": "raincoat"
+  },
+  {
+    "removed": "other",
+    "added": "blanket"
+  },
+  {
+    "removed": "really",
+    "added": "comb"
+  },
+  {
+    "removed": "let",
+    "added": "sleepy"
+  },
+  {
+    "removed": "form",
+    "added": "granddaughter"
+  },
+  {
+    "removed": "sure",
+    "added": "grandson"
+  },
+  {
+    "removed": "matter",
+    "added": "turtle"
+  },
+  {
+    "removed": "organization",
+    "added": "shark"
+  },
+  {
+    "removed": "accord",
+    "added": "camel"
+  },
+  {
+    "removed": "list",
+    "added": "squirrel"
+  },
+  {
+    "removed": "kill",
+    "added": "parrot"
+  },
+  {
+    "removed": "personal",
+    "added": "puppy"
+  },
+  {
+    "removed": "self",
+    "added": "kitten"
+  },
+  {
+    "removed": "paragraph",
+    "added": "feather"
+  },
+  {
+    "removed": "pardon",
+    "added": "seed"
+  },
+  {
+    "removed": "best",
+    "added": "lake"
+  },
+  {
+    "removed": "living",
+    "added": "forest"
+  },
+  {
+    "removed": "reading",
+    "added": "root"
+  },
+  {
+    "removed": "swimming",
+    "added": "valley"
+  },
+  {
+    "removed": "sentence",
+    "added": "desert"
+  },
+  {
+    "removed": "smoking",
+    "added": "coast"
+  },
+  {
+    "removed": "technology",
+    "added": "shore"
+  },
+  {
+    "removed": "recognize",
+    "added": "planet"
+  },
+  {
+    "removed": "successful",
+    "added": "earth"
+  },
+  {
+    "removed": "just",
+    "added": "air"
+  },
+  {
+    "removed": "now",
+    "added": "space"
+  },
+  {
+    "removed": "first",
+    "added": "shell"
+  },
+  {
+    "removed": "still",
+    "added": "insect"
+  },
+  {
+    "removed": "become",
+    "added": "bug"
+  },
+  {
+    "removed": "again",
+    "added": "rope"
+  },
+  {
+    "removed": "keep",
+    "added": "lamp"
+  },
+  {
+    "removed": "yet",
+    "added": "refrigerator"
+  },
+  {
+    "removed": "mind",
+    "added": "mug"
+  },
+  {
+    "removed": "period",
+    "added": "bench"
+  },
+  {
+    "removed": "type",
+    "added": "glove"
+  },
+  {
+    "removed": "maybe",
+    "added": "dessert"
+  },
+  {
+    "removed": "join",
+    "added": "ankle"
+  },
+  {
+    "removed": "front",
+    "added": "soda"
+  },
+  {
+    "removed": "vote",
+    "added": "spaghetti"
+  },
+  {
+    "removed": "realize",
+    "added": "earring"
+  },
+  {
+    "removed": "fight",
+    "added": "scissors"
+  },
+  {
+    "removed": "discuss",
+    "added": "purple"
+  },
+  {
+    "removed": "item",
+    "added": "chess"
+  },
+  {
+    "removed": "spot",
+    "added": "hockey"
+  },
+  {
+    "removed": "sum",
+    "added": "fog"
+  },
+  {
+    "removed": "everywhere",
+    "added": "curry"
+  },
+  {
+    "removed": "false",
+    "added": "wheelchair"
+  },
+  {
+    "removed": "grammar",
+    "added": "sunglasses"
+  },
+  {
+    "removed": "blank",
+    "added": "battery"
+  },
+  {
+    "removed": "following",
+    "added": "basket"
+  },
+  {
+    "removed": "better",
+    "added": "pan"
+  },
+  {
+    "removed": "closed",
+    "added": "oak"
+  },
+  {
+    "removed": "broken",
+    "added": "garage"
+  },
+  {
+    "removed": "excited",
+    "added": "comic"
+  },
+  {
+    "removed": "nationality",
+    "added": "crown"
+  },
+  {
+    "removed": "be",
+    "added": "globe"
+  },
+  {
+    "removed": "and",
+    "added": "receipt"
+  },
+  {
+    "removed": "of",
+    "added": "toe"
+  },
+  {
+    "removed": "to",
+    "added": "jam"
+  },
+  {
+    "removed": "you",
+    "added": "cleaner"
+  },
+  {
+    "removed": "he",
+    "added": "robin"
+  },
+  {
+    "removed": "they",
+    "added": "perfume"
+  },
+  {
+    "removed": "not",
+    "added": "chef"
+  },
+  {
+    "removed": "we",
+    "added": "treasure"
+  },
+  {
+    "removed": "with",
+    "added": "wool"
+  },
+  {
+    "removed": "this",
+    "added": "seafood"
+  },
+  {
+    "removed": "do",
+    "added": "belly"
+  },
+  {
+    "removed": "at",
+    "added": "ham"
+  },
+  {
+    "removed": "she",
+    "added": "wallet"
+  },
+  {
+    "removed": "but",
+    "added": "violin"
+  },
+  {
+    "removed": "from",
+    "added": "flour"
+  },
+  {
+    "removed": "by",
+    "added": "bulb"
+  },
+  {
+    "removed": "will",
+    "added": "handbag"
+  },
+  {
+    "removed": "or",
+    "added": "drawer"
+  },
+  {
+    "removed": "if",
+    "added": "statue"
+  },
+  {
+    "removed": "would",
+    "added": "dentist"
+  },
+  {
+    "removed": "about",
+    "added": "steak"
+  },
+  {
+    "removed": "can",
+    "added": "balcony"
+  },
+  {
+    "removed": "which",
+    "added": "elevator"
+  },
+  {
+    "removed": "get",
+    "added": "painter"
+  },
+  {
+    "removed": "who",
+    "added": "cooker"
+  },
+  {
+    "removed": "when",
+    "added": "dancer"
+  },
+  {
+    "removed": "what",
+    "added": "chin"
+  },
+  {
+    "removed": "some",
+    "added": "stove"
+  },
+  {
+    "removed": "out",
+    "added": "snack"
+  },
+  {
+    "removed": "no",
+    "added": "sweater"
+  },
+  {
+    "removed": "because",
+    "added": "sock"
+  },
+  {
+    "removed": "could",
+    "added": "jelly"
+  },
+  {
+    "removed": "than",
+    "added": "shampoo"
+  },
+  {
+    "removed": "into",
+    "added": "clown"
+  },
+  {
+    "removed": "only",
+    "added": "napkin"
+  },
+  {
+    "removed": "any",
+    "added": "lemonade"
+  },
+  {
+    "removed": "where",
+    "added": "cupboard"
+  },
+  {
+    "removed": "should",
+    "added": "suitcase"
+  },
+  {
+    "removed": "much",
+    "added": "tram"
+  },
+  {
+    "removed": "how",
+    "added": "armchair"
+  },
+  {
+    "removed": "may",
+    "added": "astronaut"
+  },
+  {
+    "removed": "many",
+    "added": "escalator"
+  },
+  {
+    "removed": "before",
+    "added": "bookcase"
+  },
+  {
+    "removed": "between",
+    "added": "blackboard"
+  },
+  {
+    "removed": "too",
+    "added": "swimsuit"
+  },
+  {
+    "removed": "same",
+    "added": "racket"
+  },
+  {
+    "removed": "lot",
+    "added": "plate"
+  },
+  {
+    "removed": "both",
+    "added": "ring"
+  },
+  {
+    "removed": "own",
+    "added": "rock"
+  },
+  {
+    "removed": "something",
+    "added": "gate"
+  },
+  {
+    "removed": "another",
+    "added": "tap"
+  },
+  {
+    "removed": "each",
+    "added": "lip"
+  },
+  {
+    "removed": "off",
+    "added": "chest"
+  },
+  {
+    "removed": "why",
+    "added": "stomach"
+  },
+  {
+    "removed": "must",
+    "added": "belt"
+  },
+  {
+    "removed": "every",
+    "added": "coin"
+  },
+  {
+    "removed": "under",
+    "added": "stamp"
+  },
+  {
+    "removed": "yes",
+    "added": "envelope"
+  },
+  {
+    "removed": "away",
+    "added": "printer"
+  },
+  {
+    "removed": "anything",
+    "added": "fence"
+  },
+  {
+    "removed": "nothing",
+    "added": "cheek"
+  },
+  {
+    "removed": "either",
+    "added": "diary"
+  },
+  {
+    "removed": "ago",
+    "added": "stadium"
+  },
+  {
+    "removed": "along",
+    "added": "calendar"
+  },
+  {
+    "removed": "toward",
+    "added": "bush"
+  },
+  {
+    "removed": "everything",
+    "added": "kit"
+  },
+  {
+    "removed": "someone",
+    "added": "diamond"
+  },
+  {
+    "removed": "else",
+    "added": "lane"
+  },
+  {
+    "removed": "behind",
+    "added": "cab"
+  },
+  {
+    "removed": "site",
+    "added": "dam"
+  },
+  {
+    "removed": "due",
+    "added": "medal"
+  },
+  {
+    "removed": "everyone",
+    "added": "cooler"
+  },
+  {
+    "removed": "anyone",
+    "added": "fridge"
+  },
+  {
+    "removed": "below",
+    "added": "bookshelf"
+  },
+  {
+    "removed": "yourself",
+    "added": "tights"
+  },
+  {
+    "removed": "everybody",
+    "added": "cricket"
+  },
+  {
+    "removed": "the",
+    "added": "rugby"
+  },
+  {
+    "removed": "pop",
+    "added": "net"
+  },
+  {
+    "removed": "anybody",
+    "added": "badminton"
+  },
+  {
+    "removed": "tight",
+    "added": "skate"
+  },
+  {
+    "removed": "beside",
+    "added": "cave"
+  },
+  {
+    "removed": "super",
+    "added": "ski"
+  },
+  {
+    "removed": "is",
+    "added": "snowboard"
+  },
+  {
+    "removed": "are",
+    "added": "canoe"
+  },
+  {
+    "removed": "your",
+    "added": "tent"
+  },
+  {
+    "removed": "an",
+    "added": "pony"
+  },
+  {
+    "removed": "was",
+    "added": "lamb"
+  },
+  {
+    "removed": "us",
+    "added": "strawberry"
+  },
+  {
+    "removed": "my",
+    "added": "pineapple"
+  },
+  {
+    "removed": "has",
+    "added": "kiwi"
+  },
+  {
+    "removed": "our",
+    "added": "cucumber"
+  },
+  {
+    "removed": "their",
+    "added": "lettuce"
+  },
+  {
+    "removed": "his",
+    "added": "broccoli"
+  },
+  {
+    "removed": "am",
+    "added": "salt"
+  },
+  {
+    "removed": "were",
+    "added": "cream"
+  },
+  {
+    "removed": "me",
+    "added": "yogurt"
+  },
+  {
+    "removed": "these",
+    "added": "popcorn"
+  },
+  {
+    "removed": "its",
+    "added": "lollipop"
+  },
+  {
+    "removed": "had",
+    "added": "acorn"
+  },
+  {
+    "removed": "them",
+    "added": "pond"
+  },
+  {
+    "removed": "her",
+    "added": "waterfall"
+  },
+  {
+    "removed": "does",
+    "added": "stream"
+  },
+  {
+    "removed": "did",
+    "added": "volcano"
+  },
+  {
+    "removed": "those",
+    "added": "ferry"
+  },
+  {
+    "removed": "him",
+    "added": "tractor"
+  },
+  {
+    "removed": "doing",
+    "added": "ambulance"
+  },
+  {
+    "removed": "interested",
+    "added": "kettle"
+  },
+  {
+    "removed": "whose",
+    "added": "cushion"
+  },
+  {
+    "removed": "yours",
+    "added": "pillow"
+  },
+  {
+    "removed": "exciting",
+    "added": "carpet"
+  },
+  {
+    "removed": "dancing",
+    "added": "curtain"
+  },
+  {
+    "removed": "ours",
+    "added": "roof"
+  },
+  {
+    "removed": "hers",
+    "added": "sink"
+  },
+  {
+    "removed": "cd",
+    "added": "wardrobe"
+  },
+  {
+    "removed": "use",
+    "added": "parcel"
+  },
+  {
+    "removed": "while",
+    "added": "chalk"
+  },
+  {
+    "removed": "seem",
+    "added": "glue"
+  },
+  {
+    "removed": "kind",
+    "added": "calculator"
+  },
+  {
+    "removed": "actually",
+    "added": "keyboard"
+  },
+  {
+    "removed": "ever",
+    "added": "screen"
+  },
+  {
+    "removed": "deal",
+    "added": "headphone"
+  },
+  {
+    "removed": "remain",
+    "added": "trumpet"
+  },
+  {
+    "removed": "situation",
+    "added": "flute"
+  },
+  {
+    "removed": "certain",
+    "added": "whistle"
+  },
+  {
+    "removed": "act",
+    "added": "slide"
+  },
+  {
+    "removed": "national",
+    "added": "roller"
+  },
+  {
+    "removed": "trade",
+    "added": "helmet"
+  },
+  {
+    "removed": "common",
+    "added": "boot"
+  },
+  {
+    "removed": "century",
+    "added": "sandal"
+  },
+  {
+    "removed": "response",
+    "added": "zipper"
+  },
+  {
+    "removed": "manage",
+    "added": "sleeve"
+  },
+  {
+    "removed": "recently",
+    "added": "collar"
+  },
+  {
+    "removed": "represent",
+    "added": "cotton"
+  },
+  {
+    "removed": "international",
+    "added": "bubble"
+  },
+  {
+    "removed": "influence",
+    "added": "faucet"
+  },
+  {
+    "removed": "attempt",
+    "added": "toaster"
+  },
+  {
+    "removed": "average",
+    "added": "freezer"
+  },
+  {
+    "removed": "production",
+    "added": "jewel"
+  },
+  {
+    "removed": "drug",
+    "added": "comet"
+  },
+  {
+    "removed": "success",
+    "added": "sweatshirt"
+  },
+  {
+    "removed": "director",
+    "added": "dragon"
+  },
+  {
+    "removed": "achieve",
+    "added": "lobster"
+  },
+  {
+    "removed": "cent",
+    "added": "otter"
+  },
+  {
+    "removed": "military",
+    "added": "aquarium"
+  },
+  {
+    "removed": "nation",
+    "added": "beetle"
+  },
+  {
+    "removed": "statement",
+    "added": "syrup"
+  },
+  {
+    "removed": "strike",
+    "added": "chestnut"
+  },
+  {
+    "removed": "seek",
+    "added": "sesame"
+  },
+  {
+    "removed": "release",
+    "added": "drummer"
+  },
+  {
+    "removed": "solution",
+    "added": "lizard"
+  },
+  {
+    "removed": "pressure",
+    "added": "necklace"
+  },
+  {
+    "removed": "task",
+    "added": "bracelet"
+  },
+  {
+    "removed": "doubt",
+    "added": "crow"
+  },
+  {
+    "removed": "bill",
+    "added": "hedgehog"
+  },
+  {
+    "removed": "search",
+    "added": "goose"
+  },
+  {
+    "removed": "basic",
+    "added": "almond"
+  },
+  {
+    "removed": "debate",
+    "added": "cabbage"
+  },
+  {
+    "removed": "discover",
+    "added": "garlic"
+  },
+  {
+    "removed": "daily",
+    "added": "fountain"
+  },
+  {
+    "removed": "university",
+    "added": "thunder"
+  },
+  {
+    "removed": "easily",
+    "added": "lightning"
+  },
+  {
+    "removed": "replace",
+    "added": "cliff"
+  }
+]

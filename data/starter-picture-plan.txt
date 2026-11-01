@@ -1,0 +1,552 @@
+# Twemoji scene components. Each line explicitly maps words to one or more icons.
+👩|mother mum mom mommy woman lady
+👨|father dad daddy man guy sir mister
+👧|sister girl daughter
+👦|brother boy son kid child
+👶|baby birth
+👵|grandmother grandma granny
+👴|grandfather
+👧 🧒|granddaughter grandson
+👨‍👩‍👧‍👦|family parent cousin uncle aunt
+🧒 🧒|friend partner pair couple together meet group team people social collection
+🧑‍🏫|teacher teach lesson
+🧑‍🎓|student learn college elementary grade
+📖|book read reading reader story history dictionary textbook
+✏️|pencil write writer writing copy
+📄|paper page sheet form file
+🎒|bag
+🪑|chair seat sit
+🪑 📖|desk
+🍽️ 🪑|table
+🚪|door open close closed entrance
+🪟|window
+🛏️|bed bedroom sleep sleepy wake awake
+🐱|cat kitten
+🐶|dog puppy pet
+🐦|bird robin parrot
+🐟|fish fishing fisherman seafood
+🐰|rabbit
+🐴|horse pony ride
+🐮|cow
+🐷|pig
+🦁|lion
+🦆|duck
+🐘|elephant
+🦖|dinosaur
+🐢|turtle
+🦈|shark
+🐫|camel
+🐿️|squirrel
+🐵|monkey
+🐯|tiger
+🐻|bear
+🐍|snake
+🦋|butterfly
+🐝|bee
+🐑|sheep lamb wool
+🐀|rat mouse
+🐸|frog
+🦞|lobster
+🦦|otter
+🪲|beetle insect bug
+🦎|lizard
+🪿|goose
+🐦‍⬛|crow
+🦔|hedgehog
+🍎|apple fruit
+🍌|banana
+🍞|bread toast
+🍚|rice
+🥛|milk drink
+🥚|egg
+💧|water drop
+🧃|juice thirsty
+🍰|cake
+🥕|carrot vegetable
+🍋|lemon
+🍯|honey syrup sweet
+🫑|pepper
+🧅|onion
+🍝|pasta spaghetti
+🍐|pear
+🍄|mushroom
+🌭|sausage
+🥣|cereal breakfast meal
+🍕|pizza
+🍇|grape
+🫛|pea bean
+🍊|orange
+🧀|cheese
+🍫|chocolate
+🥔|potato
+🍪|cookie biscuit
+🥣|soup bowl
+🍅|tomato
+🥤|coke soda cola
+🍗|meat chicken
+🥩|beef steak
+🌽|corn
+🧈|butter
+🥪|sandwich
+🍔|burger hamburger
+🥓|ham
+🌾|flour
+🍿|popcorn
+🍭|lollipop candy
+🍓|strawberry
+🍍|pineapple
+🥝|kiwi
+🥒|cucumber
+🥬|lettuce cabbage
+🥦|broccoli
+🧂|salt
+🍨|cream dessert
+🥣 🥛|yogurt
+🥜|almond
+🧄|garlic
+☕|coffee cup tea mug
+🥗|salad healthy health
+🍴|eat dinner lunch feed food
+👨‍🍳|cook cooking chef cooker
+🍽️|dish plate
+🥄|spoon
+🍴|fork
+🔪|knife
+🍷|glass
+🍼|bottle
+🍬 👅|delicious taste
+☀️|sun sunny sunshine sunlight bright daylight
+🌙|moon night tonight
+⭐|star special
+🌤️|sky weather
+☁️|cloud cloudy
+🌧️|rain rainy
+❄️|snow snowy ice cold winter
+🌬️|wind windy breathe air
+🌳|tree forest oak wood
+🌸|flower rose lily beautiful pretty lovely blossom bloom
+🌻|sunflower
+🍃|leaf grass garden yard
+🏝️|island
+🏖️|beach holiday vacation seaside
+🌊|sea surf coast shore wave
+🏞️|river lake pond stream valley waterfall
+🌋|volcano
+🏔️|mountain hill ground cliff
+🌵|desert dry
+🪴|plant seed root grow life
+🌰|chestnut acorn
+🪶|feather
+🐚|shell
+🪨|stone rock pebble
+🕳️|hole
+🌱 ☀️|spring
+☀️ 🏖️|summer hot warm
+🍂|autumn
+🌩️|thunder lightning
+🌐|world earth globe country foreigner
+🪐|planet space
+💎|diamond jewel treasure gold rich expensive money
+🧠|head brain think idea mind memory clever smart intelligent
+👁️|eye see look sight watch
+👂|ear hear listen quiet noise sound
+👃|nose smell
+👄|mouth lip speak conversation speech talk
+🖐️|hand touch hold catch throw shake
+💪|arm strong strength
+🦵|leg knee
+🦶|foot ankle toe kick
+💇|hair haircut
+🙂|face smile happy glad merry enjoy nice good fun funny pleasure excellent wonderful great
+😢|sad cry lonely tear
+😡|angry
+😴|tired lazy rest
+😨|afraid ghost strange
+😳|shy surprise
+🤕|headache sick fever ill
+🦷|tooth dentist
+👅|tongue
+👕|body shirt clothes cloth cotton
+🧍|stand person self
+🧣|neck scarf
+🤷|shoulder
+🍑|bottom
+🦴|bone
+🫀|heart chest love care
+🤰|belly stomach full hungry
+🙂 ✨|handsome cute
+👋|come arrive hello hi bye goodbye greet
+🏠|house home hometown living room
+🏫|school classroom class
+🏞️ 🌳|park
+🦁 🦒|zoo
+🏪|store shop shopping sale sell buy supermarket
+🚌|bus
+🚗|car drive driver cab taxi
+🚲|bike bicycle cycling
+🚇|subway
+🚆|train tram station
+🚚|truck
+✈️|plane fly airport trip travel
+🚤|boat sailor sailing ship
+🛩️|jet
+🚢|ferry
+🚜|tractor farm farmer
+🚑|ambulance hospital
+🚀|rocket
+🚶|walk walking move way road path street lane
+🏃|run running runner quickly fast hurry
+🧸 🎲|play game toy
+🎤|sing singer song musician music pop opera concert karaoke
+🏊|swim swimming pool swimmer
+🦕|big large dinosaur
+🐁|small little tiny
+🔴|red
+🔵|blue
+🟢|green
+⚫|black dark
+⚪|white
+🟡|yellow
+🟣|purple
+🟤|brown
+🩷|pink
+↔️|long wide size line
+↕️|high tall height low
+🐘 ⚖️|heavy weight
+🪶 ⚖️|light thin
+📏|ruler inch length short
+🧱|wall building block build
+🕍|church temple
+🏭|factory work worker job
+🏢|office business company
+🏦|bank
+🏨|hotel
+🛒|market
+🏛️|palace museum
+🏰|castle
+🏟️|stadium
+🏥|nurse doctor medicine pill
+🧑‍🚒|fireman
+👮|officer cop police policeman policewoman
+🕵️|spy
+🧑‍🔬|scientist science test
+🧑‍🔧|engineer tool machine kit
+💻|computer keyboard program code
+🖥️|screen television tv video movie cinema
+📻|radio
+📷|camera photo photograph picture
+🎞️|film cartoon drama character actor
+📰|newspaper magazine reporter news
+✉️|letter message mail post envelope
+📱|phone call telephone
+📚|library bookstore bookshop bookshelf bookcase shelf
+📒|notebook diary homework note study
+✏️ 📖|underline
+🖍️|crayon chalk art draw drawing design painting paint painter
+🎨|color
+🖌️|paintbrush
+📎|paperclip
+🖨️|printer
+📋|list survey interview check review
+🧑‍🏫 💬|interviewer question ask answer topic subject describe
+🔤|word spell spelling language sentence
+📅|week month year day date today tomorrow yesterday weekend calendar
+⏰|hour minute clock time early late soon period
+⏱️|second
+🌅|morning begin start
+🌇|afternoon evening end finish
+🔄|repeat return change turn replace
+🎉|party birthday festival celebration celebrate event
+🎁|gift surprise
+🎈|balloon
+🎀|ribbon
+👸|princess queen
+🤴|prince king
+👑|crown royal
+🧚|fairy magic
+🧙|wizard
+🚿|shower wash clean
+🛁|bath bathroom bubble
+🚽|toilet
+🧼|soap
+🧴|shampoo
+🪥|toothbrush
+🧽|sponge
+🪣|bucket
+🧹|broom garbage dirty
+🪮|comb
+🧻|towel napkin
+🛋️|sofa couch armchair cushion
+🪞|mirror
+🛏️|pillow blanket
+🪟|curtain
+🧶|carpet rug wool
+🏠 ⬆️|roof
+🚰|sink tap faucet
+🗄️|wardrobe cupboard drawer
+📦|box parcel pack
+🧺|basket collection
+🧰|toolbox
+🧊|freezer fridge refrigerator cooler
+🍳|oven stove pan
+🫖|kettle teapot
+🔦|lamp bulb light
+💡|idea understand solve find solution ideal problem
+🪭|fan
+🏺|vase
+🖼️|poster album frame
+🚧|fence gate
+🪜|ladder
+🪑|bench
+👖|pants jeans trousers
+👗|dress skirt
+🧥|coat jacket raincoat
+🧶|sweater
+🧦|sock tights
+👟|shoe shoes sneaker
+🥾|boot
+🩴|sandal
+🧢|cap hat
+🩱|swimsuit
+👓|glasses sunglasses
+🧤|glove
+👜|handbag pocket
+👛|wallet
+📿|necklace bracelet ring
+👔|collar
+🪢|belt
+🧷|zipper button
+🪡|sew
+🧑‍🍳|apron
+🧴 ✨|perfume
+⚽|soccer football ball sport player coach contest match goal team
+🏀|basketball
+⚾|baseball bat
+🏐|volleyball
+🎾|tennis racket
+🏉|rugby
+🏏|cricket
+🏸|badminton
+🎿|ski
+🏂|snowboard
+🛹|skate skateboard
+⛸️|roller skating
+🏑|hockey
+🥅|net
+♟️|chess
+🎯|point aim goal
+🏅|medal win contest contest olympics lucky luck
+🎲|try chance choose
+➕|add sum
+➖|minus
+🔢|number code
+🎸|guitar
+🎹|piano
+🎻|violin
+🎺|trumpet
+🪈|flute
+🥁|drum drummer band
+🔔|bell whistle
+🎧|headphone
+🎠|playground fun
+🛝|slide
+🪁|kite
+🪀|doll toy
+🧸|doll teddy
+🚣|canoe
+⛺|tent camp
+🛏️ 🌙|sleep
+🪥 ✨|healthy
+💪 🪨|hard thick
+🐢|slow careful carefully
+💌|kiss love boyfriend girlfriend
+💑|wife husband marry
+🫂|help support agree thank thanks excuse please pardon
+🫱|give bring carry feed
+🛑|stop wrong bad poor rude
+✅|correct true real really sure ready okay fine fair right well clear simple easy
+❌|false never no not wrong miss mistake
+↗️|right
+↖️|left
+🔙|back
+⏭️|next following
+🪙|coin cent money dollar price pay spend
+💵|dollar
+🤔|believe think doubt wonder seem
+💭|dream wish hope forget remember
+👀|show watch look seek sight
+🔑|key owner save
+🔒|close closed cover hide
+👐|open free
+🦸|hero leader officer special important
+🧒 🌱|young age child childhood
+🧓|old elderly
+✨|new fresh interesting wonderful excellent
+🧩|piece part skill problem solve clever difficult
+🚶 🐢|slowly slow
+🏃 💨|fast quickly hurry
+🙅|bad wrong ugly rude strict
+🤝|join meet together partner agree conversation
+🧑 🧑|pair group people
+🕯️|peace quiet
+⚓|sailor port
+🔍|find search check review
+📐|shape circle square triangle design
+🟠|circle
+🏆|success winner contest champion
+📝|poem story word rule
+📍|place address center side corner row section station location
+🧍|stand
+🧑‍🏭|smith worker work
+🍽️|food meal
+🚀|high climb
+🧗|climb
+🫙|jar
+🔋|battery
+📡|technology
+🌱 💧|care grow
+🤧|sick fever
+🌡️|hot cold
+👨‍👩‍👧‍👦|home family parent
+🎓|classmate student
+👩‍🍳|waitress waiter
+🎧 🎶|song singing
+⛲|fountain
+🏕️|picnic
+🏔️ 🕳️|cave
+✨ 🕰️|happen moment already
+🟫 🏠|floor
+🃏|card
+🍈|melon
+🏫 🚪|hall
+📦|thing
+🖐️ 📦|put fill
+📋 ✅|order plan practice habit course
+🏘️|town city visit
+🏃|action
+🎭|stage comic boring
+🕓|quarter
+💃|dance dancing dancer
+🗺️|map
+🍳 🏠|kitchen
+🧂 🍬|sugar
+🖊️|pen
+⛏️|dig
+🥁 🚶|march
+🖌️|brush
+🧑 💬|meeting suggestion
+😊 ❤️|feeling
+🎨 🎸|hobby
+🪧|sign
+🪵|board
+😎|cool
+🎟️|ticket
+☂️|umbrella
+🧠 💡|know
+🗣️|tell
+🔴 🔵|different
+🐷|fat
+🪚|saw
+1|one
+2|two
+🎁 🙏|need
+🪢|rope
+🏷️|name
+👕 🧍|wear
+🌾|field
+💎 👂|earring
+🐾|animal
+✂️|scissors
+🔥|fire
+😟|worry sorry
+🎶 🏠|club bar
+🎯|middle
+🍽️ 🏠|restaurant
+🧑‍💻 ⏰|busy
+🌫️|fog foggy
+🧑 🏠|guest
+🌉|bridge
+😱|terrible
+🍛|curry
+🛞|wheel
+🦽|wheelchair
+🧪|tube
+🗼|tower
+🚩|flag
+🙏|pray promise
+🏠 🚗|garage
+🦃|turkey
+🧾|receipt
+🫙 🍓|jam jelly
+🧹|cleaner
+🗿|statue
+🏠 🌤️|balcony
+🛗|elevator
+🙂 👇|chin
+🍪 🧃|snack
+🤡|clown
+🍋 🧃|lemonade
+🧳|suitcase
+🧑‍🚀|astronaut
+🪜 🏬|escalator
+🏫 ✏️|blackboard
+📮|stamp
+🙂 🫳|cheek
+🌿|bush
+🏞️ 🧱|dam
+❤️ ⭐|favorite dear
+🧸 🐰|beside
+📅 🔄|everyday
+📅 1|january
+📅 2|february
+📅 4|april
+📅 6|june
+📅 7|july
+📅 8|august
+📅 9|september
+📅 10|october
+📅 11|november
+📅 12|december
+📅 Mon|monday
+📅 Tue|tuesday
+📅 Wed|wednesday
+📅 Thu|thursday
+📅 Fri|friday
+📅 Sat|saturday
+📅 Sun|sunday
+3|three
+4|four
+5|five
+6|six
+7|seven
+8|eight
+9|nine
+10|ten
+11|eleven
+12|twelve
+13|thirteen
+14|fourteen
+15|fifteen
+16|sixteen
+17|seventeen
+18|eighteen
+19|nineteen
+20|twenty
+30|thirty
+40|forty
+50|fifty
+60|sixty
+70|seventy
+80|eighty
+90|ninety
+🧴 📄|glue
+🧮|calculator
+🧑 👥|member
+🪖|helmet
+👕 💪|sleeve
+🍞 🔥|toaster
+☄️|comet
+👕|sweatshirt
+🐉|dragon
+🐟 🪟|aquarium
+🌱 🥯|sesame

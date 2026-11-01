@@ -1,9 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import { useEffect, useRef, useState } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Linking, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import AdMobBanner from './components/AdMobBanner';
+import StarterWordIllustration from './components/StarterWordIllustration';
 import { WORD_LEVEL, wordsForLevel, type LevelId, type Word } from './vocabulary';
 
 type Screen = 'splash' | 'welcome' | 'home' | 'study' | 'studyResult' | 'countdown' | 'playing' | 'result';
@@ -14,7 +15,7 @@ const ROUND_SECONDS = 60;
 const STUDY_SESSION_SIZE = 10;
 const WELCOME_COMPLETED_KEY = 'wordrush.welcome.completed';
 const LEVELS: { id: LevelId; title: string; english: string; description: string }[] = [
-  { id: 'starter', title: '입문', english: 'STARTER', description: '영어를 막 시작하는 학습자를 위한 가장 기초 단어예요.' },
+  { id: 'starter', title: '입문', english: 'STARTER', description: '유아를 위한 그림으로 배우는 생활 단어예요.' },
   { id: 'beginner', title: '초급', english: 'BEGINNER', description: '초등학생을 위한 생활 기초 단어예요.' },
   { id: 'intermediate', title: '중급', english: 'INTERMEDIATE', description: '중·고등학생 수준의 학교와 독해 단어예요.' },
   { id: 'advanced', title: '고급', english: 'ADVANCED', description: '대학 강의와 학술 글에서 쓰는 단어예요.' },
@@ -447,6 +448,7 @@ export default function App() {
               </Pressable>
             )}
             <Text style={styles.homeFootnote}>원하는 단계에서 학습이나 1분 퀴즈를 시작해 보세요</Text>
+            <Text style={styles.artCredit} onPress={() => { void Linking.openURL('https://github.com/jdecked/twemoji').catch(() => undefined); }}>그림: Twemoji · CC BY 4.0</Text>
           </ScrollView>
           <AdMobBanner />
         </View>
@@ -472,10 +474,9 @@ export default function App() {
             <View style={[styles.studyProgressFill, { width: `${((studyIndex + 1) / Math.max(studyWords.length, 1)) * 100}%` }]} />
           </View>
           {studyWords[studyIndex] && (
-            <View style={[styles.flashcard, studyRevealed && styles.flashcardOpen]}>
-              <Text style={styles.flashcardLabel}>영어 단어</Text>
-              <Text style={styles.flashcardWord}>{studyWords[studyIndex].word}</Text>
-              <Text style={styles.flashcardPhonetic}>{studyWords[studyIndex].phonetic}</Text>
+            <ScrollView style={[styles.flashcard, studyRevealed && styles.flashcardOpen]} contentContainerStyle={styles.flashcardContent} showsVerticalScrollIndicator={false}>
+              {selectedLevel === 'starter' && <StarterWordIllustration word={studyWords[studyIndex].word} />}
+              <Text style={styles.flashcardWord} numberOfLines={1} adjustsFontSizeToFit minimumFontScale={0.6}>{studyWords[studyIndex].word}</Text>
               <View style={styles.flashcardDivider} />
               {studyRevealed ? (
                 <>
@@ -490,7 +491,7 @@ export default function App() {
                   <Text style={styles.revealButtonIcon}>↓</Text>
                 </Pressable>
               )}
-            </View>
+            </ScrollView>
           )}
           {studyRevealed ? (
             <View style={styles.studyActions}>
@@ -580,7 +581,6 @@ export default function App() {
               <View style={styles.questionBlock}>
                 <Text style={styles.questionEyebrow}>{activeLevel.title} · 뜻이 같은 단어를 골라요</Text>
                 <Text style={styles.questionWord}>{question.answer.word}</Text>
-                <Text style={styles.questionPhonetic}>{question.answer.phonetic}</Text>
                 {question.answer.example ? <Text style={styles.exampleText}>{question.answer.example}</Text> : null}
               </View>
               <View style={styles.options}>
@@ -827,11 +827,11 @@ const styles = StyleSheet.create({
   studyProgressTotal: { color: COLORS.muted, fontSize: 12, fontWeight: '700' },
   studyProgressTrack: { height: 5, backgroundColor: '#E9E6F2', borderRadius: 4, overflow: 'hidden' },
   studyProgressFill: { height: 5, backgroundColor: COLORS.purple, borderRadius: 4 },
-  flashcard: { flex: 1, minHeight: 300, marginTop: 19, marginBottom: 14, paddingHorizontal: 24, paddingVertical: 24, borderRadius: 25, backgroundColor: COLORS.white, borderWidth: 1, borderColor: '#F0EEF5', alignItems: 'center', justifyContent: 'center', shadowColor: '#282041', shadowOpacity: 0.04, shadowRadius: 16, shadowOffset: { width: 0, height: 7 }, elevation: 2 },
+  flashcard: { flex: 1, minHeight: 0, marginTop: 19, marginBottom: 14, borderRadius: 25, backgroundColor: COLORS.white, borderWidth: 1, borderColor: '#F0EEF5', shadowColor: '#282041', shadowOpacity: 0.04, shadowRadius: 16, shadowOffset: { width: 0, height: 7 }, elevation: 2 },
+  flashcardContent: { flexGrow: 1, alignItems: 'center', justifyContent: 'center', paddingHorizontal: 20, paddingVertical: 20 },
+  artCredit: { color: COLORS.muted, fontSize: 10, textAlign: 'center', marginTop: 6, textDecorationLine: 'underline' },
   flashcardOpen: { backgroundColor: '#FDFDFF' },
-  flashcardLabel: { color: COLORS.muted, fontSize: 10, fontWeight: '700', letterSpacing: 0.5 },
-  flashcardWord: { marginTop: 10, color: COLORS.ink, fontSize: 38, fontWeight: '900', letterSpacing: -1 },
-  flashcardPhonetic: { marginTop: 5, color: '#777185', fontSize: 17, fontWeight: '600', letterSpacing: 0.3 },
+  flashcardWord: { width: '100%', textAlign: 'center', marginTop: 10, color: COLORS.ink, fontSize: 38, fontWeight: '900', letterSpacing: -1 },
   flashcardDivider: { width: 42, height: 3, marginTop: 22, marginBottom: 20, borderRadius: 2, backgroundColor: '#E9E5FB' },
   flashcardMeaning: { color: COLORS.purpleDark, fontSize: 23, fontWeight: '900', textAlign: 'center' },
   flashcardExample: { color: COLORS.muted, fontSize: 12, lineHeight: 19, textAlign: 'center', marginTop: 12 },
