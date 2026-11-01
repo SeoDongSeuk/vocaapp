@@ -4,7 +4,7 @@ An English vocabulary study app built with Expo and React Native. Each of six le
 
 ## Play
 
-Home → **광고 목록 보기** opens a separate Tenping advertisement list, with images, titles, categories, descriptions, reload, and explicit external-link buttons. Publisher payout fields are not presented as user rewards. Requests use HTTPS and abort after 15 seconds. Empty lists, connection errors, and image failures have fallback UI.
+The home screen contains two horizontally paged cards: **나의 학습 단계** and **광고 목록**. Swipe left from the learning card to see Tenping advertisements; swipe right to return. The brand header remains visible, with a page indicator and swipe hint below it. Each page scrolls vertically independently. Advertisements load only when their card is first opened; Android Back returns to the learning card. The ad list shows images, titles, categories, descriptions, reload, and explicit external-link buttons. Publisher payout fields are not presented as user rewards. Requests use HTTPS and abort after 15 seconds. Empty lists, connection errors, and image failures have fallback UI.
 
 Copy `.env.example` to `.env.local`, set `EXPO_PUBLIC_TENPING_MEMBER_ID` to your Tenping publisher MemberID, and restart Expo after changing the value. `.env.local` is ignored by Git. This EXPO_PUBLIC value is embedded in the mobile bundle and must not contain a secret API key. The supplied publisher ID is configured locally, not committed. Native Expo Go can call the API directly; browser use also requires the provider to permit your web origin via CORS.
 
