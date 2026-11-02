@@ -1,14 +1,16 @@
 {
   "name": "vocab-race",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "main": "index.ts",
   "dependencies": {
     "@expo/metro-runtime": "~58.0.16",
     "@react-native-async-storage/async-storage": "2.2.0",
     "expo": "~58.0.22",
+    "expo-build-properties": "~58.0.12",
     "expo-constants": "~58.0.14",
     "expo-dev-client": "~58.0.18",
     "expo-modules-core": "~58.0.29",
+    "expo-network": "~58.0.4",
     "expo-speech": "~58.0.3",
     "expo-splash-screen": "~58.0.12",
     "expo-status-bar": "~58.0.4",
@@ -27,6 +29,8 @@
     "typescript": "~6.0.3"
   },
   "scripts": {
+    "check:vocabulary": "node scripts/check-vocabulary.cjs && node scripts/check-vocabulary-guards.cjs",
+    "eas-build-post-install": "node scripts/check-vocabulary.cjs",
     "lint": "eslint .",
     "start": "expo start --go",
     "start:dev": "expo start --dev-client",

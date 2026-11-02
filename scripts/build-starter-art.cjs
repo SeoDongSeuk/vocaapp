@@ -1,14 +1,14 @@
 // Build-time only: bundle selected Twemoji artwork for offline Expo Go use.
 const fs = require('node:fs');
 const path = require('node:path');
-const vocabulary = JSON.parse(fs.readFileSync('vocabulary-data.json', 'utf8'));
+const archivedWords = Object.keys(JSON.parse(fs.readFileSync('data/starter-scenes.json', 'utf8')));
 const scenes = {};
 for (const line of fs.readFileSync('data/starter-picture-plan.txt', 'utf8').split(/\r?\n/)) {
   if (!line || line.startsWith('#')) continue;
   const [symbols, words] = line.split('|');
   for (const word of words.trim().split(/\s+/)) scenes[word] = symbols.trim().split(' ');
 }
-const selected = Object.fromEntries(vocabulary.starter.map(({ word }) => {
+const selected = Object.fromEntries(archivedWords.map(word => {
   if (!scenes[word]) throw new Error(`Missing illustration: ${word}`);
   return [word, scenes[word]];
 }));
@@ -37,7 +37,7 @@ async function main() {
     }));
   }
   if (errors.length) throw new Error(errors.join('\n'));
-  const artwork = Object.fromEntries(symbols.map(symbol => [symbol, fs.readFileSync(path.join(target, `${code(symbol)}.svg`), 'utf8')]));
+  const artwork = Object.fromEntries(symbols.map(symbol => [symbol, fs.readFileSync(path.join(target, `${code(symbol)}.svg`), 'utf8').replace(/\r\n/g, '\n')]));
   fs.writeFileSync('data/starter-artwork.json', JSON.stringify(artwork) + '\n');
   console.log(`Illustrations: ${Object.keys(selected).length} words, ${symbols.length} vector assets.`);
 }

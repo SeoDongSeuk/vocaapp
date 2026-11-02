@@ -1,13 +1,13 @@
 import vocabularyData from './vocabulary-data.json';
 
-export type LevelId = 'starter' | 'beginner' | 'intermediate' | 'advanced' | 'upperAdvanced' | 'master';
-export type Word = { word: string; phonetic: string; meaning: string; example?: string };
+export type LevelId = 'beginner' | 'intermediate' | 'advanced' | 'upperAdvanced' | 'master';
+export type Word = { word: string; phonetic: string; meaning: string; example?: string; cefr: string; category: 'general' };
 
 export const LEVEL_WORDS = vocabularyData as unknown as Record<LevelId, Word[]>;
 
 for (const level of Object.keys(LEVEL_WORDS) as LevelId[]) {
-  if (LEVEL_WORDS[level].length !== 1000) {
-    throw new Error(`${level} must contain exactly 1000 words.`);
+  if (LEVEL_WORDS[level].length < 30) {
+    throw new Error(`${level} must contain at least 30 reviewed words.`);
   }
 }
 

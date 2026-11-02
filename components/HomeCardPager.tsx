@@ -2,20 +2,28 @@ import { useRef, useState, type ComponentRef, type ReactNode } from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import AdCampaignList from './AdCampaignList';
+import { useNetworkState } from 'expo-network';
 
 export default function HomeCardPager({ children }: { children: ReactNode }) {
+  const network = useNetworkState();
+  const online = network.isConnected === true && network.isInternetReachable === true;
+  // Reset the pager to study when connectivity changes, including during a swipe.
+  return <HomeCardPages key={online ? 'online' : 'offline'} online={online}>{children}</HomeCardPages>;
+}
+
+function HomeCardPages({ children, online }: { children: ReactNode; online: boolean }) {
   const pager = useRef<ComponentRef<typeof ScrollView>>(null);
   const currentPage = useRef(0);
   const [width, setWidth] = useState(0);
   const [page, setPage] = useState(0);
   const [visitedPages, setVisitedPages] = useState<number[]>([0]);
-  const labels = ['나의 학습 단계', '쇼핑 핫딜', '쇼핑 추천상품', '애드픽', '텐핑'];
+  const labels = online ? ['나의 학습 단계', '쇼핑 핫딜', '쇼핑 추천상품', '애드픽', '텐핑'] : ['나의 학습 단계'];
   const returnToPrevious = () => pager.current?.scrollTo({ x: Math.max(0, currentPage.current - 1) * width, animated: true });
   return <SafeAreaView edges={['bottom']} style={styles.container}>
-    <View style={styles.hint} accessibilityLiveRegion="polite">
+    {online && <View style={styles.hint} accessibilityLiveRegion="polite">
       <Text style={styles.hintText}>{labels[page]} · {page + 1}/{labels.length} · 좌우로 밀어 이동해요</Text>
       <View style={styles.dots}>{labels.map((label, index) => <View key={label} style={[styles.dot, page === index && styles.active]} />)}</View>
-    </View>
+    </View>}
     <View style={styles.container} onLayout={event => {
       const next = event.nativeEvent.layout.width;
       if (next !== width) {
@@ -23,7 +31,7 @@ export default function HomeCardPager({ children }: { children: ReactNode }) {
         requestAnimationFrame(() => pager.current?.scrollTo({ x: currentPage.current * next, animated: false }));
       }
     }}>
-      {width > 0 && <ScrollView ref={pager} testID="home-card-pager" style={styles.container} horizontal pagingEnabled directionalLockEnabled nestedScrollEnabled showsHorizontalScrollIndicator={false} scrollEventThrottle={32}
+      {width > 0 && <ScrollView ref={pager} testID="home-card-pager" style={styles.container} horizontal scrollEnabled={online} pagingEnabled directionalLockEnabled nestedScrollEnabled showsHorizontalScrollIndicator={false} scrollEventThrottle={32}
         onScroll={event => {
           const next = Math.max(0, Math.min(labels.length - 1, Math.round(event.nativeEvent.contentOffset.x / width)));
           currentPage.current = next;
@@ -31,10 +39,10 @@ export default function HomeCardPager({ children }: { children: ReactNode }) {
           setVisitedPages(previous => previous.includes(next) ? previous : [...previous, next]);
         }}>
         <View style={{ width, height: '100%' }} accessibilityElementsHidden={page !== 0} importantForAccessibility={page === 0 ? 'auto' : 'no-hide-descendants'}>{children}</View>
-        <View style={{ width, height: '100%' }} accessibilityElementsHidden={page !== 1} importantForAccessibility={page === 1 ? 'auto' : 'no-hide-descendants'}>{visitedPages.includes(1) && <AdCampaignList provider="shopping" embedded active={page === 1} onBack={returnToPrevious} />}</View>
+        {online && <><View style={{ width, height: '100%' }} accessibilityElementsHidden={page !== 1} importantForAccessibility={page === 1 ? 'auto' : 'no-hide-descendants'}>{visitedPages.includes(1) && <AdCampaignList provider="shopping" embedded active={page === 1} onBack={returnToPrevious} />}</View>
         <View style={{ width, height: '100%' }} accessibilityElementsHidden={page !== 2} importantForAccessibility={page === 2 ? 'auto' : 'no-hide-descendants'}>{visitedPages.includes(2) && <AdCampaignList provider="recommendations" embedded active={page === 2} onBack={returnToPrevious} />}</View>
         <View style={{ width, height: '100%' }} accessibilityElementsHidden={page !== 3} importantForAccessibility={page === 3 ? 'auto' : 'no-hide-descendants'}>{visitedPages.includes(3) && <AdCampaignList provider="adpick" embedded active={page === 3} onBack={returnToPrevious} />}</View>
-        <View style={{ width, height: '100%' }} accessibilityElementsHidden={page !== 4} importantForAccessibility={page === 4 ? 'auto' : 'no-hide-descendants'}>{visitedPages.includes(4) && <AdCampaignList provider="tenping" embedded active={page === 4} onBack={returnToPrevious} />}</View>
+        <View style={{ width, height: '100%' }} accessibilityElementsHidden={page !== 4} importantForAccessibility={page === 4 ? 'auto' : 'no-hide-descendants'}>{visitedPages.includes(4) && <AdCampaignList provider="tenping" embedded active={page === 4} onBack={returnToPrevious} />}</View></>}
       </ScrollView>}
     </View>
   </SafeAreaView>;

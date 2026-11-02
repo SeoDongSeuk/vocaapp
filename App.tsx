@@ -17,15 +17,14 @@ const ROUND_SECONDS = 60;
 const STUDY_SESSION_SIZE = 30;
 const WELCOME_COMPLETED_KEY = 'wordrush.welcome.completed';
 const LEVELS: { id: LevelId; title: string; english: string; description: string }[] = [
-  { id: 'beginner', title: '초급', english: 'BEGINNER', description: '초등학생을 위한 생활 기초 단어예요.' },
-  { id: 'intermediate', title: '중급', english: 'INTERMEDIATE', description: '중·고등학생 수준의 학교와 독해 단어예요.' },
-  { id: 'advanced', title: '고급', english: 'ADVANCED', description: '대학 강의와 학술 글에서 쓰는 단어예요.' },
-  { id: 'upperAdvanced', title: '최상급', english: 'EXPERT', description: '고급을 넘어 원어민 수준에 가까운 심화 어휘예요.' },
-  { id: 'master', title: '마스터', english: 'MASTER', description: '성인과 원어민 수준의 섬세한 어휘예요.' },
+  { id: 'beginner', title: '초급', english: 'BEGINNER', description: 'A1 · 인사와 가족, 일상생활의 기초 어휘예요.' },
+  { id: 'intermediate', title: '중급', english: 'INTERMEDIATE', description: 'A2 · 익숙한 상황에서 생각과 경험을 표현하는 어휘예요.' },
+  { id: 'advanced', title: '고급', english: 'ADVANCED', description: 'B1 · 일상과 사회의 다양한 주제를 이해하는 어휘예요.' },
+  { id: 'upperAdvanced', title: '최상급', english: 'EXPERT', description: 'B2 · 뉴스와 글의 주장, 세부 내용을 이해하는 어휘예요.' },
+  { id: 'master', title: '마스터', english: 'MASTER', description: 'C1–C2 · 추상적인 생각과 미묘한 차이를 표현하는 심화 어휘예요.' },
 ];
 
 const LEVEL_COLORS: Record<LevelId, string> = {
-  starter: '#438A72',
   beginner: '#6E5AE6',
   intermediate: '#347EAE',
   advanced: '#C76A43',
@@ -34,7 +33,6 @@ const LEVEL_COLORS: Record<LevelId, string> = {
 };
 
 const LEVEL_TINTS: Record<LevelId, string> = {
-  starter: '#E5F4EF',
   beginner: '#ECE9FF',
   intermediate: '#E5F2F8',
   advanced: '#FFF0E8',
@@ -103,7 +101,13 @@ function takeCycleWords(cycle: WordCycle, words: Word[], count: number): Word[] 
 }
 
 function createQuestion(answer: Word, levelWords: Word[]): Question {
-  const distractors = shuffle(levelWords.filter((item) => item.word !== answer.word && item.meaning !== answer.meaning))
+  const seenMeanings = new Set([answer.meaning]);
+  const distractors = shuffle(levelWords.filter((item) => item.word !== answer.word))
+    .filter((item) => {
+      if (seenMeanings.has(item.meaning)) return false;
+      seenMeanings.add(item.meaning);
+      return true;
+    })
     .slice(0, 3);
   return { answer, choices: shuffle([answer, ...distractors]) };
 }
@@ -114,7 +118,6 @@ export default function App() {
   const [correct, setCorrect] = useState(0);
   const [incorrect, setIncorrect] = useState(0);
   const [bestScores, setBestScores] = useState<Record<LevelId, number>>({
-    starter: 0,
     beginner: 0,
     intermediate: 0,
     advanced: 0,
@@ -139,7 +142,6 @@ export default function App() {
   const wordCyclesRef = useRef<Record<LevelId, WordCycle> | null>(null);
   if (wordCyclesRef.current === null) {
     wordCyclesRef.current = {
-      starter: createWordCycle(wordsForLevel('starter')),
       beginner: createWordCycle(wordsForLevel('beginner')),
       intermediate: createWordCycle(wordsForLevel('intermediate')),
       advanced: createWordCycle(wordsForLevel('advanced')),

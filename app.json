@@ -2,7 +2,7 @@
   "expo": {
     "name": "워드챌린지",
     "slug": "vocab-race",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "plugins": [
@@ -21,6 +21,14 @@
           "androidAppId": "ca-app-pub-3940256099942544~3347511713",
           "iosAppId": "ca-app-pub-3940256099942544~1458002511"
         }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "extraProguardRules": "# WorkManager creates these classes by reflection during Android startup.\n-keep class * extends androidx.room.RoomDatabase { <init>(); }\n-keep class * extends androidx.work.InputMerger { <init>(); }"
+          }
+        }
       ]
     ],
     "userInterfaceStyle": "light",
@@ -28,11 +36,11 @@
       "supportsTablet": true
     },
     "android": {
+      "versionCode": 3,
       "package": "com.wordrush.vocabrush",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#F0EBFF",
         "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false

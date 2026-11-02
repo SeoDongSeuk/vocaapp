@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import Constants from 'expo-constants';
+import { useNetworkState } from 'expo-network';
 
 type GoogleMobileAds = typeof import('react-native-google-mobile-ads');
 
@@ -23,11 +24,13 @@ async function loadGoogleMobileAds(): Promise<GoogleMobileAds | null> {
 }
 
 export default function AdMobBanner() {
+  const network = useNetworkState();
+  const online = network.isConnected === true && network.isInternetReachable === true;
   const [adsModule, setAdsModule] = useState<GoogleMobileAds | null>(null);
   const [isReady, setIsReady] = useState(false);
 
   useEffect(() => {
-    if (!__DEV__ || isExpoGo) return;
+    if (!__DEV__ || isExpoGo || !online) return;
 
     let isMounted = true;
     void loadGoogleMobileAds().then(async (module) => {
@@ -47,9 +50,9 @@ export default function AdMobBanner() {
     return () => {
       isMounted = false;
     };
-  }, []);
+  }, [online]);
 
-  if (!__DEV__ || isExpoGo || !isReady || !adsModule) return null;
+  if (!__DEV__ || isExpoGo || !online || !isReady || !adsModule) return null;
 
   const { BannerAd, BannerAdSize, TestIds } = adsModule;
 

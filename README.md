@@ -1,6 +1,6 @@
 # 워드챌린지 (Word Challenge)
 
-An English vocabulary study app built with Expo and React Native. Five selectable levels—초급, 중급, 고급, 최상급, 마스터—each contain 1,000 words with Korean meanings. The default level is 초급. Learn 30 words with flashcards (swipe right to mark a word as known), review words you miss, or take a timed quiz at the selected level. Phonetic transcriptions are not displayed in study cards or quizzes.
+An English vocabulary study app built with Expo and React Native. Five selectable levels—초급, 중급, 고급, 최상급, 마스터—contain 4,911 individually reviewed general-vocabulary entries with Korean meanings (1,000 per level except 911 in 마스터). The default level is 초급. Learn 30 words with flashcards (swipe right to mark a word as known), review words you miss, or take a timed quiz at the selected level. Phonetic transcriptions are not displayed in study cards or quizzes.
 
 ## Play
 
@@ -20,13 +20,13 @@ Shopping hotdeals use the same affiliate ID and `/apis/sdk_shopping_hotdeal.php`
 
 Shopping recommendations use `/apis/sdk_shopping.php` with the same parser and affiliate ID, but a separate cache and card. The feed includes travel products with placeholder zero prices; nonpositive or missing prices are shown as ‘가격은 판매처에서 확인해 주세요’, not free products.
 
-입문 is no longer selectable in the app. Its previous vocabulary and illustration sources are retained as archived content. The historical replacement list is in `data/starter-word-replacements.json`.
+The former 입문 bank has been removed from the runtime vocabulary; core A1 words are now included in 초급. Historical illustration sources remain archived. The historical replacement list is in `data/starter-word-replacements.json`.
 
 Archived picture plans are in `data/starter-picture-plan.txt`. `node scripts/build-starter-art.cjs` validates their coverage and regenerates the artwork data. `--download` retrieves missing source SVGs during development only. Artwork attribution and license details are in `assets/word-art/ATTRIBUTION.md`.
 
-On the home screen, each level has **학습하기** and **1분 퀴즈** buttons. Choose **학습하기** to study 10 flashcards: reveal each Korean meaning, then mark the word as known or add it to the review list. Review words again from the home screen.
+On the home screen, each level has **학습하기** and **1분 퀴즈** buttons. Choose **학습하기** to study 30 flashcards: reveal each Korean meaning, then mark the word as known or add it to the review list. Review words again from the home screen.
 
-Choose a level's **1분 퀴즈** button to answer English-to-Korean questions from that level for 60 seconds. Study cards and quiz questions share a shuffled 1,000-word cycle for each level, so a target word appears once per cycle before the next cycle can repeat it. This cycle lasts while the app stays open; review mode intentionally repeats words you've marked for review. The home screen and result screen show the highest score separately for each level during the current app session.
+Choose a level's **1분 퀴즈** button to answer English-to-Korean questions from that level for 60 seconds. Study cards and quiz questions share a shuffled full-bank cycle for each level, so a target word appears once per cycle before the next cycle can repeat it. This cycle lasts while the app stays open; review mode intentionally repeats words you've marked for review. The home screen and result screen show the highest score separately for each level during the current app session.
 
 Vocabulary data attributions and license terms are in [VOCABULARY-LICENSE.md](VOCABULARY-LICENSE.md).
 
@@ -48,3 +48,7 @@ eas build --platform android --profile preview
 ```
 
 EAS Build uploads the project source to Expo's cloud build service. This computer does not have the Android SDK or Java toolchain for a local APK build.
+
+Version 1.0.2 preserves Room database and WorkManager input-merger constructors in Android release builds through `expo-build-properties`. WorkManager is initialized before JavaScript, and SDK 58's R8 full mode can otherwise strip the constructors it loads reflectively, causing the app to close immediately. This workaround follows [Expo issue #52173](https://github.com/expo/expo/issues/52173) and [the upstream fix](https://github.com/expo/expo/pull/51349). Confirm the constructors in the built APK as well as cold launch on the target device; a successful build alone does not verify startup.
+
+Run `node scripts/check-apk-constructors.cjs --apk /path/to/app.apk` against the release APK. It reads the actual DEX constructor definitions and fails if WorkDatabase_Impl or either WorkManager input merger lacks its no-argument constructor. The reported 1.0.1 APK fails this check. Without a device crash log the specific user's crash is not confirmed; verify the rebuilt APK and a cold launch before reporting that the device issue is resolved.
