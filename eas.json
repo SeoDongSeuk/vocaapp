@@ -18,6 +18,14 @@
       "android": {
         "buildType": "apk"
       }
+    },
+    "production": {
+      "extends": "preview",
+      "distribution": "store",
+      "environment": "production",
+      "android": {
+        "buildType": "app-bundle"
+      }
     }
   }
 }

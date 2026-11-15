@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, type ComponentRef, type ReactNode } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
@@ -373,7 +373,7 @@ export default function App() {
         <View style={styles.homeScreen}>
           <View style={styles.homePagerHeader}><Header /></View>
           <HomeCardPager>
-          <ScrollView contentContainerStyle={styles.homeContent} nestedScrollEnabled showsVerticalScrollIndicator={false}>
+          <HomeStudyScrollView>
             <View style={styles.levelCard}>
             <View style={styles.levelCardTop}>
               <View>
@@ -408,6 +408,9 @@ export default function App() {
                         <View style={styles.levelOptionCopy}>
                           <Text style={styles.levelOptionText}>{level.title}</Text>
                           <Text style={styles.levelOptionEnglish}>{level.english}</Text>
+                          <Text style={styles.levelOptionBest} accessibilityLabel={`1분 퀴즈 최고 기록 ${bestScores[level.id]}개`}>
+                            최고 기록 · <Text style={{ color: LEVEL_COLORS[level.id], fontWeight: '900' }}>{bestScores[level.id]}개</Text>
+                          </Text>
                         </View>
                       </Pressable>
                       <Pressable
@@ -432,12 +435,6 @@ export default function App() {
                         <Text style={styles.levelQuizButtonText}>1분 퀴즈</Text>
                       </Pressable>
                     </View>
-                    <View style={styles.levelOptionRecord}>
-                      <Text style={styles.levelOptionRecordLabel}>1분 퀴즈 최고 기록</Text>
-                      <Text style={[styles.levelOptionRecordScore, { color: LEVEL_COLORS[level.id] }]}>
-                        {bestScores[level.id]}<Text style={styles.levelOptionRecordUnit}>개</Text>
-                      </Text>
-                    </View>
                   </View>
                 );
               })}
@@ -455,7 +452,7 @@ export default function App() {
               </Pressable>
             )}
             <Text style={styles.homeFootnote}>원하는 단계에서 학습이나 1분 퀴즈를 시작해 보세요</Text>
-          </ScrollView>
+          </HomeStudyScrollView>
           </HomeCardPager>
           <AdMobBanner />
         </View>
@@ -680,6 +677,32 @@ export default function App() {
   );
 }
 
+function HomeStudyScrollView({ children }: { children: ReactNode }) {
+  const scroll = useRef<ComponentRef<typeof ScrollView>>(null);
+  const [viewportHeight, setViewportHeight] = useState(0);
+  const [contentHeight, setContentHeight] = useState(0);
+  const canScroll = viewportHeight > 0 && contentHeight > viewportHeight + 1;
+
+  useEffect(() => {
+    if (!canScroll) scroll.current?.scrollTo({ y: 0, animated: false });
+  }, [canScroll]);
+
+  return <ScrollView
+    ref={scroll}
+    testID="home-study-scroll"
+    style={styles.homeScroll}
+    contentContainerStyle={styles.homeContent}
+    scrollEnabled={canScroll}
+    bounces={false}
+    alwaysBounceVertical={false}
+    overScrollMode="never"
+    nestedScrollEnabled
+    showsVerticalScrollIndicator={false}
+    onLayout={event => setViewportHeight(event.nativeEvent.layout.height)}
+    onContentSizeChange={(_, height) => setContentHeight(height)}
+  >{children}</ScrollView>;
+}
+
 function Header({ trailing }: { trailing?: string }) {
   return (
     <View style={styles.header}>
@@ -742,7 +765,8 @@ const styles = StyleSheet.create({
   launchSplashDot: { width: 6, height: 6, borderRadius: 3, backgroundColor: '#CFCBDF' },
   launchSplashDotAccent: { backgroundColor: COLORS.purple },
   launchSplashDotGreen: { backgroundColor: '#42B77A' },
-  homeContent: { width: '100%', maxWidth: 520, alignSelf: 'center', flexGrow: 1, paddingHorizontal: 22, paddingTop: 0, paddingBottom: 26 },
+  homeScroll: { flex: 1, minHeight: 0 },
+  homeContent: { width: '100%', maxWidth: 520, alignSelf: 'center', flexGrow: 1, paddingHorizontal: 22, paddingTop: 0, paddingBottom: 12 },
   gameScreen: { flex: 1 },
   gameContent: { width: '100%', maxWidth: 520, alignSelf: 'center', flexGrow: 1, paddingHorizontal: 22, paddingTop: 54, paddingBottom: 22 },
   header: { minHeight: 38, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
@@ -756,7 +780,7 @@ const styles = StyleSheet.create({
   eyebrowDot: { width: 6, height: 6, borderRadius: 3, backgroundColor: '#E58A63' },
   eyebrowText: { color: COLORS.muted, fontSize: 10, fontWeight: '800', letterSpacing: 1.5 },
   heroTitleAccent: { color: COLORS.purple },
-  levelCard: { marginTop: 20, marginBottom: 15, padding: 15, borderRadius: 21, backgroundColor: COLORS.white, borderWidth: 1, borderColor: '#DDD8F1', shadowColor: '#33265D', shadowOpacity: 0.07, shadowRadius: 14, shadowOffset: { width: 0, height: 5 }, elevation: 2 },
+  levelCard: { marginTop: 10, marginBottom: 8, padding: 12, borderRadius: 21, backgroundColor: COLORS.white, borderWidth: 1, borderColor: '#DDD8F1', shadowColor: '#33265D', shadowOpacity: 0.07, shadowRadius: 14, shadowOffset: { width: 0, height: 5 }, elevation: 2 },
   levelCardTop: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 },
   levelEyebrow: { color: COLORS.purple, fontSize: 8, fontWeight: '900', letterSpacing: 1.4, marginBottom: 4 },
   levelTitle: { color: COLORS.ink, fontSize: 19, fontWeight: '900' },
@@ -764,20 +788,17 @@ const styles = StyleSheet.create({
   levelOptions: { flexDirection: 'column', gap: 8 },
   levelOptionItem: { gap: 2 },
   levelOption: { width: '100%', minHeight: 62, flexDirection: 'row', alignItems: 'center', gap: 5, paddingHorizontal: 8, borderRadius: 14, borderWidth: 1.5 },
-  levelOptionInfo: { flex: 1, minWidth: 0, flexDirection: 'row', alignItems: 'center', paddingVertical: 7 },
+  levelOptionInfo: { flex: 1, minWidth: 95, flexDirection: 'row', alignItems: 'center', paddingVertical: 7 },
   levelOptionNumberBadge: { width: 31, height: 31, borderRadius: 11, alignItems: 'center', justifyContent: 'center' },
   levelOptionNumber: { fontSize: 10, fontWeight: '900', letterSpacing: 0.3 },
   levelOptionCopy: { flex: 1, marginLeft: 8 },
   levelOptionText: { color: COLORS.ink, fontSize: 13, fontWeight: '900' },
   levelOptionEnglish: { color: COLORS.muted, fontSize: 7, fontWeight: '800', letterSpacing: 0.5, marginTop: 2 },
-  levelStudyButton: { width: 74, minHeight: 42, alignItems: 'center', justifyContent: 'center', borderRadius: 11, borderWidth: 1.5 },
+  levelStudyButton: { width: 74, minWidth: 60, flexShrink: 1, minHeight: 42, alignItems: 'center', justifyContent: 'center', borderRadius: 11, borderWidth: 1.5 },
   levelStudyButtonText: { fontSize: 10, fontWeight: '900' },
-  levelQuizButton: { width: 76, minHeight: 42, alignItems: 'center', justifyContent: 'center', borderRadius: 11 },
+  levelQuizButton: { width: 76, minWidth: 60, flexShrink: 1, minHeight: 42, alignItems: 'center', justifyContent: 'center', borderRadius: 11 },
   levelQuizButtonText: { color: COLORS.white, fontSize: 9, fontWeight: '900' },
-  levelOptionRecord: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', paddingHorizontal: 11, paddingVertical: 2 },
-  levelOptionRecordLabel: { color: COLORS.muted, fontSize: 9, fontWeight: '700' },
-  levelOptionRecordScore: { fontSize: 11, fontWeight: '900' },
-  levelOptionRecordUnit: { color: COLORS.muted, fontSize: 9, fontWeight: '700' },
+  levelOptionBest: { color: COLORS.muted, fontSize: 9, fontWeight: '700', marginTop: 3 },
   levelDescriptionRow: { flexDirection: 'row', alignItems: 'center', marginTop: 11, paddingHorizontal: 2 },
   levelDescriptionDot: { width: 6, height: 6, borderRadius: 3, marginRight: 7 },
   levelDescription: { flex: 1, color: COLORS.muted, fontSize: 9, fontWeight: '700' },
@@ -788,7 +809,7 @@ const styles = StyleSheet.create({
   pressed: { opacity: 0.88, transform: [{ scale: 0.99 }] },
   primaryButtonText: { color: COLORS.white, fontSize: 15, fontWeight: '800' },
   buttonArrow: { position: 'absolute', right: 20, color: COLORS.white, fontSize: 21, fontWeight: '500' },
-  homeFootnote: { textAlign: 'center', color: '#A5A2B1', fontSize: 11, marginTop: 14, fontWeight: '600' },
+  homeFootnote: { textAlign: 'center', color: '#A5A2B1', fontSize: 11, marginTop: 8, fontWeight: '600' },
   soloScoreBar: { flexDirection: 'row', alignItems: 'center', backgroundColor: COLORS.white, borderRadius: 17, marginTop: 21, paddingHorizontal: 14, paddingVertical: 12, borderWidth: 1, borderColor: '#F0EEF5' },
   soloAvatar: { width: 34, height: 34, borderRadius: 12, justifyContent: 'center', alignItems: 'center', backgroundColor: COLORS.lavender },
   soloAvatarText: { color: COLORS.purple, fontSize: 13, fontWeight: '900' },

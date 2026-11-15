@@ -2,7 +2,7 @@
   "expo": {
     "name": "워드챌린지",
     "slug": "vocab-race",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "plugins": [
@@ -38,7 +38,7 @@
       "supportsTablet": true
     },
     "android": {
-      "versionCode": 4,
+      "versionCode": 5,
       "package": "com.wordrush.vocabrush",
       "adaptiveIcon": {
         "backgroundColor": "#F0EBFF",

@@ -47,10 +47,22 @@ The `preview` EAS profile is configured to produce an installable APK:
 eas build --platform android --profile preview
 ```
 
-EAS Build uploads the project source to Expo's cloud build service. This computer does not have the Android SDK or Java toolchain for a local APK build.
+EAS Build uploads the project source to Expo's cloud build service and uses the existing signing credentials. Android SDK and Java are also installed locally; emulator testing currently cannot proceed past ADB authentication.
 
 Version 1.0.2 preserves Room database and WorkManager input-merger constructors in Android release builds through `expo-build-properties`. WorkManager is initialized before JavaScript, and SDK 58's R8 full mode can otherwise strip the constructors it loads reflectively, causing the app to close immediately. This workaround follows [Expo issue #52173](https://github.com/expo/expo/issues/52173) and [the upstream fix](https://github.com/expo/expo/pull/51349). Confirm the constructors in the built APK as well as cold launch on the target device; a successful build alone does not verify startup.
 
 Run `node scripts/check-apk-constructors.cjs --apk /path/to/app.apk` against the release APK. It reads the actual DEX constructor definitions and fails if WorkDatabase_Impl or either WorkManager input merger lacks its no-argument constructor. The reported 1.0.1 APK fails this check. Without a device crash log the specific user's crash is not confirmed; verify the rebuilt APK and a cold launch before reporting that the device issue is resolved.
 
 The 1.0.2 APK passes constructor and arm64 16 KB ELF/ZIP alignment checks, but the user still reported an immediate exit on a Galaxy S25 Ultra. Version 1.0.3 disables Android release minification and resource shrinking to investigate other optimization-related startup failures. `AppBootstrap` loads the app module after registering the root and displays selectable error details for module-loading/render failures, allowing diagnosis without USB. This does not catch native crashes or prove the remaining device failure is fixed. Confirm launch on the target phone.
+
+The user confirmed that 1.0.3 runs correctly on the Galaxy S25 Ultra. Version 1.0.4 (Android version code 5) retains the Android startup configuration, fits the home level list more compactly, improves right-swipe recognition in study cards, and adds a `production` profile for a signed Google Play Android App Bundle:
+
+```bash
+npx eas-cli@latest build --platform android --profile production
+```
+
+The profile inherits the same toolchain from `preview`, overrides distribution to `store`, and uses `android.buildType: app-bundle`. The resulting `.aab` is for upload to Google Play Console, rather than direct phone installation. See the [Expo AAB documentation](https://docs.expo.dev/build-reference/apk/) and [build configuration reference](https://docs.expo.dev/eas/json/). Build creation does not upload or publish a Google Play release.
+
+The home level rows now include their own quiz record, keeping all five levels visible at ordinary phone sizes without reducing the existing label or button text sizes. The home page measures its viewport and content, enabling vertical scrolling only when needed for smaller screens or larger text. Overscroll/bounce is disabled on this page. The shopping and advertising pages retain their independent scrolling.
+
+In study cards, a right drag or short right fling shows `✓ 외웠어요`, then advances once and records the word as known. This works before and after revealing the meaning. Left/vertical drags, taps, and canceled gestures do not mark the word. `node scripts/check-study-swipe.cjs` checks direction/velocity thresholds, confirmation, one-time completion, cancellation, current callbacks after rerenders, and cleanup after unmount. Native Android touch interaction still needs a device test for this release.
