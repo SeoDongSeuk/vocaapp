@@ -2,7 +2,7 @@
   "expo": {
     "name": "워드챌린지",
     "slug": "vocab-race",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "plugins": [
@@ -18,8 +18,9 @@
       [
         "react-native-google-mobile-ads",
         {
-          "androidAppId": "ca-app-pub-3940256099942544~3347511713",
-          "iosAppId": "ca-app-pub-3940256099942544~1458002511"
+          "androidAppId": "ca-app-pub-2182604513568696~8810858261",
+          "iosAppId": "ca-app-pub-3940256099942544~1458002511",
+          "delayAppMeasurementInit": true
         }
       ],
       [
@@ -38,7 +39,7 @@
       "supportsTablet": true
     },
     "android": {
-      "versionCode": 5,
+      "versionCode": 6,
       "package": "com.wordrush.vocabrush",
       "adaptiveIcon": {
         "backgroundColor": "#F0EBFF",

@@ -66,3 +66,19 @@ The profile inherits the same toolchain from `preview`, overrides distribution t
 The home level rows now include their own quiz record, keeping all five levels visible at ordinary phone sizes without reducing the existing label or button text sizes. The home page measures its viewport and content, enabling vertical scrolling only when needed for smaller screens or larger text. Overscroll/bounce is disabled on this page. The shopping and advertising pages retain their independent scrolling.
 
 In study cards, a right drag or short right fling shows `✓ 외웠어요`, then advances once and records the word as known. This works before and after revealing the meaning. Left/vertical drags, taps, and canceled gestures do not mark the word. `node scripts/check-study-swipe.cjs` checks direction/velocity thresholds, confirmation, one-time completion, cancellation, current callbacks after rerenders, and cleanup after unmount. Native Android touch interaction still needs a device test for this release.
+
+## AdMob (1.0.5 / Android version code 6)
+
+The Android app now uses its registered AdMob application ID in `app.json`. Configure the public ad unit IDs in `.env.local` using the Android banner/interstitial variables in `.env.example`; the existing local publisher IDs are included in EAS builds through `.easignore`. The `/` ad unit IDs are different from the `~` application ID. These identifiers are embedded in the client and are not secret credentials. Production never substitutes Google's sample ad units for missing configuration.
+
+A 320×50 banner appears below the home, study, quiz and result screens when online and ready. The root owns the bottom safe-area inset once, so the banner does not cover controls. Offline, unavailable SDK, missing IDs or load failure removes the banner. The native AdMob package is not imported by the web fallback or Expo Go.
+
+The SDK gathers UMP consent before initialization. When UMP requires privacy options, a home-screen button opens them. Held ads are retired when privacy choices change. Learning results do not wait for consent, initialization or an ad request.
+
+The last card of a study session and the end of the 60-second quiz each attempt one preloaded interstitial. Leaving early does not trigger one. An unavailable, expired or failed ad is skipped for that completed session; it will not pop up later on the results screen or after returning online. SDK errors are contained and the app keeps working.
+
+Use `npx eas-cli@latest build --platform android --profile production` for the Play AAB with real ad unit IDs. The separate `adtest` profile builds a release APK with Google's test ad units (`EXPO_PUBLIC_ADMOB_TEST_ADS=1`); production explicitly sets this flag to `0`. Use the test build to check rendering without generating live traffic on your own units. Expo Go cannot display the native ads.
+
+`node scripts/check-admob.cjs` exercises consent/initialization sharing, completion triggers, duplicates, late callbacks, offline/background transitions, expiry, show/load failures, privacy changes and banner collapse with mocked hooks/SDK. It does not request real ads. Native SDK rendering needs a physical-device test. Newly created units and apps are also subject to AdMob's propagation, app-store linkage and app-readiness review; building an AAB does not approve live serving.
+
+The Play listing icon is `store-assets/google-play-icon.png`, a 512×512 32-bit sRGB PNG exported from the existing app icon. Regenerate it with `node scripts/export-play-icon.cjs` when the app icon changes.

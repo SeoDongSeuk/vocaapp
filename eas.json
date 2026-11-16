@@ -23,8 +23,17 @@
       "extends": "preview",
       "distribution": "store",
       "environment": "production",
+      "env": {
+        "EXPO_PUBLIC_ADMOB_TEST_ADS": "0"
+      },
       "android": {
         "buildType": "app-bundle"
+      }
+    },
+    "adtest": {
+      "extends": "preview",
+      "env": {
+        "EXPO_PUBLIC_ADMOB_TEST_ADS": "1"
       }
     }
   }

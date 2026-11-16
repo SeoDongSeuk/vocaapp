@@ -1,67 +1,37 @@
-import { useEffect, useState } from 'react';
-import { StyleSheet, View } from 'react-native';
-import Constants from 'expo-constants';
-import { useNetworkState } from 'expo-network';
+import { Component, useState, type ReactNode } from 'react';
+import { StyleSheet, View, useWindowDimensions } from 'react-native';
+import { getAdMobUnitId, useAdMobRuntime, type GoogleMobileAds } from './admobRuntime.native';
 
-type GoogleMobileAds = typeof import('react-native-google-mobile-ads');
-
-const isExpoGo = Constants.expoGoConfig != null;
-
-let adsInitialization: Promise<unknown> | null = null;
-let cachedAdsModule: GoogleMobileAds | null | undefined;
-
-async function loadGoogleMobileAds(): Promise<GoogleMobileAds | null> {
-  if (cachedAdsModule !== undefined) return cachedAdsModule;
-
-  try {
-    cachedAdsModule = await import('react-native-google-mobile-ads');
-  } catch {
-    // Expo Go does not include this native module. Keep the app usable without ads there.
-    cachedAdsModule = null;
-  }
-
-  return cachedAdsModule;
+class BannerBoundary extends Component<{ children: ReactNode }, { failed: boolean }> {
+  state = { failed: false };
+  static getDerivedStateFromError() { return { failed: true }; }
+  render() { return this.state.failed ? null : this.props.children; }
 }
 
 export default function AdMobBanner() {
-  const network = useNetworkState();
-  const online = network.isConnected === true && network.isInternetReachable === true;
-  const [adsModule, setAdsModule] = useState<GoogleMobileAds | null>(null);
-  const [isReady, setIsReady] = useState(false);
+  const runtime = useAdMobRuntime();
+  const { width } = useWindowDimensions();
+  const { adsModule } = runtime;
+  if (!runtime.online || !runtime.active || !runtime.canRequestAds || runtime.privacyOptionsBusy || !adsModule || width < 320) return null;
+  const unitId = getAdMobUnitId('banner', adsModule);
+  if (!unitId) return null;
 
-  useEffect(() => {
-    if (!__DEV__ || isExpoGo || !online) return;
+  return <BannerBoundary key={`${runtime.consentVersion}:${width}`}>
+    <BannerSlot adsModule={adsModule} unitId={unitId} width={width} />
+  </BannerBoundary>;
+}
 
-    let isMounted = true;
-    void loadGoogleMobileAds().then(async (module) => {
-      if (!module || !isMounted) return;
-      adsInitialization ??= module.default().initialize().catch((error: unknown) => {
-        console.warn('AdMob SDK initialization failed:', error);
-        adsInitialization = null;
-        throw error;
-      });
-      await adsInitialization;
-      if (isMounted) {
-        setAdsModule(module);
-        setIsReady(true);
-      }
-    }).catch(() => undefined);
-
-    return () => {
-      isMounted = false;
-    };
-  }, [online]);
-
-  if (!__DEV__ || isExpoGo || !online || !isReady || !adsModule) return null;
-
-  const { BannerAd, BannerAdSize, TestIds } = adsModule;
+function BannerSlot({ adsModule, unitId, width }: { adsModule: GoogleMobileAds; unitId: string; width: number }) {
+  const [failed, setFailed] = useState(false);
+  if (failed) return null;
+  const { BannerAd, BannerAdSize } = adsModule;
 
   return (
-    <View style={styles.adSlot}>
+    <View style={[styles.adSlot, { paddingHorizontal: width >= 336 ? 8 : 0 }]} testID="admob-bottom-banner">
       <BannerAd
-        unitId={TestIds.BANNER}
+        unitId={unitId}
         size={BannerAdSize.BANNER}
-        onAdFailedToLoad={(error) => console.warn('AdMob test banner failed to load:', error)}
+        onAdFailedToLoad={() => setFailed(true)}
       />
     </View>
   );
@@ -69,11 +39,9 @@ export default function AdMobBanner() {
 
 const styles = StyleSheet.create({
   adSlot: {
-    minHeight: 64,
     alignItems: 'center',
     justifyContent: 'center',
-    paddingHorizontal: 8,
-    paddingVertical: 7,
+    paddingVertical: 6,
     borderTopWidth: 1,
     borderTopColor: '#EAE8F1',
     backgroundColor: '#FFFFFF',

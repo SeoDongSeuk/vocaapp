@@ -7,6 +7,7 @@ import AdMobBanner from './components/AdMobBanner';
 import HomeCardPager from './components/HomeCardPager';
 import WordSpeaker from './components/WordSpeaker';
 import StudySwipeCard from './components/StudySwipeCard';
+import useAdMobAds from './components/useAdMobAds';
 import { WORD_LEVEL, wordsForLevel, type LevelId, type Word } from './vocabulary';
 
 type Screen = 'splash' | 'welcome' | 'home' | 'study' | 'studyResult' | 'countdown' | 'playing' | 'result';
@@ -113,6 +114,7 @@ function createQuestion(answer: Word, levelWords: Word[]): Question {
 }
 
 export default function App() {
+  const { showCompletionAd, privacyOptionsRequired, privacyOptionsBusy, showPrivacyOptions } = useAdMobAds();
   const [screen, setScreen] = useState<Screen>('splash');
   const [selectedLevel, setSelectedLevel] = useState<LevelId>('beginner');
   const [correct, setCorrect] = useState(0);
@@ -139,6 +141,7 @@ export default function App() {
   const [studyMissed, setStudyMissed] = useState<Word[]>([]);
   const [reviewWords, setReviewWords] = useState<Word[]>([]);
   const lastMarkedStudyWord = useRef<string | null>(null);
+  const studySession = useRef(0);
   const wordCyclesRef = useRef<Record<LevelId, WordCycle> | null>(null);
   if (wordCyclesRef.current === null) {
     wordCyclesRef.current = {
@@ -180,6 +183,7 @@ export default function App() {
       ? shuffle(wordsToReview).slice(0, STUDY_SESSION_SIZE)
       : takeCycleWords(wordCyclesRef.current![level], levelWords, STUDY_SESSION_SIZE);
     setStudyWords(nextWords);
+    studySession.current += 1;
     lastMarkedStudyWord.current = null;
     setStudyIndex(0);
     setStudyRevealed(false);
@@ -215,6 +219,7 @@ export default function App() {
 
     if (studyIndex + 1 >= studyWords.length) {
       setScreen('studyResult');
+      showCompletionAd(`study:${studySession.current}`);
     } else {
       setStudyIndex((current) => current + 1);
       setStudyRevealed(false);
@@ -247,10 +252,11 @@ export default function App() {
         clearInterval(timer);
         setSelected(null);
         setScreen('result');
+        showCompletionAd(`quiz:${roundKey}`);
       }
     }, 150);
     return () => clearInterval(timer);
-  }, [screen, roundKey]);
+  }, [screen, roundKey, showCompletionAd]);
 
   useEffect(() => {
     if (selected === null || screen !== 'playing') return;
@@ -306,7 +312,7 @@ export default function App() {
 
   return (
     <SafeAreaProvider>
-      <View style={styles.root}>
+      <SafeAreaView edges={['bottom']} style={styles.root}>
         <StatusBar style="dark" />
       {screen === 'splash' && (
         <View style={styles.launchSplash}>
@@ -451,15 +457,19 @@ export default function App() {
                 <Text style={styles.reviewLinkArrow}>↗</Text>
               </Pressable>
             )}
+            {privacyOptionsRequired && (
+              <Pressable accessibilityRole="button" disabled={privacyOptionsBusy} style={styles.privacyLink} onPress={() => void showPrivacyOptions()}>
+                <Text style={styles.reviewLinkText}>{privacyOptionsBusy ? '설정을 여는 중이에요' : '광고 개인정보 설정'}</Text>
+              </Pressable>
+            )}
             <Text style={styles.homeFootnote}>원하는 단계에서 학습이나 1분 퀴즈를 시작해 보세요</Text>
           </HomeStudyScrollView>
           </HomeCardPager>
-          <AdMobBanner />
         </View>
       )}
 
       {screen === 'study' && (
-        <SafeAreaView edges={['bottom']} style={styles.studyContent}>
+        <SafeAreaView edges={[]} style={styles.studyContent}>
           <View style={styles.header}>
             <View style={styles.brand}>
               <View style={styles.brandMark}><Text style={styles.brandMarkText}>W</Text></View>
@@ -555,7 +565,7 @@ export default function App() {
       )}
 
       {(screen === 'countdown' || screen === 'playing') && (
-        <SafeAreaView edges={['bottom']} style={styles.gameScreen}>
+        <SafeAreaView edges={[]} style={styles.gameScreen}>
         <ScrollView key={question.answer.word} contentContainerStyle={styles.gameContent} showsVerticalScrollIndicator={false}>
           <Header trailing={`${activeLevel.english} CHALLENGE`} />
           <View style={styles.soloScoreBar}>
@@ -672,7 +682,8 @@ export default function App() {
           </View>
         </ScrollView>
       )}
-      </View>
+      {screen !== 'splash' && screen !== 'welcome' && screen !== 'countdown' && <AdMobBanner />}
+      </SafeAreaView>
     </SafeAreaProvider>
   );
 }
@@ -803,6 +814,7 @@ const styles = StyleSheet.create({
   levelDescriptionDot: { width: 6, height: 6, borderRadius: 3, marginRight: 7 },
   levelDescription: { flex: 1, color: COLORS.muted, fontSize: 9, fontWeight: '700' },
   reviewLink: { flexDirection: 'row', alignSelf: 'center', alignItems: 'center', gap: 5, paddingTop: 12, paddingBottom: 1 },
+  privacyLink: { alignSelf: 'center', minHeight: 40, paddingHorizontal: 12, justifyContent: 'center' },
   reviewLinkText: { color: COLORS.purpleDark, fontSize: 10, fontWeight: '800' },
   reviewLinkArrow: { color: COLORS.purpleDark, fontSize: 12, fontWeight: '800' },
   primaryButton: { height: 58, marginTop: 18, borderRadius: 17, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', backgroundColor: COLORS.purple, shadowColor: COLORS.purple, shadowOpacity: 0.2, shadowRadius: 12, shadowOffset: { width: 0, height: 7 }, elevation: 4 },

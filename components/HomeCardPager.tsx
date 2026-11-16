@@ -1,6 +1,5 @@
 import { useRef, useState, type ComponentRef, type ReactNode } from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
 import AdCampaignList from './AdCampaignList';
 import { useNetworkState } from 'expo-network';
 
@@ -19,7 +18,7 @@ function HomeCardPages({ children, online }: { children: ReactNode; online: bool
   const [visitedPages, setVisitedPages] = useState<number[]>([0]);
   const labels = online ? ['나의 학습 단계', '쇼핑 핫딜', '쇼핑 추천상품', '애드픽', '텐핑'] : ['나의 학습 단계'];
   const returnToPrevious = () => pager.current?.scrollTo({ x: Math.max(0, currentPage.current - 1) * width, animated: true });
-  return <SafeAreaView edges={['bottom']} style={styles.container}>
+  return <View style={styles.container}>
     {online && <View style={styles.hint} accessibilityLiveRegion="polite">
       <Text style={styles.hintText}>{labels[page]} · {page + 1}/{labels.length} · 좌우로 밀어 이동해요</Text>
       <View style={styles.dots}>{labels.map((label, index) => <View key={label} style={[styles.dot, page === index && styles.active]} />)}</View>
@@ -45,7 +44,7 @@ function HomeCardPages({ children, online }: { children: ReactNode; online: bool
         <View style={{ width, height: '100%' }} accessibilityElementsHidden={page !== 4} importantForAccessibility={page === 4 ? 'auto' : 'no-hide-descendants'}>{visitedPages.includes(4) && <AdCampaignList provider="tenping" embedded active={page === 4} onBack={returnToPrevious} />}</View></>}
       </ScrollView>}
     </View>
-  </SafeAreaView>;
+  </View>;
 }
 
 const styles = StyleSheet.create({
